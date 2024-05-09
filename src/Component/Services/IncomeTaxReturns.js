@@ -79,13 +79,13 @@ const IncomeTaxReturns = () => {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-wrap justify-center items-start">
                     {/* Left side image with description */}
-                    <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
-                        <img
+                    <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4">
+                         <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
+                         <img
                             src="assets/gstservices/Income-Tax-Returns.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
+                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
                         />
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:bg-black hover:bg-opacity-50">
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Income Tax Returns & Compliances</h2>
                             <h1 className="text-2xl mb-4 font-semibold">Income Tax Returns</h1>
                             <p className="text-md mb-4"><mark>Income tax is a type of tax that the central government charges on the income earned during a financial year by individuals and businesses. Taxes are sources of revenue for the government. The government utilises this revenue for developing infrastructure, providing healthcare, education, subsidies to the farmer/agriculture sector and other government welfare schemes.</mark></p>
@@ -109,12 +109,12 @@ const IncomeTaxReturns = () => {
 
                     {/* Right side service list */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mt-0 sm:mt-0 md:mt-0 lg:mt-96">
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:text-xl hover:bg-black hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
                             <h1 className="text-3xl font-bold text-gray-800 mb-4">Overview of Income Tax Compliances</h1>
                             <p className="text-lg mb-4">In today's global business landscape, it has become essential to have a comprehensive understanding of tax and regulatory policies in order to maximise growth and capitalise on opportunities, especially with the increasing investment and transactions by multinational companies in India. Leading tax consultants and advisors in the country specialise in assisting businesses with income tax services and navigating the complexities of tax and regulatory procedures. As the world undergoes significant changes, India is also embracing a new approach to broaden its tax base and enforce stringent compliance measures using digital platforms</p>
                             <p className="text-lg mb-4">Before formulating investment strategies, it is essential for companies to have a thorough understanding of the tax regulatory challenges they may face as they expand their business geographically or undergo structural changes. Companies are actively brainstorming to identify the most optimal tax structures and unlock potential opportunities. In pursuit of their organisational goals, companies often choose to outsource critical aspects of their tax strategy to ensure alignment between investments and tax management.</p>
                             <img
-                                src="assets/gstservices/compliance.webp"
+                                src="assets/loan-services/income-tax-in-India.jpg"
                                 alt="GST Services"
                                 className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
                             />

@@ -8,7 +8,7 @@ const OurBranches = () => {
         <div className="container mx-auto px-4 py-8 bg-gray-400">
             <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center ">
         <span className="relative">
-        Our Branches
+       GET IN TOUCH
           <span className="absolute left-0 right-0 bottom-0 h-1 bg-blue-500 transition-all duration-300"></span>
         </span>
       </h2>
@@ -18,7 +18,7 @@ const OurBranches = () => {
                     <div className="flex flex-wrap justify-center md:justify-start">
                         {/* Branch 1 */}
                         <div className="w-full md:w-5/6 px-4 mb-4">
-                            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-black hover:text-white transition duration-300">
+                            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
                                 <h3 className="text-xl font-semibold mb-2">Pune</h3>
                                 <div className="mb-2 flex items-center">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
@@ -36,7 +36,7 @@ const OurBranches = () => {
                         </div>
                         {/* Branch 2 */}
                         <div className="w-full md:w-5/6 px-4 mb-4">
-                            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-black hover:text-white transition duration-300">
+                            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
                                 <h3 className="text-xl font-semibold mb-2">Ahmednagar</h3>
                                 <div className="mb-2 flex items-center">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
@@ -44,17 +44,17 @@ const OurBranches = () => {
                                 </div>
                                 <div className="mb-2 flex items-center">
                                     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                                    <h6><strong>Email:</strong> jagaikwadandassociates@gmail.com</h6>
+                                    <h6><strong>Email:</strong> kawareabhijeet22@gmail.com</h6>
                                 </div>
                                 <div className="flex items-center">
                                     <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                                    <h6><strong>Mobile</strong> 8624058644 / 8668511898</h6>
+                                    <h6><strong>Mobile</strong> 8624058644 / 9730574023</h6>
                                 </div>
                             </div>
                         </div>
                         {/* Branch 3 */}
                         <div className="w-full md:w-5/6 px-4 ">
-                            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-black hover:text-white transition duration-300">
+                            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
                                 <h3 className="text-xl font-semibold mb-2">Daund </h3>
                                 <div className="mb-2 flex items-center">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
@@ -62,7 +62,7 @@ const OurBranches = () => {
                                      </div>
                                      <div className="mb-2 flex items-center">
                                     <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                                    <h6><strong>Email:</strong> jagaikwadandassociates@gmail.com</h6>
+                                    <h6><strong>Email:</strong>caanitagaikwad06@gmail.com</h6>
                                   </div>
                                   <div className="flex items-center">
                                     <FontAwesomeIcon icon={faPhone} className="mr-2" />

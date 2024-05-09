@@ -22,12 +22,13 @@ const ServicesPage = () => {
                 <div className="flex flex-wrap justify-center items-center">
                     {/* Left side image with description */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
+                      
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
                         <img
                             src="assets/gstservices/GST-Return.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
+                            className="w-full object-cover rounded-lg shadow-md mb-4 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
                         />
-                        <div className="bg-white rounded-lg shadow-md p-6  hover:border-black hover:border-solid hover:border-2 hover:text-white hover:text-xl hover:bg-black hover:bg-opacity-50">
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">GST Returns & Compliances</h2>
                             <h1 className="text-2xl mb-4 font-semibold">GST Returns Compliance</h1>
                             <p className="text-md mb-4"><mark>All registered businesses are required to file returns on a monthly/quarterly/yearly basis. The frequency of the returns depends mainly on the type of business activity. The GST returns are required to be filed online on the Returns section of the GST website.</mark></p>
@@ -43,7 +44,7 @@ const ServicesPage = () => {
 
                     {/* Right side service list */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4">
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:text-xl hover:bg-black hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
                             <h1 className="text-3xl font-bold text-gray-800 mb-4">Compliance</h1>
                             <p className="text-lg mb-4"> The Goods and Services Tax (GST) is a single and destination based tax levied on goods & services consumed in an economy. GST as envisaged by the Central Government is a single uniform indirect tax which will treat India as one nation one market.</p>
                             <p className="text-lg mb-4">With start of its inception from 1st July 2017, compliance with GST Law has always been challenging issue for business organizations. GST requires greater integration of tax domain knowledge, expertise and technology, as compliance has become vast, paperless and data-intensive, with sector-specific nuances.</p>

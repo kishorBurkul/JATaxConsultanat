@@ -54,12 +54,7 @@ const ServicesSection = () => {
                                     state="hover-pinch"
                                     style={{}}>
                                 </lord-icon>Project Report</li>
-                                <li className="flex items-center"> <lord-icon
-                                    src="https://cdn.lordicon.com/rvmukzut.json"
-                                    trigger="hover"
-                                    state="hover-pinch"
-                                    style={{ innerWidth: "50px" }}>
-                                </lord-icon>Food Insurance</li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -95,7 +90,7 @@ const ServicesSection = () => {
                                     trigger="hover"
                                     state="hover-pinch"
                                     style={{}}>
-                                </lord-icon>Mortgage </li>
+                                </lord-icon>Mortgage Loan</li>
                                 <li className="flex items-center">  <lord-icon
                                     src="https://cdn.lordicon.com/rvmukzut.json"
                                     trigger="hover"
@@ -107,24 +102,103 @@ const ServicesSection = () => {
                                     trigger="hover"
                                     state="hover-pinch"
                                     style={{}}>
-                                </lord-icon>Vehicle Loan</li>
+                                </lord-icon>Car Loan</li>
                                 <li className="flex items-center">  <lord-icon
                                     src="https://cdn.lordicon.com/rvmukzut.json"
                                     trigger="hover"
                                     state="hover-pinch"
                                     style={{}}>
-                                </lord-icon>Balance Transfer & Top Up</li>
+                                </lord-icon>Education Loan</li>
                                 <li className="flex items-center">  <lord-icon
                                     src="https://cdn.lordicon.com/rvmukzut.json"
                                     trigger="hover"
                                     state="hover-pinch"
                                     style={{}}>
-                                </lord-icon>All Type Loan </li>
+                                </lord-icon>Balance Transfer & Top Up </li>
                             </ul>
                         </div>
                     </div>
 
                     {/* Service 3 */}
+                    
+
+
+                    {/* Service 4 */}
+                    <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
+                            <img src="assets/homepage/home-Insurance.png" alt="Service 2" className="w-full h-full mb-4" style={{ height: "180px" }} />
+                            <h3 className="text-xl font-semibold mb-2">Insurance Services</h3>
+                            <ul className="text-gray-700 text-md">
+                                <li>
+                                   
+                                    <ul className="list-disc pl-6">
+                                        <li className="flex items-center">  <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon> Health Insurance</li>
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Life Insurance</li>
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Term Life Insurance</li>
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>General Insurance</li>
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Motor Insurance</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                   
+                                    <ul className="list-disc pl-6">
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Home Insurance</li>
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Personal Accident Cover</li>
+                                        <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Maternity Health Insuarnce</li>
+                                        {/* <li className="flex items-center"> <lord-icon
+                                            src="https://cdn.lordicon.com/rvmukzut.json"
+                                            trigger="hover"
+                                            state="hover-pinch"
+                                            style={{}}>
+                                        </lord-icon>Food Insurance</li> */}
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                     <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
                         <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
                             <img src="assets/homepage/service-detail.jpg" alt="Service 2" className="w-full mb-4" style={{ height: "180px" }} />
@@ -193,82 +267,6 @@ const ServicesSection = () => {
                                         state="hover-pinch"
                                         style={{}}>
                                     </lord-icon>Employees Provident Fund Registrations & Returns
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    {/* Service 4 */}
-                    <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
-                            <img src="assets/homepage/home-Insurance.png" alt="Service 2" className="w-full h-full mb-4" style={{ height: "180px" }} />
-                            <h3 className="text-xl font-semibold mb-2">Insurance Services</h3>
-                            <ul className="text-gray-700 text-md">
-                                <li>
-                                    Health Insurance
-                                    <ul className="list-disc pl-6">
-                                        <li className="flex items-center">  <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>Star Health</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>HDFC Ergo</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>NIVA BUPA</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>TATA Health</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>NIVA BUPA</li>
-
-                                    </ul>
-                                </li>
-                                <li>
-                                    Life Insurance
-                                    <ul className="list-disc pl-6">
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>LIC</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>MAX Life</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>Bajaj Allianz Life</li>
-                                        <li className="flex items-center"> <lord-icon
-                                            src="https://cdn.lordicon.com/rvmukzut.json"
-                                            trigger="hover"
-                                            state="hover-pinch"
-                                            style={{}}>
-                                        </lord-icon>All Company Life Insurance</li>
-                                    </ul>
                                 </li>
                             </ul>
                         </div>

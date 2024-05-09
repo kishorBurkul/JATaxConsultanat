@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-const Slider = () => {
+const SliderServices = () => {
     return (
 
 
         <>
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <div id="default-carousel" class="relative w-full mt-10" data-carousel="slide" >
 
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
 
@@ -101,4 +101,4 @@ const Slider = () => {
     );
 };
 
-export default Slider;
+export default SliderServices;

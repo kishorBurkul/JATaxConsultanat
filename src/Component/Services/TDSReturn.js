@@ -74,15 +74,17 @@ const TDSReturn = () => {
                 <div className="flex flex-wrap justify-center items-start">
                     {/* Left side image with description */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
-                        <img
-                            src="assets/gstservices/tdsretrun.webp"
-                            alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
-                        />
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:bg-black hover:bg-opacity-50">
+
+                        <div className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-2 border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:bg-gray-100 hover:bg-opacity-50">
+
+                            <img
+                                src="assets/gstservices/tdsretrun.webp"
+                                alt="GST Services"
+                                className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:bg-gray-100 hover:bg-opacity-50"
+                            />
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">TDS Returns & Compliances</h2>
                             <h2 className="text-2xl mb-4 font-semibold">What are the Eligibility Criteria for TDS Deduction in India?</h2>
-                            <p className="text-md mb-4"><mark>TDS is a mechanism prescribed by the Income Tax Act, 1961, where a certain percentage of payments are deducted at the time of making specified transactions. The following entities are eligible as deductors who can deduct TDS in India:</mark></p>
+                            <p className="text-md ml-2 mb-4"><mark>TDS is a mechanism prescribed by the Income Tax Act, 1961, where a certain percentage of payments are deducted at the time of making specified transactions. The following entities are eligible as deductors who can deduct TDS in India:</mark></p>
                             {/* <h3 className="font-semibold mb-4">Listed below are the forms required to file GST Returns:</h3> */}
                             <ul className=" pl-4">
                                 {benefits.map((benefit, index) => (
@@ -103,7 +105,7 @@ const TDSReturn = () => {
 
                     {/* Right side service list */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4">
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:text-xl hover:bg-black hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-solid border-2 border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
                             <h1 className="text-3xl font-bold text-gray-800 mb-4">Overview of Tax Deducted at Source (TDS) and Compliance</h1>
                             <p className="text-lg mb-4"><b>TDS or Tax Deducted at Source</b>, is the amount of tax deducted from money paid at the time of making specified payments such as rent, commission, professional fees, salary, interest and so on.</p>
                             <p className="text-lg mb-4">TDS is deducted when a salary or life insurance policy is paid. The TDS sum is then submitted with the Income Tax department. TDS is a method of automatically paying a portion of the tax to the Income Tax department. As a result, TDS is regarded as a method of reducing tax avoidance.</p>
