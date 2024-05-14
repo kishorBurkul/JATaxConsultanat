@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React, { useState } from 'react';
 
 const Vision = ({ image, description, name, role }) => {
@@ -17,19 +18,20 @@ const Vision = ({ image, description, name, role }) => {
             <span className="block text-sm">{role}</span>
           </div>
         </div>
-        <p className={`text-black text-md mb-4 ${expanded ? 'max-h-full' : 'max-h-24 overflow-hidden'}`}>{expanded ? description : `${description.slice(0, 200)}...`}</p>
-        <div className="flex justify-center">
-        {!expanded && (
-          <button onClick={toggleExpanded} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Read More
-          </button>
-        )}
+        <p className='text-black text-md mb-4 max-h-full  overflow-hidden'>{description}</p>
+        <Button>Read More</Button>
+        {/* <div className="flex justify-center">
+          {!expanded && (
+            <button onClick={toggleExpanded} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Read More
+            </button>
+          )}
           {expanded && (
             <button onClick={toggleExpanded} className="text-black text-sm font-semibold mb-2 bg-gray-800 px-4 py-2 rounded-md hover:bg-gray-700">
               Read Less
             </button>
           )}
-        </div>
+        </div> */}
         <div className="absolute inset-0 rounded-lg shadow-md opacity-0 transition-opacity duration-300 hover:opacity-50"></div>
       </div>
     </div>
@@ -40,21 +42,36 @@ const Visions = () => {
   const visions = [
     {
       image: 'assets/homepage/vision.png',
-      description: 'Above all our vision and goal is to divert from the traditional practice of taxation and audit legal requirements to comprehensive and active support to the business entities by providing a broad range of advisory activities, management support services to strengthen and improve productivity and profitability in the clients business with total compliance of business legal laws and applicable regulatory framework. Dedication and discipline are the aims of our parents and employees giving an edge to our professional services for the clients. We best chartered accountants in Pune Maharashtra, India are not only continuously accelerating to be amongst top runners in the top accounting firms or accounting companies profession but also abide with a capability to provide one-stop value addition to professional services.',
+      description: [' Above all our vision and goal is to divert from the traditional practice of taxation and audit legal requirements to comprehensive and active support to the business entities by providing a broad range of advisory activities, management support services to strengthen and improve productivity and profitability in the clients business with total compliance of business legal laws and applicable regulatory framework.',
+        'Dedication and discipline are the aims of our parents and employees giving an edge to our professional services for the clients.',
+        'To be a preferred provider of Accounting, Auditing and Consulting Services.',
+        'To provide highest client satisfaction through our dedicated workforce.',
+        'To be a respected name and leader in consultancy services.',
+      ],
       name: 'Our Vision',
-      role: 'CEO, J A Gaikwad & Associates '
+
     },
     {
       image: 'assets/homepage/goal-icon-png-3.jpg',
-      description: 'Besides our mission is to update the professional skills to cope up with ever-evolving business requirements to provide qualitative services to assist clients to manage tax-related dynamic situations in the rapid changing segment of business and also assisting incorrect decision-making processes. On the other hand, we ca account keep ourselves updated with day to day new reforms in the business accountant world and legal & regulatory policies to maintain strong relationships and long-lasting business relations with clients always ready to provide personalized, authenticated, and committed services through ought all the time easily accessible for strong business advice and qualitative services at cost-effective fees with highest ethics keeping professional standards.',
+      description: [
+        'Our mission is to provide quality service of taxation, auditing, financial and general management with up-to-date knowledge of relevant field.',
+        'We help our client to conduct their daily business activities smoothly by providing latest tax information and advices and making timely compliance to tax authorities to avoid financial losses.',
+      ],
       name: 'Our Mission',
-      role: 'Marketing Manager, J A Gaikwad & Associates'
+
     },
     {
       image: 'assets/homepage/Whyus.webp',
-      description: 'In addition to the above enable our clients free to work in full force in the field of their core capacity by lifting over the burden of their non-functions and deploy our complete energy and resources thereon with efficiency, but still remaining cost-efficient & effective. Additionally, discipline and accuracy are our domain for shoulder-to-shoulder development of our skills and the business requirements of our clients. We are based in Pune and we can found on searching CA near me in Pune. We are recognized as best chartered accountant in India.',
+      description:['We have Professional, Proactive and Partnership Approach towards client’s needs.',
+        'We believe to stay ahead and updated with the latest developments and sharing the information in the changing economy to provide our clients with the most consistent and prompt quality services.',
+        'We believe in strong and regular communication with our clients to eliminate their concerns thereby ensuring meeting the deadlines by working with them closely.',
+        'We consider feedback from our clients for us to improvise.',
+        'We abide by our commitment.',
+        'We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.',
+        'We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.',
+        
+      ],
       name: 'Why Choose Us',
-      role: 'CTO, J A Gaikwad & Associates'
     }
   ];
 

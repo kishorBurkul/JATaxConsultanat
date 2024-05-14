@@ -82,17 +82,14 @@ const HomeServices = () => {
                     <div className="md:w-1/2 md:ml-12 mt-6 md:mt-0 mr-6 sm:mr-0">
                         <h2 className="text-2xl font-bold text-gray-800 mb-4 text-justify">About J.A Gaikwad & Associates,Tax Practitioner In Pune</h2>
                         <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                            With over 7 years of experience, J.A Gaikwad and Associates is a trusted Tax Practitioner and Loan Provider firm in Pune.
-                            We cater to all kinds of businesses, be it of any size or shape. We keep client satisfaction as our top priority.
-                            We provide advisory, regulatory, and compliance-related services in the areas of Direct and Indirect Taxation and Loan Services.
+                        J.A. Gaikwad and Associates has established itself as a comprehensive accounting, tax, and audit firm offering a wide array of services to clients across Maharashtra.
+                         Founded in 2017 by Jayram Ashok Gaikwad, the firm is led by a team of chartered accountants,
+                         tax consultants, and other professionals in India, equipped with extensive knowledge and professional experience.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                            including Income Tax related Compliance, GST related compliance, Transfer Pricing, Auditing and Assurance,
-                            cross-border transactions related services, Company Formation, GST Registration, All Registration Services and Consultancy Services, etc.
-                            The proprietor, J.A Gaikwad, is a Tax Practitioner in Pune. He started this firm as a practicing CA in Pune in 2017.
-                            Being among the top Tax Practitioner firms in Pune, we help clients in filing their Income Tax Returns, GST returns, GST registrations, Loan services.
-                            So if you are looking for tax advice from a Tax Practitioner and Loan Provider in Pune, J.A Gaikwad and Associates is your one-stop destination for all tax compliances and Loan Services. Apart from Taxation,
-                            we also help with Auditing and Assurance, Company Incorporation, LLP registration, and other ROC and registration matters and Project Report.
+                        Our services encompass various areas, including accounting, auditing, direct taxation, Goods & Services Tax (GST), company law consultancy, NRI taxation, startup services, and bookkeeping & outsourcing services.
+                         We pride ourselves on being a dedicated group of professionals committed to continuously adding value and optimizing benefits for our clients.
+                         
                         </p>
                         {/* Add more description or elements as needed */}
                         <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">

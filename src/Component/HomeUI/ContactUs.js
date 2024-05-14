@@ -1,17 +1,32 @@
-import React from 'react';
+
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
-const OurBranches = () => {
+const ContactUs = () => {
     return (
-        <div className="container mx-auto px-4 py-8 bg-gray-400">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center ">
+        <div>
+
+            <div className="relative overflow-hidden">
+                {/* Background Image */}
+                <img
+                    className="w-full h-64 sm:h-96 object-cover mt-12"
+                    src="assets/insurance/contactus (1).jpg"
+                    alt="Services Header"
+                />
+                {/* Text Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+                    <h1 className="text-4xl font-bold text-center">Contact Us</h1>
+                </div>
+            </div>
+            <div className="container mx-auto px-4 py-8 bg-gray-400">
+            {/* <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center ">
                 <span className="relative">
                     GET IN TOUCH
                     <span className="absolute left-0 right-0 bottom-0 h-1 bg-blue-500 transition-all duration-300"></span>
                 </span>
-            </h2>
+            </h2> */}
             <div className="flex flex-wrap">
                 {/* Branches Section */}
               <div className="w-full md:w-1/2 px-4 mb-8">
@@ -19,7 +34,7 @@ const OurBranches = () => {
         {/* Branch 1 */}
         <div className="w-full md:w-5/6 px-4 mb-4  ">
             <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                <h3 className="text-xl font-semibold mb-2"><span>Katraj</span> , Pune</h3>
+                <h3 className="text-xl font-semibold mb-2"><span>Katraj</span> , Pune </h3>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
                     <p><strong>Address:</strong> Sr. No. 34/8, Suman Plaza, A Wing, 3rd Floor, Flat No.10 Trimurti Chouk, Near Bharati Vidyapith, Dr. P.K.Nagar, Dhankawadi, Pune Maharashtra - 411046</p>
@@ -38,7 +53,7 @@ const OurBranches = () => {
         {/* Branch 2 */}
         <div className="w-full md:w-5/6 px-4 mb-4">
             <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                <h3 className="text-xl font-semibold mb-2"><span>Rahuri</span> , Ahmednagar</h3>
+                <h3 className="text-xl font-semibold mb-2"> <span>Rahuri</span> , Ahmednagar</h3>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
                     <p><strong>Address:</strong> At Post -Baragaon Nandur, Near Chatrapati Shivaji Chouk,Tal- Rahuri, Dist - Ahmednagar -  413705.</p>
@@ -75,8 +90,8 @@ const OurBranches = () => {
 </div>
 
                 {/* Contact Form Section */}
-                <div className="w-full md:w-1/2 w-30 px-4 mb-8">
-                    <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="w-full md:w-1/2 px-4 mb-8">
+                    <div className="bg-white rounded-lg shadow-md p-6 md:w-11/12">
                         <h3 className="text-xl font-bold mb-4 text-center md:text-left">Contact Us</h3>
                         <div className="mb-4">
                             <label htmlFor="fullName" className="block text-gray-700 font-semibold mb-2">Full Name</label>
@@ -99,7 +114,10 @@ const OurBranches = () => {
                 </div>
             </div>
         </div>
-    );
-};
+        
 
-export default OurBranches;
+        </div>
+    )
+}
+
+export default ContactUs

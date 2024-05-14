@@ -6,7 +6,7 @@ import Footer from './Component/HomeUI/Footer';
 import Testimonials from './Component/HomeUI/Testimonials';
 import ReviewSlider from './Component/HomeUI/ReviewSlider';
 import Visions from './Component/HomeUI/Visions';
-import Readmore from './Component/HomeUI/ReadMore';
+// import Readmore from './Component/HomeUI/ReadMore';
 import ClientS from './Component/HomeUI/ClientS';
 import OurBranches from './Component/HomeUI/OurBranches';
 import ServicesPage from './Component/Services/ServicesPage';
@@ -31,6 +31,19 @@ import GeneralInsurance from './Component/Insuarance/GeneralInsurance';
 import MotorInsurance from './Component/Insuarance/MotorInsurance';
 import HomeInsurance from './Component/Insuarance/HomeInsurance';
 import PersonalCover from './Component/Insuarance/PersonalCover';
+import Vision from './Component/HomeUI/Vision';
+import MaternityHealthInsurance from './Component/Insuarance/MaternityHealthInsurane';
+import TermLifeInsurance from './Component/Insuarance/TermLifeInsurance';
+import AboutUs from './Component/HomeUI/AboutUs';
+import ContactUs from './Component/HomeUI/ContactUs';
+import UdyamRegistrstion from './Component/Registration/UdyamRegistrstion';
+import GstRegistration from './Component/Registration/GstRegistration';
+import CompanyRegistration from './Component/Registration/ComapanyRegistartion';
+import PanRegistration from './Component/Registration/PanRegistration';
+import ShopActRegistration from './Component/Registration/ShopActRegistration';
+import TradeMarkRegistration from './Component/Registration/TradeMarkRegistration';
+import ProfessionalTaxRegistration from './Component/Registration/ProfessionalTaxRegistration';
+import EpfRegistration from './Component/Registration/EpfRegistration';
 
 function App() {
   return (
@@ -41,6 +54,8 @@ function App() {
        
         <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path='/contact-us' element={<ContactUs/>}/>
+            <Route path='/about-us' element={<AboutUs/>}/>
             <Route path="/gst-return-compliance" element={<ServicesPage />} />
             <Route path="/income-tax-returns" element={<IncomeTaxReturns />} />
             <Route path="/tds-return" element={<TDSReturn />} />
@@ -55,12 +70,27 @@ function App() {
             <Route path='/balance-topup-loan' element={<Balance_Topup/>}/>
             <Route path='/health-insurance' element={<HealthInsurance/>}/>
             <Route path='/life-insurance' element={<LifeInsurance/>}/>
+            <Route path="/term-life-insurance" element={<TermLifeInsurance/>}/>
             <Route path='/general-insurance' element={<GeneralInsurance/>}/>
             <Route path='/motor-insurance' element={<MotorInsurance/>}/>
             <Route path='/home-insurance' element={<HomeInsurance/>}/>
             <Route path='/personal-accident-cover' element={<PersonalCover/>}/>
-       </Routes>
+            <Route path='/maternity-health-insurance' element={<MaternityHealthInsurance/>}/>
+            <Route path='/gst-registration' element={<GstRegistration/>}/>
+            <Route path='/udyog-adhar-registration' element={<UdyamRegistrstion/>}/>
+            <Route path="/pan-registration" element={<PanRegistration/>}/>
+            <Route path='/company-registration' element={<CompanyRegistration/>}/>
+            <Route path='/shop-act-registration' element={<ShopActRegistration/>}/>
+            <Route path="/trademark-registrations"  element={<TradeMarkRegistration/>}/>
+            <Route path="/professional-tax-registration" element={<ProfessionalTaxRegistration/>}/>
+            <Route path="/epf-registration" element={<EpfRegistration/>}/>
+
+
+           
+         </Routes>
+        
         <Footer />
+        
     </>
 </Router>
   );
@@ -75,8 +105,11 @@ const HomePage = () => {
           <ServicesSection/>
           <Testimonials />
           <ClientS />
-          <Visions />
+          {/* <Visions /> */}
+          <Vision/>
           <OurBranches />
+          {/* <AboutUs/> */}
+          {/* <ContactUs/> */}
       </>
   );
 };

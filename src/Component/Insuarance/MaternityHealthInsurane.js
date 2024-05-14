@@ -49,7 +49,7 @@ const descriptionStyle = {
 
 };
 
-const PersonalCover = () => {
+const MaternityHealthInsurance = () => {
     const benefits = [
         {
             title: '1.Car Insurance',
@@ -96,12 +96,12 @@ const PersonalCover = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/insurance/personal_accident_2_header.jpg"
+                    src="assets/insurance/maternity_helth_insrance_header.jpg"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center">Personal Accident Cover Insurance </h1>
+                    <h1 className="text-4xl font-bold text-center">Maternity Health Insurance </h1>
                 </div>
             </div>
 
@@ -111,12 +111,12 @@ const PersonalCover = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 } }}>
                         <Typography variant="h4" gutterBottom>
-                            What is Personal Accident Cover Insurance?
+                            What Is Maternity Health Insurance?
                         </Typography>
                         <Typography variant="body1" paragraph>
-
-                            Personal accident insurance safeguards you against the financial pain of an accident. Personal Accident insurance is a
-                            fixed benefit plan that provides financial protection to policyholders in case of death, permanent or temporary disability caused due to an accident. In case of any of these unfortunate events, the plan will provide a lump sum payout, as specified under the policy terms and conditions.
+                            A maternity insurance policy is a type of health insurance policy that covers the medical expenses for delivery, hospitalisation, and medicines. Parenthood is one of the most significant
+                            life experiences for a couple. But given the rising medical cost, this stage can put you under some financial burden. This is exactly when a comprehensive health insurance for pregnant
+                            women comes as a saviour. Maternity insurance helps expecting mothers get quality healthcare facilities without the financial burden.
                         </Typography>
                         {/* <Typography variant="body1" paragraph>
                         Motor insurance is a financial protection for cars, bikes, trucks, bus and other vehicles that covers damages to vehicles and liabilities arising from accidents, providing peace of mind to vehicle owners.
@@ -125,54 +125,12 @@ const PersonalCover = () => {
                             Life insurance can be an essential part of financial planning, providing peace of mind and financial security to loved ones in the event of the insured's passing. It's typically recommended to assess one's financial needs and goals to determine the appropriate type and amount of life insurance coverage needed.
                         </Typography> */}
 
-                        <ul sx={{
-                            listStyleType: 'disc',
-
-                            paddingLeft: { xs: 2, sm: 2, md: 4 }, // Adjust the padding for different screen sizes
-                        }}>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-
-                                    Covers Accidental Death
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Covers Disabilities
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Affordable Protection
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Instant Policy Issuance
-                                </span>
-                            </li>
-                        </ul>
                     </Grid>
 
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/Personal_health.png"
+                            src="assets/insurance/maternity_health.jpeg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -218,7 +176,7 @@ const PersonalCover = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/Accident-Insurance-Policy_benefit.png"
+                            src="assets/insurance/maternity_beneifits.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -232,10 +190,10 @@ const PersonalCover = () => {
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                         <Typography variant="h5" gutterBottom>
 
-                            Key Benefits of Personal Accident Cover Insurance
+                            Key Benefits of Maternity Health Insurance
                         </Typography>
                         <Typography variant="body1" paragraph>
-                        Personal Accident Cover Insurance offer several key benefits
+                           Maternity Health Insurance offer several key benefits
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
@@ -248,7 +206,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    Financial Assistance
+                                    Coverage for Prenatal Care
                                 </span>
                             </li>
 
@@ -257,7 +215,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Income Replacement
+                                    Hospitalization Expenses
                                 </span>
                             </li>
 
@@ -266,7 +224,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Permanent Disability Benefits
+                                    Delivery Costs
                                 </span>
                             </li>
 
@@ -275,7 +233,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Death Benefit
+                                    Postnatal Care
                                 </span>
                             </li>
 
@@ -284,7 +242,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Coverage for Various Types of Accidents
+                                    Coverage for Newborns
                                 </span>
                             </li>
 
@@ -293,7 +251,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    No Medical Examination Required
+                                    Financial Protection
                                 </span>
                             </li>
 
@@ -303,7 +261,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    Additional Benefits
+                                    Access to Quality Healthcare
                                 </span>
                             </li>
 
@@ -312,7 +270,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Affordable Premiums
+                                    Peace of Mind
                                 </span>
                             </li>
 
@@ -345,10 +303,10 @@ const PersonalCover = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5" gutterBottom>
-                            Documents Required For  Personal Accident Cover Insurance
+                            Documents Required For   Maternity Health Insurance
                         </Typography>
                         <Typography variant="body1" gutterBottom>
-                            When applying for a  Personal Accident Cover Insurance, you typically need the following documents
+                            When applying for a   Maternity Health Insurance, you typically need the following documents
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
@@ -360,7 +318,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Duly filled in claim form
+                                    Application Form
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -368,16 +326,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Death certificate
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Disability certificate from doctor
+                                    Proof of Identity
                                 </span>
                             </li>
 
@@ -386,7 +335,16 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Post-mortem report
+                                    Proof of Age
+                                </span>
+                            </li>
+
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Marriage Certificate
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -394,7 +352,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Doctor’s report
+                                    Medical Reports
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -402,7 +360,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    FIR copy
+                                    Pregnancy Confirmation
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -410,7 +368,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Medical certificate
+                                    Income Proof
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -418,7 +376,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Medicine bills
+                                    Bank Account Details
                                 </span>
                             </li>
                             {/* <li style={{ marginBottom: '1rem' }}>
@@ -442,7 +400,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Discharge summary, if hospitalised
+                                    Previous Insurance Details
                                 </span>
                             </li>
 
@@ -451,7 +409,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Investigation report
+                                    Any Other Required Documents
                                 </span>
                             </li>
 
@@ -462,7 +420,7 @@ const PersonalCover = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/car_document.webp"
+                            src="assets/insurance/Maternity-Health-Insurance-document.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -478,7 +436,7 @@ const PersonalCover = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
+                            src="assets/insurance/top_10_comp.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -491,7 +449,7 @@ const PersonalCover = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 2, sm: 2 } } }}>
                         <Typography variant="h5" gutterBottom>
-                            We Provide A List Of The Top 10  Personal Accident Cover Insurance Companies
+                            We Provide A List Of The Top 10  Maternity Health Insurance Companies
                         </Typography>
                         {/* <Typography variant="body1" paragraph>
                          Health insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits
@@ -507,7 +465,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    1.Aditya Birla Capital
+                                    1.Star Health and Allied Health Insurance
                                 </span>
                             </li>
 
@@ -516,7 +474,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    2.Bajaj Allianz Insurance
+                                    2.Care Health Insurance
                                 </span>
                             </li>
 
@@ -525,7 +483,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    3.Bharati AXA Insurance
+                                    3.Niva Bupa Health Insurance
                                 </span>
                             </li>
 
@@ -534,7 +492,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    4.Cholamandalam Insuarance
+                                    4.HDFC Ergo Health Insurance
                                 </span>
                             </li>
 
@@ -543,7 +501,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    5.Future Generali Insurance
+                                    5.ICICI Lambard Health Insurance
                                 </span>
                             </li>
 
@@ -552,7 +510,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    6.IFFCO Tokio Insurance
+                                    6. Aditya Birla Health Insurance
                                 </span>
                             </li>
 
@@ -562,7 +520,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    7.Kotak General Insurance
+                                    7. Manipal Cigna Health Insurance
                                 </span>
                             </li>
 
@@ -571,7 +529,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    8.Liability General Insurance
+                                    8.TATA AIG Health Insurance
                                 </span>
                             </li>
 
@@ -580,7 +538,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    9.Max Bupa Health Insurance
+                                    9.SBI Health Insurance
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -588,7 +546,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    10.Manipal Cigna Health Insurance
+                                    10.ACKO Health Insurance
 
                                 </span>
                             </li>
@@ -612,4 +570,4 @@ const PersonalCover = () => {
     );
 };
 
-export default PersonalCover;
+export default MaternityHealthInsurance;

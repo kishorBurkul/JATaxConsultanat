@@ -13,8 +13,8 @@ const ServicesSection = () => {
                 <div className="flex flex-wrap mx-4 ">
                     {/* Service 1 */}
 
-                    <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
+                    <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8 ">
+                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out h-full">
                             <img src="assets/homepage/taxation-service-jpg-500x500.webp" alt="Service 2" className="w-full mb-4" style={{ height: "180px" }} />
                             <h3 className="text-xl font-semibold mb-2">GST | Tax & Other Services</h3>
                             <ul className="text-gray-700 text-md">
@@ -63,8 +63,8 @@ const ServicesSection = () => {
 
                     {/* Service 2 */}
                     <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
-                            <img src="assets/homepage/loan-services-500x500.webp" alt="Service 2" className="w-full h-full mb-4" />
+                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out h-full">
+                            <img src="assets/homepage/loan-services-500x500.webp" alt="Service 2" className="w-full  mb-4" />
                             <h3 className="text-xl font-semibold mb-2">All Loan Services</h3>
                             <ul className="text-gray-700 text-md">
                                 <li className="flex items-center">  <lord-icon
@@ -125,7 +125,7 @@ const ServicesSection = () => {
 
                     {/* Service 4 */}
                     <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
+                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out h-full">
                             <img src="assets/homepage/home-Insurance.png" alt="Service 2" className="w-full h-full mb-4" style={{ height: "180px" }} />
                             <h3 className="text-xl font-semibold mb-2">Insurance Services</h3>
                             <ul className="text-gray-700 text-md">
@@ -200,7 +200,7 @@ const ServicesSection = () => {
 
 
                     <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out">
+                        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out h-full">
                             <img src="assets/homepage/service-detail.jpg" alt="Service 2" className="w-full mb-4" style={{ height: "180px" }} />
                             <h3 className="text-xl font-semibold mb-2">Registration Services</h3>
                             <ul className="text-gray-700 text-md list-none">

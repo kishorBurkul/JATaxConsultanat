@@ -49,39 +49,44 @@ const descriptionStyle = {
 
 };
 
-const PersonalCover = () => {
+const TermLifeInsurance = () => {
     const benefits = [
         {
-            title: '1.Car Insurance',
-            image: "/assets/insurance/car_insu.svg",
-            description: ['Car insurance plans offer protection to the vehicle against an accident, theft, natural calamity and other unforeseen circumstances that could incur financial losses. A car insurance policy covers third party liabilities as well.'
+            title: '1.Level Term Life Insurance',
+            image: "/assets/insurance/Term_insurance_1.jpg",
+            description: ['In this type of policy, the death benefit and premiums remain level, or unchanged, throughout the term of the policy. This means that the premium payments remain the same for the entire duration of coverage, providing predictable costs.'
             ]
         },
         {
-            title: '2.Two Wheeler Insurance',
-            image: "/assets/insurance/bike.png",
-            description: [
-                'Bike Insurance or two wheeler insurance is a type of insurance, which safeguards you against the damage happening to your bike due to accidents, natural calamities and other unfortunate events. Bike Insurance policy covers the cost of treatment as well as third party liabilities.']
+            title: '2.Convertible Term Life Insurance',
+            image: "/assets/insurance/convertible-term-life-insurance.jpg",
+            description: ['Convertible term life insurance policies allow policyholders to convert their term policy into a permanent life insurance policy, such as whole life or universal life, without the need for a medical exam. This provides flexibility for individuals who may want to extend coverage or build cash value over time..']
         },
-
         {
-            title: '3.Commercial Vehicle Insurance',
-            image: "/assets/insurance/Commercial-Veh-Truck.svg",
-            description: ['Commercial vehicle insurance covers your commercial vehicle against different types of external damages like theft, accident, natural calamity along with personal as well third-party liabilities.']
+            title: '3.Renewable Term Life Insurance ',
+            image: "/assets/insurance/insurance-2-900x506.webp",
+            description: [
+                'Renewable term life insurance policies offer the option to renew coverage at the end of the initial term without the need for a medical exam. However, premiums may increase upon renewal based on the insureds age and health status.']
         },
-        // {
-        //     title: '4.Travel Insurance',
-        //     image: "/assets/insurance/habits.png",
-        //     description: [
-        //         'Provides coverage for travelers against unexpected events such as trip cancellations, medical emergencies, lost baggage, and travel delays while traveling domestically or internationally.']
+        {
+            title: '4.Annual Renewable Term (ART) Life Insurance',
+            image: "/assets/insurance/ART.webp",
+            description: [
+                'ART policies offer coverage for one year at a time and can be renewed annually without the need for a medical exam. Premiums typically increase each year as the insured ages.']
 
-        // },
-        // {
-        //     title: '5.Business Insurance:',
-        //     image: "/assets/insurance/pre-existing-health.jpg",
-        //     description: [
-        //         'Offers various types of coverage to protect businesses from financial losses due to risks such as property damage, liability claims, business interruption, theft, and employee-related issues.']
-        // },
+        },
+        {
+            title: '5.Decreasing Term Life Insurance',
+            image: "/assets/insurance/Caspian-Header-Decreasing-1.png",
+            description: [
+                'With decreasing term life insurance, the death benefit decreases over the duration of the policy while the premiums remain level. This type of policy is often used to cover specific financial obligations that decrease over time, such as a mortgage or other debts.']
+        },
+        {
+            title: '6.Increasing Term Life Insurance',
+            image: "/assets/insurance/increasing-term-life-insurance.jpg",
+            description: [
+                'Increasing term life insurance policies provide coverage with a death benefit that increases over time, typically to keep pace with inflation or changing financial needs. Premiums may also increase with the rising death benefit.']
+        },
 
     ];
 
@@ -96,12 +101,12 @@ const PersonalCover = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/insurance/personal_accident_2_header.jpg"
+                    src="assets/insurance/term-in-surance-benefits.jpg"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center">Personal Accident Cover Insurance </h1>
+                    <h1 className="text-4xl font-bold text-center">Term Life Insurance </h1>
                 </div>
             </div>
 
@@ -111,68 +116,29 @@ const PersonalCover = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 } }}>
                         <Typography variant="h4" gutterBottom>
-                            What is Personal Accident Cover Insurance?
+                            What is Term Life Insuarance?
                         </Typography>
                         <Typography variant="body1" paragraph>
-
-                            Personal accident insurance safeguards you against the financial pain of an accident. Personal Accident insurance is a
-                            fixed benefit plan that provides financial protection to policyholders in case of death, permanent or temporary disability caused due to an accident. In case of any of these unfortunate events, the plan will provide a lump sum payout, as specified under the policy terms and conditions.
+                            Term insurance is a type of life insurance plan that provides financial coverage to the policyholder's family
+                            for a fixed time or years called the 'term' of a policy. This type of life insurance offers a death benefit to the
+                            nominee in case of the death of the insured during the policy term. A term insurance plan provides high life
+                            cover at low premium rates.
                         </Typography>
-                        {/* <Typography variant="body1" paragraph>
-                        Motor insurance is a financial protection for cars, bikes, trucks, bus and other vehicles that covers damages to vehicles and liabilities arising from accidents, providing peace of mind to vehicle owners.
-                        </Typography> */}
-                        {/* <Typography variant="body1" paragraph>
-                            Life insurance can be an essential part of financial planning, providing peace of mind and financial security to loved ones in the event of the insured's passing. It's typically recommended to assess one's financial needs and goals to determine the appropriate type and amount of life insurance coverage needed.
-                        </Typography> */}
-
-                        <ul sx={{
-                            listStyleType: 'disc',
-
-                            paddingLeft: { xs: 2, sm: 2, md: 4 }, // Adjust the padding for different screen sizes
-                        }}>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-
-                                    Covers Accidental Death
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Covers Disabilities
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Affordable Protection
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Instant Policy Issuance
-                                </span>
-                            </li>
-                        </ul>
+                        <Typography variant="body1" paragraph>
+                            Term life insurance is typically purchased for a specific duration, such as 10, 20, or 30 years.
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            For e.g., A 30-year-old healthy, non-smoker male can buy a term cover of Rs. 1 Crore for his family for the
+                            next 20 years. If he buys a term plan, he must pay only Rs. 641/month. With this 1 crore cover, he can
+                            ensure that their family will be able to maintain their current lifestyle without any hassle in case of his
+                            untimely death.
+                        </Typography>
                     </Grid>
 
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/Personal_health.png"
+                            src="assets/insurance/HealthInsurance.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -185,9 +151,9 @@ const PersonalCover = () => {
             </Container>
 
             {/* Cards Section */}
-            {/* <Container maxWidth="lg" style={{ marginTop: "20px" }}>
+            <Container maxWidth="lg" style={{ marginTop: "20px" }}>
                 <Typography variant="h4" component="h3" display="flex" justifyContent="center">
-                    Type Of Motor Insurance
+                    Type Of Term Life Insurance
                 </Typography>
                 <Grid container spacing={3} sx={{ marginTop: "5px" }}>
                     {benefits.map((benefit, index) => (
@@ -213,12 +179,12 @@ const PersonalCover = () => {
                         </Grid>
                     ))}
                 </Grid>
-            </Container> */}
+            </Container>
             <Container className={classes.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/Accident-Insurance-Policy_benefit.png"
+                            src="assets/insurance/top-7-health-insurance-riders-717x404.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -232,10 +198,10 @@ const PersonalCover = () => {
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                         <Typography variant="h5" gutterBottom>
 
-                            Key Benefits of Personal Accident Cover Insurance
+                        Key Benefits of Term  Life Insurance Plans
                         </Typography>
                         <Typography variant="body1" paragraph>
-                        Personal Accident Cover Insurance offer several key benefits
+                        Term Life insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
@@ -248,7 +214,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    Financial Assistance
+                                    Affordability
                                 </span>
                             </li>
 
@@ -257,16 +223,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Income Replacement
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Permanent Disability Benefits
+                                    Flexible Coverage
                                 </span>
                             </li>
 
@@ -284,7 +241,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Coverage for Various Types of Accidents
+                                    Simple and Transparent
                                 </span>
                             </li>
 
@@ -293,7 +250,16 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    No Medical Examination Required
+                                    Renewable and Convertible
+                                </span>
+                            </li>
+
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Protection During Critical Years
                                 </span>
                             </li>
 
@@ -303,16 +269,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    Additional Benefits
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Affordable Premiums
+                                    Tax-Free Benefits
                                 </span>
                             </li>
 
@@ -321,17 +278,19 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Peace of Mind
+
+                                    Tax Advantages
                                 </span>
-                            </li>
+                            </li> */}
+
                             <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Convenience and Support
+                                    Additional Benefits
                                 </span>
-                            </li> */}
+                            </li>
                         </ul>
                     </Grid>
 
@@ -345,10 +304,11 @@ const PersonalCover = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5" gutterBottom>
-                            Documents Required For  Personal Accident Cover Insurance
+                            Things to Consider Before You Pick a Life Insurance Plan
                         </Typography>
                         <Typography variant="body1" gutterBottom>
-                            When applying for a  Personal Accident Cover Insurance, you typically need the following documents
+
+                            Before selecting a life insurance plan, it's essential to consider several factors to ensure you choose the right coverage for your needs. Here are some key things to consider
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
@@ -360,7 +320,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Duly filled in claim form
+                                    Financial Needs and Goals
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -368,16 +328,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Death certificate
-                                </span>
-                            </li>
-
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Disability certificate from doctor
+                                    Type of Coverage
                                 </span>
                             </li>
 
@@ -386,63 +337,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Post-mortem report
-                                </span>
-                            </li>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Doctor’s report
-                                </span>
-                            </li>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    FIR copy
-                                </span>
-                            </li>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Medical certificate
-                                </span>
-                            </li>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Medicine bills
-                                </span>
-                            </li>
-                            {/* <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Additional Driver Details
-                                </span>
-                            </li>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Bank Account Details
-                                </span>
-                            </li> */}
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Discharge summary, if hospitalised
+                                    Coverage Amount and Duration
                                 </span>
                             </li>
 
@@ -451,7 +346,47 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    Investigation report
+                                    Premium Affordability
+                                </span>
+                            </li>
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Health and Lifestyle Factors
+                                </span>
+                            </li>
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Understand the process
+                                </span>
+                            </li>
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Look at the features
+                                </span>
+                            </li>
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Choose a good company
+                                </span>
+                            </li>
+                            <li style={{ marginBottom: '1rem' }}>
+                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
+                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
+                                        &nbsp;&#10004;&nbsp;
+                                    </span>
+                                    Additional Benefits and Value-Added Services
                                 </span>
                             </li>
 
@@ -462,7 +397,7 @@ const PersonalCover = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/car_document.webp"
+                            src="assets/insurance/think-image.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -478,7 +413,7 @@ const PersonalCover = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
+                            src="assets/insurance/life_insuarance_compny-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -491,7 +426,7 @@ const PersonalCover = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 2, sm: 2 } } }}>
                         <Typography variant="h5" gutterBottom>
-                            We Provide A List Of The Top 10  Personal Accident Cover Insurance Companies
+                            We Provide A List Of The Top 10 Term Life Insurance Companies
                         </Typography>
                         {/* <Typography variant="body1" paragraph>
                          Health insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits
@@ -507,7 +442,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    1.Aditya Birla Capital
+                                    1.Max Life Insurance Company
                                 </span>
                             </li>
 
@@ -516,7 +451,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    2.Bajaj Allianz Insurance
+                                    2.AEGON Life Insurance Company
                                 </span>
                             </li>
 
@@ -525,7 +460,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    3.Bharati AXA Insurance
+                                    3.Bharti AXA Life Insurance Company
                                 </span>
                             </li>
 
@@ -534,7 +469,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    4.Cholamandalam Insuarance
+                                    4.Bajaj Allianz Life Insurance Company
                                 </span>
                             </li>
 
@@ -543,7 +478,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    5.Future Generali Insurance
+                                    5.HDFC Life Insurance Company
                                 </span>
                             </li>
 
@@ -552,7 +487,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    6.IFFCO Tokio Insurance
+                                    6. Life Insurance Company (LIC)
                                 </span>
                             </li>
 
@@ -562,7 +497,7 @@ const PersonalCover = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                    7.Kotak General Insurance
+                                    7. Pramerica Life Insurance Company
                                 </span>
                             </li>
 
@@ -571,7 +506,8 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    8.Liability General Insurance
+
+                                    8.Exide Life Insurance Company
                                 </span>
                             </li>
 
@@ -580,7 +516,7 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    9.Max Bupa Health Insurance
+                                    9.Kotak Mahindra Life Insurance Company
                                 </span>
                             </li>
                             <li style={{ marginBottom: '1rem' }}>
@@ -588,19 +524,9 @@ const PersonalCover = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                    10.Manipal Cigna Health Insurance
-
+                                    10.Reliance Nippon Life Insurance Company
                                 </span>
                             </li>
-                            {/* <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    10.SBI General Home Insurance Company Limited
-
-                                </span>
-                            </li> */}
                         </ul>
                     </Grid>
 
@@ -612,4 +538,4 @@ const PersonalCover = () => {
     );
 };
 
-export default PersonalCover;
+export default TermLifeInsurance;

@@ -1,4 +1,19 @@
+import { Twitter, YouTube, Facebook, Instagram, Telegram } from '@mui/icons-material';
+import { Grid, IconButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import {
+    Box,
+    Button,
+    Divider,
+    Link,
+    List,
+    ListItem,
+    TextField,
+} from "@mui/material";
+import { Avatar } from 'flowbite-react';
 import React from 'react';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const Footer = () => {
     const handleLinkClick = (event) => {
@@ -7,46 +22,175 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-gray-800 py-8">
-            <div className="container mx-auto flex justify-between items-center">
-                <div className="flex items-center ml-36">
-                    <div className="text-white">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-600">
-                            <img src="assets/homepage/logo.jpeg" alt="Logo" className="flex-shrink-0 w-6 h-6 rounded-full dark:text-gray-50" />
-                        </div>
-                    </div>
-                    <h1 className="text-white">J A Gaikwad & Associates</h1>
-                </div>
+        <footer>
+            <Grid
+                container
+                justifyContent="center"
+                sx={{ backgroundColor: "#252B42", color: "white" }}
+            >
+                {/* <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sm={6}
+                    display={"flex"}
+                    justifyContent="center"
+                    mt={{ xs: 0, sm: 0, md: 4 }}
+                >
+                    <Box style={{ display: 'flex', alignItems: 'center' }}>
+                    <Avatar alt="Lo" src="assets/homepage/hdfc.png" sx={{ width: 34, height: 34 }} />
+                        <Typography variant="h6" style={{ marginLeft: 10 }}>J A Gaikwad & Associates</Typography>
+                        
+                    </Box>
+                </Grid> */}
+                {/* <Grid
+                    item
+                    xs={6}
+                    md={6}
+                    sm={6}
+                    display={"flex"}
+                    justifyContent="center"
+                    mt={{ xs: 0, sm: 0, md: 4 }}
+                >
 
-                <div className='flex justify-start'>
-                    <div className="text-white">
-                        <a href="#" className="text-white hover:text-gray-400 mx-4" onClick={handleLinkClick}>Home</a>
-                    </div>
-                    <div className="text-white">
-                        <a href="#" className="text-white hover:text-gray-400 mx-4" onClick={handleLinkClick}>Services</a>
-                    </div>
-                    <div className="text-white">
-                        <a href="#" className="text-white hover:text-gray-400 mx-4" onClick={handleLinkClick}>About Us</a>
-                    </div>
-                    <div className="text-white">
-                        <a href="#" className="text-white hover:text-gray-400 mx-4" onClick={handleLinkClick}>Contact us</a>
-                    </div>
-                </div>
+                    <IconButton aria-label="Facebook" sx={{ color: "#1877F2" }}>
+                        <Facebook />
+                    </IconButton>
+                    <IconButton aria-label="Instagram" sx={{ color: "red" }}>
+                        <Instagram />
+                    </IconButton>
+                    <IconButton aria-label="Twitter" sx={{ color: "#1DA1F2" }}>
+                        <Twitter />
+                    </IconButton>
+                    <IconButton aria-label="Youtube" sx={{ color: "red" }}>
+                        <YouTube />
+                    </IconButton>
+                </Grid> */}
+                <Grid container m={4} spacing={0.5}>
+                    <Grid item xs={6} sm={6} md={2}>
+                        <Box>
+                            <Typography variant="h6">GST & Tax Services</Typography>
+                            <List>
+                                <ListItem>GST Returns & Compliances</ListItem>
+                                <ListItem>Income Tax Returns & Compliances</ListItem>
+                                <ListItem>TDS Returns & Compliances</ListItem>
+                                <ListItem>Digital Signatures ( DSC)</ListItem>
+                                <ListItem>Accounting</ListItem>
+                                <ListItem>Project Report</ListItem>
+                            </List>
+                        </Box>
+                    </Grid>
 
-                <div className="flex items-center space-x-4 mr-36">
-                    <a rel="noopener noreferrer" href="https://www.facebook.com/jagaikwadandassociates" title="Facebook" className="flex items-center p-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#3b5998" viewBox="0 0 32 32" className="w-5 h-5 fill-current text-blue-500">
-                            <path d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"></path>
-                        </svg>
-                    </a>
-                    <a rel="noopener noreferrer" href="https://www.youtube.com/@jagaikwadandassociates" title="YouTube" className="flex items-center p-1">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-6 h-10 fill-current text-red-500">
-                            <path fill="#FF0000" d="M23.6,7.2c-0.3-1.1-1.1-2-2.2-2.2c-1.8-0.3-9.1-0.3-9.1-0.3s-7.3,0-9.1,0.3C1.5,5.2,0.7,6.1,0.4,7.2 C0.1,8.4,0,9.8,0,12s0.1,3.6,0.4,4.8c0.3,1.1,1.1,2,2.2,2.2c1.8,0.3,9.1,0.3,9.1,0.3s7.3,0,9.1-0.3c1.1-0.2,1.9-1.1,2.2-2.2 c0.3-1.2,0.4-2.6,0.4-4.8S23.9,8.4,23.6,7.2z M9.5,15.8V8.2l6.7,3.8L9.5,15.8z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </footer>
+                    <Grid item xs={6} sm={6} md={2}>
+                        <Box>
+                            <Typography variant="h6" justifyContent="center">
+                                Registration Services
+                            </Typography>
+                            <List>
+                                <ListItem>GST Registration</ListItem>
+                                <ListItem>Company Registration</ListItem>
+                                <ListItem>Shop Act Registration</ListItem>
+                                <ListItem>Udyam Registration</ListItem>
+                                <ListItem>GST Registration</ListItem>
+                                <ListItem>PAN Registration</ListItem>
+                                <ListItem>Trademark Registrations</ListItem>
+                                <ListItem>Professional Tax Registrations & Returns</ListItem>
+                                <ListItem>EPF Registrations & Returns</ListItem>
+                            </List>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={6} sm={6} md={2}>
+                        <Box>
+                            <Typography variant="h6">All Loan Services</Typography>
+                            <List>
+                                <ListItem>Personal Loan </ListItem>
+                                <ListItem>Home Loan</ListItem>
+                                <ListItem>Business Loan</ListItem>
+                                <ListItem>Mortgage Loan</ListItem>
+                                <ListItem>Cash Credit Overdraft Loan </ListItem>
+                                <ListItem>Car Loan</ListItem>
+                                <ListItem>Education Loan</ListItem>
+                                <ListItem>Balance Transfer & Top Up
+                                </ListItem>
+                            </List>
+                        </Box>
+                    </Grid>
+
+                    <Grid item xs={6} sm={6} md={2}>
+                        <Box>
+                            <Typography variant="h6">Insurance Services</Typography>
+                            <List>
+                                <ListItem>Health Insurance</ListItem>
+                                <ListItem>Life Insurance</ListItem>
+                                <ListItem>Term Life Insurance</ListItem>
+                                <ListItem>General Insurance</ListItem>
+                                <ListItem>Motor Insurance</ListItem>
+                                <ListItem>Home Insurance</ListItem>
+                                <ListItem>Personal Accident Cover</ListItem>
+                                <ListItem>Maternity Health Insuarnce</ListItem>
+
+                            </List>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Typography variant="h6">Get in Touch</Typography>
+                        <IconButton aria-label="Facebook" sx={{ color: "#1877F2" }} href="https://www.facebook.com/jagaikwadandassociates">
+                            <Facebook />
+                        </IconButton>
+                        <IconButton aria-label="Instagram" sx={{ color: "#c32aa3" }} href="https://www.instagram.com/jagaikwadandassociates">
+                            <Instagram />
+                        </IconButton>
+                        <IconButton aria-label="Twitter" sx={{ color: "#1DA1F2" }} href="https://x.com/JayGaik58255590?t=l2wBBE212sAUAGksjFKdNg&s=09">
+                            <Twitter />
+                        </IconButton>
+                        <IconButton aria-label="Youtube" sx={{ color: "red" }} href="https://www.youtube.com/@jagaikwadandassociates">
+                            <YouTube />
+                        </IconButton>
+                        <IconButton aria-label="Telegram" sx={{ color: "#0088cc" }} href="https://t.me/jagaikwadandassociates">
+                            <Telegram />
+                        </IconButton>
+
+                        <List sx={{ marginTop: 2 }}>
+                            <ListItem disablePadding>
+                                <ListItemIcon sx={{ color: "#03a8a0" }}>
+                                    <LocationOnIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Address: Sr. No. 34/8, Suman Plaza, A Wing, 3rd Floor, Flat No.10 Trimurti Chouk, Near Bharati Vidyapith, Dr. P.K.Nagar, Dhankawadi, Pune Maharashtra - 411046" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon sx={{ color: "#d44638" }}>
+                                    <EmailIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Email: jagaikwadandassociates@gmail.com" />
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemIcon sx={{ color: "#133292" }}>
+                                    <PhoneIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Mobile: 8624058644 / 8668511898" />
+                            </ListItem>
+                        </List>
+                        {/* <TextField
+                            placeholder="Enter your email"
+                            variant="outlined"
+                            sx={{ backgroundColor: "white" }}
+                            InputProps={{
+                                endAdornment: (
+                                    <Button size="large" variant="contained" color="warning" sx={{ height: "100%" }}>
+                                        Subscribe
+                                    </Button>
+                                ),
+                            }}
+                        /> */}
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid style={{ backgroundColor: '#17213C', textAlign: 'center', padding: '20px 0', color: 'white' }}>
+                <Typography variant="body2" color="inherit">Copyright&copy;J A Gaikwad & Associates . Developed By Kishor Burkul</Typography>
+            </Grid>
+
+
+        </footer >
     );
 };
 

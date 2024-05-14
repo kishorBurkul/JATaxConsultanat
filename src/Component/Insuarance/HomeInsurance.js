@@ -407,7 +407,7 @@ const HomeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/car_document.webp"
+                            src="assets/insurance/home_insu_doc.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -436,7 +436,7 @@ const HomeInsurance = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 2, sm: 2 } } }}>
                         <Typography variant="h5" gutterBottom>
-                            We provide a list of the top 10 Motor insurance companies
+                            We provide a list of the top 10 Home insurance companies
                         </Typography>
                         {/* <Typography variant="body1" paragraph>
                          Health insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits

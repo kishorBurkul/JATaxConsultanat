@@ -178,7 +178,7 @@ const CarLoan = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/loan-services/Mortage-laon.jpg"
+                    src="assets/insurance/car_loan_header.jpg"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}

@@ -186,7 +186,7 @@ const LifeInsurance = () => {
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                         <Typography variant="h5" gutterBottom>
 
-                            Key Benefits of Health Insurance Plans
+                            Key Benefits of Life Insurance Plans
                         </Typography>
                         <Typography variant="body1" paragraph>
                            Life insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits
