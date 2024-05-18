@@ -57,7 +57,7 @@ const Accounting = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/gstservices/GST2.jpg"
+                    src="assets/gstservices/Accounting-Bookkeeping.jpg"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}
@@ -71,13 +71,13 @@ const Accounting = () => {
                 <div className="flex flex-wrap justify-center items-start">
                     {/* Left side image with description */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid  ">
                         <img
                             src="assets/gstservices/accounting.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
+                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid  "
                         />
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:bg-black hover:bg-opacity-50">
-                            <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Accounting & Book Keeping  </h2>
+                           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Accounting & Book Keeping  </h2>
                             <h2 className="text-2xl mb-4 font-semibold"> Accounting & Book Keeping </h2>
                             <p className="text-md mb-4"><mark>We use accounting assurance services to help our clients grow and reach their aspirations.
                                 This is more than just preparing financial statements and tax returns.
@@ -104,7 +104,7 @@ const Accounting = () => {
 
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
 
-                        <div className="mx-auto w-2/3 bg-slate-500">
+                        <div className="mx-auto w-2/3 bg-slate-500 mb-4">
                             <div className="bg-grey rounded-lg shadow-md p-6 bg-inherit">
                                 <p className="text-lg mb-4 text-white">
                                     " We use accounting assurance services to help our clients grow and reach their aspirations.
@@ -114,7 +114,7 @@ const Accounting = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-lg shadow-md p-6 mt-10 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:bg-grey hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 mt-1 border-black border-solid border-2 text-black ">
 
                             <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Benefits of a Digital Signature Certificate</h2>
 

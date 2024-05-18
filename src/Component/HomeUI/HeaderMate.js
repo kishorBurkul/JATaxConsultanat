@@ -51,7 +51,7 @@ export default function HeaderMate(props) {
   };
 
 
-  const navItemss = [
+  const navMenuResp = [
     {
       mainItem: 'Home',
       routes: ['/'],
@@ -154,7 +154,7 @@ export default function HeaderMate(props) {
     </Typography>
     <Divider />
     <List>
-      {navItemss.map((item, index) => (
+      {navMenuResp.map((item, index) => (
         <React.Fragment key={index}>
           <ListItemButton onClick={handleSubMenuItemClick}>
             <ListItemText primary={item.mainItem} />
@@ -209,9 +209,11 @@ export default function HeaderMate(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block', } }}>
 
 
-            <Link sx={{ color: '#fff', textDecoration: "none" }} to="/"> <Button sx={{ color: '#fff' }} >Home </Button></Link>
+            
+               <Button sx={{ color: '#fff' }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/">Home</Link></Button>
+           
 
-            <Button><Option navItems={navItems} nestedMenuItems={nestedMenuItems} routes={routes} /></Button> {/* Render the Option component */}
+            <Button><Option navItems={navItems} nestedMenuItems={nestedMenuItems} routes={routes} /></Button> 
             <Link to="/about-us">
               <Button sx={{ color: '#fff' }}>
                 About Us

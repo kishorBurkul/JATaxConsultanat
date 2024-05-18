@@ -1,7 +1,9 @@
 import React from 'react'
 import { Grid, Typography, Avatar, Button, CardActionArea, Card, Box } from '@mui/material';
+import GoogleMaps from './GoogleMaps';
 
 const AboutVision = () => {
+    const apiKey = 'AIzaSyDeq1yv6MBO-XfHYlcCi30J3KAFSt8YNEg';
     return (
         <Grid container direction="column" alignItems="center">
             {/* Header with Avatar and Name */}
@@ -21,7 +23,7 @@ const AboutVision = () => {
                     <CardActionArea>
                         <Card>
                             <Avatar alt="User Avatar" src="assets/homepage/vision.png" sx={{ margin: 'auto', width: "100px", height: "100px" }} />
-                            <Typography variant="h5" align="center">Our Vison</Typography>
+                            <Typography variant="h5" align="center">Our Vision</Typography>
                             <Box p={2} display="flex" flexDirection="column" alignItems="center">
                                 <Typography variant="body1" display="flex" justifyContent="center" mx={2}>
                                     Above all our vision and goal is to divert from the traditional practice of taxation and audit legal requirements to comprehensive and active support to the business entities by providing a broad range of advisory activities, management support services to strengthen and improve productivity and profitability in the clients business with total compliance of business legal laws and applicable regulatory framework.
@@ -62,11 +64,9 @@ const AboutVision = () => {
                                     We believe in strong and regular communication with our clients to eliminate their concerns thereby ensuring meeting the deadlines by working with
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We consider feedback from our clients for us to improvise.
+                                    We consider feedback from our clients for us to improvise. We abide by our commitment.
                                 </Typography>
-                                <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We abide by our commitment.
-                                </Typography>
+
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
                                     We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.
                                 </Typography>
@@ -99,7 +99,9 @@ const AboutVision = () => {
                     </CardActionArea>
                 </Grid>
             </Grid>
+           
         </Grid>
+       
     )
 }
 

@@ -1,25 +1,28 @@
 import React from 'react';
-import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box } from '@mui/material';
+import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box, Paper } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ContactForm from './ContactForm';
+import FormComponent from './FormComponent';
 const EpfRegistration = () => {
     return (
         <>
-            <div className="relative overflow-hidden">
+
+            <Box className="relative overflow-hidden">
                 <img
-                    className="w-full h-64 sm:h-96 object-cover"
+                    className="w-full mt-10  h-64 sm:h-96 object-cover"
                     src="assets/Registration/epf-PR-Registration.jpg"
                     alt="Services Header"
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+                <Box className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Employees Provident Fund Registrations & Returns</h1>
-                </div>
-            </div>
+                </Box>
+            </Box>
+
             <Grid container spacing={2}
                 justifyContent="center">
-                <Grid container mx={4} mt={4} spacing={4}>
-                    <Grid item xs={12} sm={8}>
+                <Grid item xs={12} md={8} mt={4} >
+                    <Paper sx={{ padding: 6 }}>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Employees Provident Fund Registrations & Returns</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -41,7 +44,7 @@ const EpfRegistration = () => {
                                     <ListItemText sx={{ pl: 2 }}><b>Employer Registration:</b>Employers need to register themselves with the EPFO by submitting the required details and documents. This registration is necessary for employers to contribute to the EPF scheme on behalf of their employees.</ListItemText>
                                     <ListItemText sx={{ pl: 2 }}><b>Employee Enrollment:</b> Once the employer is registered, they need to enroll their eligible employees under the EPF scheme. This involves collecting the necessary information and documents from employees and submitting them to the EPFO.</ListItemText>
                                     <ListItemText sx={{ pl: 2 }}><b>EPF Code Allocation:</b>Upon successful registration, employers are allocated a unique Employer Provident Fund (EPF) code, which is used for all EPF-related transactions.</ListItemText>
-                                   
+
 
                                 </List>
                             </Accordion>
@@ -55,13 +58,13 @@ const EpfRegistration = () => {
                                     <Typography variant='h6'>EPF Returns:</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                <List component="div" disablePadding >
-                                    <ListItemText sx={{ pl: 2 }}>Employers are required to file various returns and reports with the EPFO to ensure compliance with EPF regulations. Some of the key returns include:</ListItemText>
-                                    <ListItemText sx={{ pl: 2 }}><b>Monthly EPF Contribution:</b> Employers must submit monthly EPF contribution details, including employee and employer contributions, to the EPFO through the Electronic Challan cum Return (ECR) portal.</ListItemText>
-                                    <ListItemText sx={{ pl: 2 }}><b>Annual EPF Return:</b> Employers need to file an annual EPF return, also known as Form 9, which provides details of all employees covered under the EPF scheme during the financial year.</ListItemText>
-                                    <ListItemText sx={{ pl: 2 }}><b>Employee Nomination Details:</b> Employers are required to submit employee nomination details, including nominees for EPF benefits in the event of the employee's death, to the EPFO.</ListItemText>
-                                    <ListItemText sx={{ pl: 2 }}><b>Any Other Required Reports:</b>  Depending on specific requirements or notifications from the EPFO, employers may need to submit additional reports or returns related to EPF compliance.</ListItemText>
-                                 </List>
+                                    <List component="div" disablePadding >
+                                        <ListItemText sx={{ pl: 2 }}>Employers are required to file various returns and reports with the EPFO to ensure compliance with EPF regulations. Some of the key returns include:</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}><b>Monthly EPF Contribution:</b> Employers must submit monthly EPF contribution details, including employee and employer contributions, to the EPFO through the Electronic Challan cum Return (ECR) portal.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}><b>Annual EPF Return:</b> Employers need to file an annual EPF return, also known as Form 9, which provides details of all employees covered under the EPF scheme during the financial year.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}><b>Employee Nomination Details:</b> Employers are required to submit employee nomination details, including nominees for EPF benefits in the event of the employee's death, to the EPFO.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}><b>Any Other Required Reports:</b>  Depending on specific requirements or notifications from the EPFO, employers may need to submit additional reports or returns related to EPF compliance.</ListItemText>
+                                    </List>
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion sx={{ backgroundColor: "#dee2e6" }}>
@@ -69,11 +72,11 @@ const EpfRegistration = () => {
                                     <Typography variant='h6'>Benefits of EPF Registration & Returns: </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                <List component="div" disablePadding >
-                                    <ListItemText sx={{ pl: 2 }}><b>Employee Financial Security:</b> EPF provides employees with a reliable savings platform for their retirement, ensuring financial security after the end of their employment.</ListItemText>
-                                    <ListItemText sx={{ pl: 2 }}><b>Employer Compliance:</b> EPF registration and returns ensure that employers comply with statutory requirements related to employee welfare and social security.</ListItemText>
-                                    <ListItemText sx={{ pl: 2 }}><b>Tax Benefits:</b> Contributions made towards EPF are eligible for tax benefits under Section 80C of the Income Tax Act, making it an attractive investment option for both employees and employers.</ListItemText>
-                               </List>
+                                    <List component="div" disablePadding >
+                                        <ListItemText sx={{ pl: 2 }}><b>Employee Financial Security:</b> EPF provides employees with a reliable savings platform for their retirement, ensuring financial security after the end of their employment.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}><b>Employer Compliance:</b> EPF registration and returns ensure that employers comply with statutory requirements related to employee welfare and social security.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}><b>Tax Benefits:</b> Contributions made towards EPF are eligible for tax benefits under Section 80C of the Income Tax Act, making it an attractive investment option for both employees and employers.</ListItemText>
+                                    </List>
                                 </AccordionDetails>
                             </Accordion>
 
@@ -101,7 +104,7 @@ const EpfRegistration = () => {
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Date of Joining and Date of Exit (if applicable)</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Bank Account Details: Bank Name, Account Number, IFSC Code</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Nomination Details: Nominee Name, Relationship, Percentage of Nomination</ListItemText>
-                                    
+
                                         <ListItemText sx={{ pl: 2 }}>3 <b>For EPF Returns: </b></ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Monthly contribution details of both employer and employees (Form 12A)</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Challans for the payment of EPF contributions</ListItemText>
@@ -110,84 +113,24 @@ const EpfRegistration = () => {
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Details of employees with a salary above the PF wage ceiling but enrolled in the EPF scheme</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Any other relevant documents as per EPFO guidelines</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>Employers need to ensure that all documents are accurate, complete, and up-to-date to avoid any issues during EPF registration and returns filing. It's also essential to adhere to the EPFO guidelines and deadlines for registration and filing returns to remain compliant with EPF regulations.</ListItemText>
-                                    
+
                                     </List>
                                 </AccordionDetails>
                             </Accordion>
                         </Box>
-
-                    </Grid>
-
-                    {/* Right Column (4 Grids) */}
-                    <Grid item xs={12} sm={4} mb={4} >
-                        {/* <Formik
-                            initialValues={{
-                                name: '',
-                                email: '',
-                                mobile: '',
-                                message: ''
-                            }}
-                            validationSchema={validationSchema}
-                            onSubmit={handleSubmit}
-                        >
-                            {({ errors, touched }) => (
-                                <Form >
-                                    <Typography variant='h6' display="flex" justifyContent="center">Equiry Form</Typography>
-
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="name"
-                                            label="Name"
-                                            fullWidth
-                                            error={touched.name && !!errors.name}
-                                            helperText={touched.name && errors.name}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="email"
-
-                                            label="Email"
-                                            fullWidth
-                                            error={touched.email && !!errors.email}
-                                            helperText={touched.email && errors.email}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="mobile"
-
-                                            label="Mobile"
-                                            fullWidth
-                                            error={touched.mobile && !!errors.mobile}
-                                            helperText={touched.mobile && errors.mobile}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField name="message"
-
-                                            label="Message"
-                                            multiline
-                                            rows={4}
-                                            fullWidth
-                                            error={touched.message && !!errors.message}
-                                            helperText={touched.message && errors.message}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Button variant="contained" color="primary" fullWidth type="submit">
-                                            Submit
-                                        </Button>
-                                    </Grid>
-                                </Form>
-                            )}
-                        </Formik> */}
-                        <ContactForm />
-                    </Grid>
+                    </Paper>
                 </Grid>
 
-
+                {/* Right Column (4 Grids) */}
+                <Grid item xs={12} md={4} mt={4}>
+                    <Paper sx={{ padding: 4 }}>
+                        <FormComponent />
+                    </Paper>
+                </Grid>
             </Grid>
+
+
+
         </>
 
     );

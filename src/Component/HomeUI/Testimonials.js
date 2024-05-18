@@ -81,11 +81,11 @@ const Testimonials = () => {
       image: 'assets/homepage/jagaikwadpic.jpeg',
       name: 'Anita Gaikwad',
       role: 'Partner, J A Gaikwad & Associates',
-      location:"Nangaon ,Daund "
+      location:"Nangaon , Daund "
 
     },
     {
-      image: 'assets/homepage/jagaikwadpic.jpeg',
+      image: 'assets/resize_rahuri_team.jpg',
       name: 'Abhijeet Kaware',
       role: 'Partner , J A Gaikwad & Associates',
       location:"Rahuri , Ahmednagar "

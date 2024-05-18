@@ -44,6 +44,9 @@ import ShopActRegistration from './Component/Registration/ShopActRegistration';
 import TradeMarkRegistration from './Component/Registration/TradeMarkRegistration';
 import ProfessionalTaxRegistration from './Component/Registration/ProfessionalTaxRegistration';
 import EpfRegistration from './Component/Registration/EpfRegistration';
+import SliderMate from './Component/HomeUI/SliderMate';
+import AboutHome from './Component/HomeUI/AboutHome';
+import TestingForm from './Component/Registration/TestingForm';
 
 function App() {
   return (
@@ -53,7 +56,7 @@ function App() {
         <HeaderMate/>
        
         <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage/>} />
             <Route path='/contact-us' element={<ContactUs/>}/>
             <Route path='/about-us' element={<AboutUs/>}/>
             <Route path="/gst-return-compliance" element={<ServicesPage />} />
@@ -84,6 +87,7 @@ function App() {
             <Route path="/trademark-registrations"  element={<TradeMarkRegistration/>}/>
             <Route path="/professional-tax-registration" element={<ProfessionalTaxRegistration/>}/>
             <Route path="/epf-registration" element={<EpfRegistration/>}/>
+            <Route path='/testing-form' element={<TestingForm/>}/>
 
 
            
@@ -102,11 +106,13 @@ const HomePage = () => {
   return (
       <>
           <HomeServices />
+          {/* <SliderMate/> */}
+          <AboutHome/>
           <ServicesSection/>
           <Testimonials />
           <ClientS />
           {/* <Visions /> */}
-          <Vision/>
+          {/* <Vision/> */}
           <OurBranches />
           {/* <AboutUs/> */}
           {/* <ContactUs/> */}

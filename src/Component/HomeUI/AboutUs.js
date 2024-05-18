@@ -8,8 +8,8 @@ const AboutUs = () => {
             <div className="relative overflow-hidden">
                 {/* Background Image */}
                 <img
-                    className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/insurance/aboutus.jpg"
+                    className="w-full h-64 sm:h-96  object-cover"
+                    src="assets/homepage/aboutus.png"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}
@@ -32,7 +32,7 @@ const AboutUs = () => {
 
                     {/* Right side: Description */}
                     <div className="md:w-1/2 md:ml-12 mt-6 md:mt-0 mr-6 sm:mr-0">
-                        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-justify">About J.A Gaikwad & Associates,Tax Practitioner In Pune</h2>
+                        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">About J.A Gaikwad & Associates, In Pune</h2>
                         <p className="text-lg text-gray-700 leading-relaxed text-justify">
                             J.A. Gaikwad and Associates has established itself as a comprehensive accounting, tax, and audit firm offering a wide array of services to clients across Maharashtra.
                             Founded in 2017 by Jayram Ashok Gaikwad, the firm is led by a team of chartered accountants,

@@ -2,6 +2,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import ContactForm from '../Registration/ContactForm';
+import FormComponent from '../Registration/FormComponent';
 
 
 const ContactUs = () => {
@@ -20,7 +22,7 @@ const ContactUs = () => {
                     <h1 className="text-4xl font-bold text-center">Contact Us</h1>
                 </div>
             </div>
-            <div className="container mx-auto px-4 py-8 bg-gray-400">
+            <div className="container mx-auto px-4 py-8">
             {/* <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center ">
                 <span className="relative">
                     GET IN TOUCH
@@ -37,7 +39,7 @@ const ContactUs = () => {
                 <h3 className="text-xl font-semibold mb-2"><span>Katraj</span> , Pune </h3>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
-                    <p><strong>Address:</strong> Sr. No. 34/8, Suman Plaza, A Wing, 3rd Floor, Flat No.10 Trimurti Chouk, Near Bharati Vidyapith, Dr. P.K.Nagar, Dhankawadi, Pune Maharashtra - 411046</p>
+                    <p><strong>Address:</strong> Sr. No. 34/8, Suman Plaza, A Wing, 3rd Floor, Flat No.10 Trimurti Chowk, Near Bharati Vidyapith, Dr. P.K.Nagar, Dhankawadi, Pune Maharashtra - 411046</p>
                 </div>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-red-500" />
@@ -56,7 +58,7 @@ const ContactUs = () => {
                 <h3 className="text-xl font-semibold mb-2"> <span>Rahuri</span> , Ahmednagar</h3>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
-                    <p><strong>Address:</strong> At Post -Baragaon Nandur, Near Chatrapati Shivaji Chouk,Tal- Rahuri, Dist - Ahmednagar -  413705.</p>
+                    <p><strong>Address:</strong> At Post -Baragaon Nandur, Near Chhatrapati Shivaji Chowk,Tal- Rahuri, Dist - Ahmednagar -  413705.</p>
                 </div>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-red-500" />
@@ -71,7 +73,7 @@ const ContactUs = () => {
         {/* Branch 3 */}
         <div className="w-full md:w-5/6 px-4 ">
             <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                <h3 className="text-xl font-semibold mb-2"><span>Rahuri</span> , Daund </h3>
+                <h3 className="text-xl font-semibold mb-2"><span>Nangaon</span> , Daund </h3>
                 <div className="mb-2 flex items-center">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
                     <p><strong>Address:</strong> At post - Nangaon, Ganesh Road, Near Jambhulkar Farm House, Tal- Daund, Dist-Pune - 412203</p>
@@ -82,7 +84,7 @@ const ContactUs = () => {
                 </div>
                 <div className="flex items-center">
                     <FontAwesomeIcon icon={faPhone} className="mr-2 text-red-500" />
-                    <p><strong>Mobile:</strong> 8624058644 / 8668511898</p>
+                    <p><strong>Mobile:</strong> 8624058644 / 9579955439</p>
                 </div>
             </div>
         </div>
@@ -92,7 +94,7 @@ const ContactUs = () => {
                 {/* Contact Form Section */}
                 <div className="w-full md:w-1/2 px-4 mb-8">
                     <div className="bg-white rounded-lg shadow-md p-6 md:w-11/12">
-                        <h3 className="text-xl font-bold mb-4 text-center md:text-left">Contact Us</h3>
+                        {/* <h3 className="text-xl font-bold mb-4 text-center md:text-left">Contact Us</h3>
                         <div className="mb-4">
                             <label htmlFor="fullName" className="block text-gray-700 font-semibold mb-2">Full Name</label>
                             <input type="text" id="fullName" name="fullName" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
@@ -109,8 +111,11 @@ const ContactUs = () => {
                             <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Message</label>
                             <textarea id="message" name="message" rows="4" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"></textarea>
                         </div>
-                        <button type="submit" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+                        <button type="submit" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600">Submit</button> */}
+                      <FormComponent/>
                     </div>
+                    {/* <ContactForm/> */}
+                    
                 </div>
             </div>
         </div>

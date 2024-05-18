@@ -1,52 +1,33 @@
 import React from 'react';
-import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box } from '@mui/material';
+import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box, Paper } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import ContactForm from './ContactForm';
+import FormComponent from './FormComponent';
 const PanRegistration = () => {
-
-    // const validationSchema = Yup.object().shape({
-    //     name: Yup.string().required('Name is required'),
-    //     email: Yup.string().email('Invalid email').required('Email is required'),
-    //     mobile: Yup.string().required('Mobile number is required'),
-    //     message: Yup.string().required('Message is required')
-    // });
-
-    // const handleSubmit = async (values, { resetForm }) => {
-    //     try {
-    //         const response = await axios.post(
-    //             'YOUR_GOOGLE_SHEETS_API_ENDPOINT',
-    //             values
-    //         );
-    //         console.log(response.data);
-    //         // Optionally, clear form fields after successful submission
-    //         resetForm();
-    //     } catch (error) {
-    //         console.error('Error submitting form:', error);
-    //     }
-    // };
 
     return (
         <>
-            <div className="relative overflow-hidden">
-
-                <img
-                    className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/Registration/pan-card-registration.jpg"
-                    alt="Services Header"
-                />
-
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center"> PAN Registration</h1>
-                </div>
-            </div>
+          
+      <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+        <img
+          src="assets/Registration/pan-card-registration.jpg"
+          alt="Services Header"
+          style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+        />
+        <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <Typography variant="h3" component="h1" fontWeight="bold">
+            PAN Registration
+          </Typography>
+        </Box>
+      </Box>
             <Grid container spacing={2}
                 justifyContent="center">
-                <Grid container mx={4} mt={4} spacing={4}>
-                    <Grid item xs={12} sm={8}>
-                      
+                {/* <Grid container mx={4} mt={4} spacing={4}> */}
+                    <Grid item xs={12} sm={8} md={8}>
+                    <Paper sx={{padding:6}}>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>PAN Registration</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -222,78 +203,18 @@ const PanRegistration = () => {
                             </Accordion> */}
                         </Box>
 
-                    </Grid>
+                        </Paper></Grid>
 
                     {/* Right Column (4 Grids) */}
-                    <Grid item xs={12} sm={4} mb={4} >
-                        {/* <Formik
-                            initialValues={{
-                                name: '',
-                                email: '',
-                                mobile: '',
-                                message: ''
-                            }}
-                            validationSchema={validationSchema}
-                            onSubmit={handleSubmit}
-                        >
-                            {({ errors, touched }) => (
-                                <Form >
-                                    <Typography variant='h6' display="flex" justifyContent="center">Equiry Form</Typography>
-
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="name"
-                                            label="Name"
-                                            fullWidth
-                                            error={touched.name && !!errors.name}
-                                            helperText={touched.name && errors.name}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="email"
-
-                                            label="Email"
-                                            fullWidth
-                                            error={touched.email && !!errors.email}
-                                            helperText={touched.email && errors.email}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="mobile"
-
-                                            label="Mobile"
-                                            fullWidth
-                                            error={touched.mobile && !!errors.mobile}
-                                            helperText={touched.mobile && errors.mobile}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField name="message"
-
-                                            label="Message"
-                                            multiline
-                                            rows={4}
-                                            fullWidth
-                                            error={touched.message && !!errors.message}
-                                            helperText={touched.message && errors.message}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Button variant="contained" color="primary" fullWidth type="submit">
-                                            Submit
-                                        </Button>
-                                    </Grid>
-                                </Form>
-                            )}
-                        </Formik> */}
-                        <ContactForm />
-                    </Grid>
+                    <Grid item xs={12}  md={4} mt={4}>
+                        <Paper sx={{padding:4}}>
+                        <FormComponent/>
+                        </Paper>
+                        </Grid>
                 </Grid>
 
 
-            </Grid>
+            {/* </Grid> */}
         </>
 
     );

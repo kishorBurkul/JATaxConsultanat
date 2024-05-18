@@ -1,5 +1,5 @@
-import { Twitter, YouTube, Facebook, Instagram, Telegram } from '@mui/icons-material';
-import { Grid, IconButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Twitter, YouTube, Facebook, Instagram, Telegram, KeyboardArrowUpRounded, WhatsApp, Phone, Call } from '@mui/icons-material';
+import { Fab, Grid, IconButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import {
     Box,
     Button,
@@ -10,12 +10,69 @@ import {
     TextField,
 } from "@mui/material";
 import { Avatar } from 'flowbite-react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import { keyframes } from '@emotion/react';
 
+
+
+const footerStyle = {
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+};
+const whatappStyle = {
+    position: 'fixed',
+    bottom: '20px',
+    left: '20px',
+}
+const callStyle={
+    position: 'fixed',
+    bottom: '100px',
+    left: '20px',
+}
+const iconStyle = {
+    fontSize: '36px',
+};
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`; 
+const commonFabStyles = {
+    animation: `${rotate} 5s linear infinite`,
+  };
 const Footer = () => {
+
+
+    const [showFab, setShowFab] = useState(false);
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            if (scrollTop > 0) {
+                setShowFab(true);
+            } else {
+                setShowFab(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const handleLinkClick = (event) => {
         // Do something when a link is clicked
         console.log('Link clicked:', event.target.href);
@@ -182,11 +239,58 @@ const Footer = () => {
                                 ),
                             }}
                         /> */}
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.0273164783343!2d73.85006435370295!3d18.456914839914706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac906c3ffaf%3A0x48727ec5c226047c!2sTrimurthi%20Chowk%2C%20Bharati%20Vidyapeeth%20Campus%2C%20Dhankawadi%2C%20Pune%2C%20Maharashtra%20411046!5e0!3m2!1sen!2sin!4v1715886428586!5m2!1sen!2sin"
+                            width="350px" height="200px" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                        </iframe>
                     </Grid>
+                    {showFab && (
+                        <Box style={footerStyle} onClick={scrollToTop}>
+                            <Fab
+                                title="Scroll to Top"
+                                color="primary"
+                                sx={{ width: "40px ", height: "40px" }}
+                                aria-label="scroll-to-top"
+                            >
+                                <KeyboardArrowUpRounded style={iconStyle} />
+                            </Fab>
+                        </Box>
+                    )}
+                    <Box style={whatappStyle}>
+                        <Fab
+                            title="Whats App"
+                            color="success"
+                            sx={{ width: "60px ", height: "60px" }}
+                        >
+                            <IconButton
+                                color="primary"
+                                sx={{ ...commonFabStyles, backgroundColor: '#25D366' ,width: '50px', height: '50px', color: 'yellow' }}
+                                aria-label="WhatsApp"
+                                onClick={() => window.open('https://wa.me/+918624058644', '_blank')}
+                            >
+                                <WhatsApp fontSize='20' />
+                            </IconButton >
+                        </Fab>
+                       </Box>
+                       <Box style={callStyle}>
+                       <Fab
+                            title="Calling"
+                            color="primary"
+                            sx={{ ...commonFabStyles, width: "60px ", height: "60px" ,backgroundColor: '#0A84FF' }}
+                           >
+                            <IconButton
+                                sx={{ width: '80px', height: '80px', color: 'blue' }}
+                                aria-label="Call"
+                                onClick={() => window.open('tel:+918624058644', '_self')}
+                            >
+                           <Call /></IconButton>
+                        </Fab>
+                       </Box>
                 </Grid>
             </Grid>
             <Grid style={{ backgroundColor: '#17213C', textAlign: 'center', padding: '20px 0', color: 'white' }}>
-                <Typography variant="body2" color="inherit">Copyright&copy;J A Gaikwad & Associates . Developed By Kishor Burkul</Typography>
+                <Typography variant="body2" color="inherit">Copyright &copy;J A Gaikwad & Associates & Developed By Kishor Burkul</Typography>
             </Grid>
 
 

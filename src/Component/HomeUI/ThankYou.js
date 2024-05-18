@@ -42,8 +42,6 @@ const ContactForm = () => {
   };
 
   return (
-
-    
     <Formik
       initialValues={{ name: '', email: '', mobile: '', message: '' }}
       validationSchema={validationSchema}
@@ -54,7 +52,7 @@ const ContactForm = () => {
           <CardContent>
             <Typography variant="h6" align="center" style={{ marginBottom: "10px" }}>Contact Us</Typography>
             <Form>
-            
+              <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <Field
                     as={TextField}
@@ -106,7 +104,7 @@ const ContactForm = () => {
                     Submit
                   </Button>
                 </Grid>
-              
+              </Grid>
             </Form>
           </CardContent>
         </Card>

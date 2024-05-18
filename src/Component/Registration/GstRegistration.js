@@ -1,10 +1,11 @@
 import React from 'react';
-import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box } from '@mui/material';
+import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box, Paper } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import ContactForm from './ContactForm';
+import FormComponent from './FormComponent';
 const GstRegistration = () => {
 
     // const validationSchema = Yup.object().shape({
@@ -43,9 +44,10 @@ const GstRegistration = () => {
                 </div>
             </div>
             <Grid container spacing={2}
-                justifyContent="center">
-                <Grid container mx={4} mt={4} spacing={4}>
-                    <Grid item xs={12} sm={8}>
+                >
+                
+                <Grid item xs={12} md={8} mt={4} >
+                     <Paper sx={{padding:6}}>
                         <Typography variant="h5" sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03" , mb:2 ,color:"blue"}}><b>Taxes In India</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -220,75 +222,17 @@ const GstRegistration = () => {
                             </Accordion>
                         </Box>
 
+                   </Paper>
                     </Grid>
+                    <Grid item xs={12}  md={4} mt={4}>
+                        <Paper sx={{padding:4}}>
+                        <FormComponent/>
+                        </Paper>
+                        </Grid>
 
-                    {/* Right Column (4 Grids) */}
-                    <Grid item xs={12} sm={4} >
-                        {/* <Formik
-                            initialValues={{
-                                name: '',
-                                email: '',
-                                mobile: '',
-                                message: ''
-                            }}
-                            validationSchema={validationSchema}
-                            onSubmit={handleSubmit}
-                        >
-                            {({ errors, touched }) => (
-                                <Form >
-                                    <Typography variant='h6' display="flex" justifyContent="center">Equiry Form</Typography>
-
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="name"
-                                            label="Name"
-                                            fullWidth
-                                            error={touched.name && !!errors.name}
-                                            helperText={touched.name && errors.name}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="email"
-
-                                            label="Email"
-                                            fullWidth
-                                            error={touched.email && !!errors.email}
-                                            helperText={touched.email && errors.email}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                            name="mobile"
-
-                                            label="Mobile"
-                                            fullWidth
-                                            error={touched.mobile && !!errors.mobile}
-                                            helperText={touched.mobile && errors.mobile}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField name="message"
-
-                                            label="Message"
-                                            multiline
-                                            rows={4}
-                                            fullWidth
-                                            error={touched.message && !!errors.message}
-                                            helperText={touched.message && errors.message}
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Button variant="contained" color="primary" fullWidth type="submit">
-                                            Submit
-                                        </Button>
-                                    </Grid>
-                                </Form>
-                            )}
-                        </Formik> */}
-                        <ContactForm />
-                    </Grid>
-                </Grid>
+                     
+        
+             
 
 
             </Grid>

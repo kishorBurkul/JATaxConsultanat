@@ -66,7 +66,7 @@ const IncomeTaxReturns = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/gstservices/GST2.jpg"
+                    src="assets/gstservices/Taxes_return.webp"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}
@@ -80,7 +80,7 @@ const IncomeTaxReturns = () => {
                 <div className="flex flex-wrap justify-center items-start">
                     {/* Left side image with description */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4">
-                         <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
+                         <div className="bg-white rounded-lg shadow-md p-6 mt-1 border-black border-solid border-2 text-black">
                          <img
                             src="assets/gstservices/Income-Tax-Returns.jpg"
                             alt="GST Services"
@@ -88,7 +88,7 @@ const IncomeTaxReturns = () => {
                         />
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Income Tax Returns & Compliances</h2>
                             <h1 className="text-2xl mb-4 font-semibold">Income Tax Returns</h1>
-                            <p className="text-md mb-4"><mark>Income tax is a type of tax that the central government charges on the income earned during a financial year by individuals and businesses. Taxes are sources of revenue for the government. The government utilises this revenue for developing infrastructure, providing healthcare, education, subsidies to the farmer/agriculture sector and other government welfare schemes.</mark></p>
+                            <p className="text-md mb-4"><b>Income tax is a type of tax that the central government charges on the income earned during a financial year by individuals and businesses. Taxes are sources of revenue for the government. The government utilises this revenue for developing infrastructure, providing healthcare, education, subsidies to the farmer/agriculture sector and other government welfare schemes.</b></p>
                             <h3 className="font-semibold mb-4">Listed below are the forms required to file GST Returns:</h3>
                             <ul className="list-disc pl-4">
                                 {benefits.map((benefit, index) => (
@@ -109,10 +109,10 @@ const IncomeTaxReturns = () => {
 
                     {/* Right side service list */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mt-0 sm:mt-0 md:mt-0 lg:mt-96">
-                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:text-lg hover:bg-gray-100 hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 mt-1 border-black border-solid border-2 text-black">
                             <h1 className="text-3xl font-bold text-gray-800 mb-4">Overview of Income Tax Compliances</h1>
-                            <p className="text-lg mb-4">In today's global business landscape, it has become essential to have a comprehensive understanding of tax and regulatory policies in order to maximise growth and capitalise on opportunities, especially with the increasing investment and transactions by multinational companies in India. Leading tax consultants and advisors in the country specialise in assisting businesses with income tax services and navigating the complexities of tax and regulatory procedures. As the world undergoes significant changes, India is also embracing a new approach to broaden its tax base and enforce stringent compliance measures using digital platforms</p>
-                            <p className="text-lg mb-4">Before formulating investment strategies, it is essential for companies to have a thorough understanding of the tax regulatory challenges they may face as they expand their business geographically or undergo structural changes. Companies are actively brainstorming to identify the most optimal tax structures and unlock potential opportunities. In pursuit of their organisational goals, companies often choose to outsource critical aspects of their tax strategy to ensure alignment between investments and tax management.</p>
+                            <p className="text-md mb-4">In today's global business landscape, it has become essential to have a comprehensive understanding of tax and regulatory policies in order to maximise growth and capitalise on opportunities, especially with the increasing investment and transactions by multinational companies in India. Leading tax consultants and advisors in the country specialise in assisting businesses with income tax services and navigating the complexities of tax and regulatory procedures. As the world undergoes significant changes, India is also embracing a new approach to broaden its tax base and enforce stringent compliance measures using digital platforms</p>
+                            <p className="text-md mb-4">Before formulating investment strategies, it is essential for companies to have a thorough understanding of the tax regulatory challenges they may face as they expand their business geographically or undergo structural changes. Companies are actively brainstorming to identify the most optimal tax structures and unlock potential opportunities. In pursuit of their organisational goals, companies often choose to outsource critical aspects of their tax strategy to ensure alignment between investments and tax management.</p>
                             <img
                                 src="assets/loan-services/income-tax-in-India.jpg"
                                 alt="GST Services"
@@ -122,7 +122,7 @@ const IncomeTaxReturns = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full md:w-5/6 lg:w-4/5 xl:w-3/4 mx-auto mt-8">
+            <div className="w-full md:w-5/6 lg:w-4/5 xl:w-3/4 mx-auto mt-8 border-solid border-black border-2 mb-4 shadow-lg">
                 <div className="bg-white rounded-lg shadow-md p-6">
                     <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Documents Required for Income Tax Return Filing in India</h2>
                     <div className="text-md font-bold text-gray-800 mb-4">

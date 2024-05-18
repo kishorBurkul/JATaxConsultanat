@@ -57,12 +57,12 @@ const DigitalSign = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/gstservices/GST2.jpg"
+                    src="assets/gstservices/Digital_Signature.jpg"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center">Digital Signature & Accounting </h1>
+                    <h1 className="text-4xl font-bold text-center">Digital Signature</h1>
                 </div>
             </div>
 
@@ -71,12 +71,13 @@ const DigitalSign = () => {
                 <div className="flex flex-wrap justify-center items-start">
                     {/* Left side image with description */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
+                    <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid ">
+                       
                         <img
                             src="assets/gstservices/Avail-Digital-Signature-Certificate-DSC.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
+                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid "
                         />
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:bg-black hover:bg-opacity-50">
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Digital Signature </h2>
                             <h2 className="text-2xl mb-4 font-semibold">About Digital Signature Certificate (DSC)</h2>
                             <p className="text-md mb-4"><mark>The Information Technology Act, 2000 has provisions for use of Digital Signatures on the documents submitted in electronic form in order to ensure the security and authenticity of the documents filed electronically. This is secure and authentic way to submit a document electronically. As such, all
@@ -102,7 +103,7 @@ const DigitalSign = () => {
                     {/* Right side service list */}
 
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:bg-grey hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-black border-solid  border-2  hover:bg-grey ">
                             <div className="bg-white rounded-lg shadow-md p-6">
                                 <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Benefits of a Digital Signature Certificate</h2>
 
