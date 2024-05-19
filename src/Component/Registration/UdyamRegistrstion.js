@@ -195,11 +195,11 @@ const UdyamRegistration = () => {
                     </Paper> </Grid>
 
                 {/* Right Column (4 Grids) */}
-                <Grid item  xs={12} sm={8}  md={4} mt={4}  >
-
-                <Paper sx={{padding:4}}>
+                <Grid item  xs={12} sm={8}  md={4} mt={4} p={8} >
+                <FormComponent/>
+                       {/* <Paper sx={{padding:2 ,maxWidth:"450px"}}>
                         <FormComponent/>
-                        </Paper>
+                        </Paper> */}
 
                     {/* <Formik
                         initialValues={{ name: '', email: '', mobile: '', message: '' }}

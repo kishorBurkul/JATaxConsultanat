@@ -112,7 +112,7 @@ const HomePage = () => {
           <Testimonials />
           <ClientS />
           {/* <Visions /> */}
-          {/* <Vision/> */}
+          <Vision/>
           <OurBranches />
           {/* <AboutUs/> */}
           {/* <ContactUs/> */}

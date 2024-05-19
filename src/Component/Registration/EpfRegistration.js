@@ -18,10 +18,10 @@ const EpfRegistration = () => {
                     <h1 className="text-4xl font-bold text-center">Employees Provident Fund Registrations & Returns</h1>
                 </Box>
             </Box>
-
-            <Grid container spacing={2}
+ 
+            <Grid container spacing={2} mt={4}
                 justifyContent="center">
-                <Grid item xs={12} md={8} mt={4} >
+                <Grid item xs={12} md={8}  >
                     <Paper sx={{ padding: 6 }}>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Employees Provident Fund Registrations & Returns</b></Typography>
                         <Divider />
@@ -122,10 +122,11 @@ const EpfRegistration = () => {
                 </Grid>
 
                 {/* Right Column (4 Grids) */}
-                <Grid item xs={12} md={4} mt={4}>
-                    <Paper sx={{ padding: 4 }}>
+                <Grid item  xs={12} sm={8}  md={4} mt={4} p={8} >
+                <FormComponent/>
+                    {/* <Paper sx={{ padding: 4 }}>
                         <FormComponent />
-                    </Paper>
+                    </Paper> */}
                 </Grid>
             </Grid>
 

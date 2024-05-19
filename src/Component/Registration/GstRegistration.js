@@ -43,10 +43,10 @@ const GstRegistration = () => {
                     <h1 className="text-4xl font-bold text-center">GST Registration</h1>
                 </div>
             </div>
-            <Grid container spacing={2}
+            <Grid container spacing={2} mt={4}
                 >
                 
-                <Grid item xs={12} md={8} mt={4} >
+                <Grid item xs={12} md={8}  >
                      <Paper sx={{padding:6}}>
                         <Typography variant="h5" sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03" , mb:2 ,color:"blue"}}><b>Taxes In India</b></Typography>
                         <Divider />
@@ -224,10 +224,11 @@ const GstRegistration = () => {
 
                    </Paper>
                     </Grid>
-                    <Grid item xs={12}  md={4} mt={4}>
-                        <Paper sx={{padding:4}}>
+                    <Grid item  xs={12} sm={8}  md={4} mt={4} p={8} >
+                <FormComponent/>
+                        {/* <Paper sx={{padding:4}}>
                         <FormComponent/>
-                        </Paper>
+                        </Paper> */}
                         </Grid>
 
                      

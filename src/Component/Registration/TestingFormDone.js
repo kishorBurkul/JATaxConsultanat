@@ -1,13 +1,8 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
-import { TextField, Button, Box, Typography, Paper } from '@mui/material';
-import {  useNavigate } from 'react-router-dom';
+import { TextField, Button, Box, Typography } from '@mui/material';
 
-
-const FormComponent = () => {
-const navigate = useNavigate()
-
-
+const TestingFormDone = () => {
   const handleSubmit = async (values, { resetForm }) => {
     const formData = new FormData();
     formData.append('name', values.name);
@@ -29,7 +24,6 @@ const navigate = useNavigate()
         console.log("data " ,response)
         alert("Thank you, the form has been submitted successfully");
         resetForm();
-        navigate('/')
       } else {
         throw new Error('Network response was not ok.');
       }
@@ -39,7 +33,6 @@ const navigate = useNavigate()
   };
 
   return (
-    <Paper sx={{padding:4 ,border:2, borderColor:"orange"}}>
     <Formik
       initialValues={{ name: '', email: '', mobile: '', message: '' }}
       onSubmit={handleSubmit}
@@ -47,14 +40,15 @@ const navigate = useNavigate()
       {({ handleSubmit }) => (
         <Form onSubmit={handleSubmit}>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, padding: 2 }}>
-            <Typography variant="h5" gutterBottom align='center' color="blue">
-             <strong> Contact Us</strong>
+            <Typography variant="h5" gutterBottom>
+              Contact Us
             </Typography>
             <Field 
               name="name" 
               as={TextField} 
               label="Name" 
               variant="outlined" 
+              fullWidth 
               required 
             />
             <Field 
@@ -63,6 +57,7 @@ const navigate = useNavigate()
               label="Email" 
               type="email" 
               variant="outlined" 
+              fullWidth 
               required 
             />
             <Field 
@@ -71,6 +66,7 @@ const navigate = useNavigate()
               label="Mobile" 
               type="tel" 
               variant="outlined" 
+              fullWidth 
               required 
             />
             <Field 
@@ -80,24 +76,17 @@ const navigate = useNavigate()
               variant="outlined" 
               multiline 
               rows={4} 
+              fullWidth 
               required 
             />
-            <Button type="submit" variant="outlined" size="medium" 
-             sx={{
-                backgroundColor: "#fd5b03", 
-                color: "white",
-                '&:hover': {
-                  backgroundColor: 'blue'
-                }
-              }}>
+            <Button type="submit" variant="contained" color="primary">
               Submit
             </Button>
           </Box>
         </Form>
       )}
     </Formik>
-    </Paper>
   );
 };
 
-export default FormComponent;
+export default TestingFormDone;

@@ -18,7 +18,8 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Option from './Option'; // Import the Option component
 import { Avatar } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useNavigation } from 'react-router-dom';
+
 
 const drawerWidth = 240;
 // const navItems = ['Home', 'Services', 'About', 'Contact'];
@@ -26,10 +27,10 @@ const subServices = ['Service 1', 'Service 2', 'Service 3']; // Sub-services und
 // const nestedMenuItems = ['Page 1', 'Page 2']; // Nested menu items under "Service 1"
 
 export default function HeaderMate(props) {
-  const { window } = props;
+  const { window , navigateTo} = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [subMenuOpen, setSubMenuOpen] = React.useState(false);
-
+  const history = useNavigate();
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(null);
 
   const handleMainItemClick = (index) => {
@@ -40,6 +41,14 @@ export default function HeaderMate(props) {
   
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const handleMainMenuItemClick = (item) => {
+    if (item.nestedItems && item.nestedItems.length > 0) {
+      setSubMenuOpen(!subMenuOpen);
+    } else {
+      handleDrawerToggle(); // Close drawer
+    }
   };
 
   const handleSubMenuItemClick = () => {
@@ -156,8 +165,9 @@ export default function HeaderMate(props) {
     <List>
       {navMenuResp.map((item, index) => (
         <React.Fragment key={index}>
-          <ListItemButton onClick={handleSubMenuItemClick}>
-            <ListItemText primary={item.mainItem} />
+          <ListItemButton onClick={handleSubMenuItemClick}  component={Link}
+     to={item.routes[0]} sx={{color:"#fd5b03" ,backgroundColor:"green" ,mt:"5px"}} >
+            <ListItemText><Typography variant='h6'><strong>{item.mainItem}</strong></Typography></ListItemText> 
             {item.nestedItems && item.nestedItems.length > 0 ? (
               subMenuOpen ? <ExpandLess /> : <ExpandMore />
             ) : null}
@@ -180,6 +190,91 @@ export default function HeaderMate(props) {
     </List>
   </Box>
   );
+  
+  // const drawer = (
+  //   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+  //     <Typography variant="h6" sx={{ my: 2 }}>
+  //       J A Gaikwad & Associates
+  //     </Typography>
+  //     <Divider />
+  //     <List>
+  //       {navMenuResp.map((item, index) => (
+  //         <React.Fragment key={index}>
+  //           <ListItemButton
+  //             onClick={() => {
+  //               if (item.nestedItems && item.nestedItems.length > 0) {
+  //                 setSubMenuOpen((prevState) => !prevState);
+  //               } else {
+  //                 handleDrawerToggle();
+  //               }
+  //             }}
+  //           >
+  //             <ListItemText primary={item.mainItem} />
+  //             {item.nestedItems && item.nestedItems.length > 0 ? (
+  //               subMenuOpen ? <ExpandLess /> : <ExpandMore />
+  //             ) : null}
+  //           </ListItemButton>
+  //           {item.nestedItems && item.nestedItems.length > 0 && (
+  //             <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
+  //               <List component="div" disablePadding>
+  //                 {item.nestedItems.map((nestedItem, nestedIndex) => (
+  //                   <ListItem key={nestedIndex} disablePadding>
+  //                     <ListItemButton component={Link} to={item.routes[nestedIndex]}>
+  //                       <ListItemText primary={nestedItem} />
+  //                     </ListItemButton>
+  //                   </ListItem>
+  //                 ))}
+  //               </List>
+  //             </Collapse>
+  //           )}
+  //         </React.Fragment>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
+  
+//   const drawer = (
+//   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+//     <Typography variant="h6" sx={{ my: 2 }}>
+//       J A Gaikwad & Associates
+//     </Typography>
+//     <Divider />
+//     <List>
+//       {navMenuResp.map((item, index) => (
+//         <React.Fragment key={index}>
+//           <ListItemButton
+//             component={Link}
+//             to={item.routes[0]} // Main menu item route
+//             sx={{ paddingLeft: item.nestedItems ? 2 : 0 }} // Indent nested items
+//           >
+//             <ListItemText primary={item.mainItem} />
+//             {item.nestedItems && (
+//               subMenuOpen ? <ExpandLess /> : <ExpandMore />
+//             )}
+//           </ListItemButton>
+//           {item.nestedItems && (
+//             <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
+//               <List component="div" disablePadding>
+//                 {item.nestedItems.map((nestedItem, nestedIndex) => (
+//                   <React.Fragment key={nestedIndex}>
+//                     <ListItemButton
+//                       component={Link}
+//                       to={item.routes[nestedIndex + 1]} // Nested item route
+//                       sx={{ paddingLeft: 4 }} // Indent nested items further
+//                     >
+//                       <ListItemText primary={nestedItem} />
+//                     </ListItemButton>
+//                   </React.Fragment>
+//                 ))}
+//               </List>
+//             </Collapse>
+//           )}
+//         </React.Fragment>
+//       ))}
+//     </List>
+//   </Box>
+// );
+
   
 
   const container = window !== undefined ? () => window().document.body : undefined;
