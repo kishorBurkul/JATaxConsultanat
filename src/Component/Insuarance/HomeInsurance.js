@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@mui/styles';
+
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -8,7 +8,26 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//         flexGrow: 1,
+//     },
+//     imageSection: {
+//         height: 400,
+//         backgroundImage: 'url("assets/loan-services/Business-Loan.png")',
+//         backgroundSize: 'cover',
+//         marginBottom: 100,
+//     },
+//     contentSection: {
+//         margin: '0 100px',
+//     },
+//     card: {
+//         maxWidth: 345,
+//         margin: '16px', // Adjust the margin directly with numeric values
+//     },
+// }));
+
+const usestyles = {
     root: {
         flexGrow: 1,
     },
@@ -25,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 345,
         margin: '16px', // Adjust the margin directly with numeric values
     },
-}));
+};
 
 
 const cardStyle = {
@@ -85,13 +104,13 @@ const HomeInsurance = () => {
 
     ];
 
-    const classes = useStyles();
+
 
     return (
 
-        <div className={classes.root}>
+        <div className={usestyles.root}>
             {/* Image Section */}
-            {/* <div className={classes.imageSection} ></div> */}
+            {/* <div className={usestyles.imageSection} ></div> */}
             <div className="relative overflow-hidden">
                 {/* Background Image */}
                 <img
@@ -106,7 +125,7 @@ const HomeInsurance = () => {
             </div>
 
             {/* Content Section */}
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 } }}>
@@ -168,7 +187,7 @@ const HomeInsurance = () => {
                     ))}
                 </Grid>
             </Container> */}
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
@@ -294,7 +313,7 @@ const HomeInsurance = () => {
                 </Grid>
             </Container>
 
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
@@ -419,7 +438,7 @@ const HomeInsurance = () => {
                 </Grid>
             </Container>
 
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img

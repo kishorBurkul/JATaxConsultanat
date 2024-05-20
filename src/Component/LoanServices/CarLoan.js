@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@mui/styles';
+
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -14,7 +14,7 @@ import { TabPanel as BaseTabPanel } from '@mui/base/TabPanel';
 import { buttonClasses } from '@mui/base/Button';
 import { Tab as BaseTab, tabClasses } from '@mui/base/Tab';
 
-const useStyles = makeStyles((theme) => ({
+const usestyles = {
     root: {
         flexGrow: 1,
     },
@@ -31,8 +31,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 345,
         margin: '16px', // Adjust the margin directly with numeric values
     },
-}));
-
+};
 
 const cardStyle = {
     maxWidth: 400,
@@ -167,13 +166,12 @@ const CarLoan = () => {
     //     // }
     // ];
 
-    const classes = useStyles();
 
     return (
 
-        <div className={classes.root}>
+        <div className={usestyles.root}>
             {/* Image Section */}
-            {/* <div className={classes.imageSection} ></div> */}
+            {/* <div className={usestyles.imageSection} ></div> */}
             <div className="relative overflow-hidden">
                 {/* Background Image */}
                 <img
@@ -188,7 +186,7 @@ const CarLoan = () => {
             </div>
 
             {/* Content Section */}
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} >
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 }, marginTop: { xs: 2, sm: 2 } }} >
                         <img
@@ -256,7 +254,7 @@ const CarLoan = () => {
                     ))}
                 </Grid>
             </Container> */}
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
@@ -343,7 +341,7 @@ const CarLoan = () => {
                 </Grid>
             </Container>
 
-            <Container className={classes.contentSection}>
+            <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
