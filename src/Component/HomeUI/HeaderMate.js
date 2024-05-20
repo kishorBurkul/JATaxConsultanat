@@ -166,7 +166,7 @@ export default function HeaderMate(props) {
       {navMenuResp.map((item, index) => (
         <React.Fragment key={index}>
           <ListItemButton onClick={handleSubMenuItemClick}  component={Link}
-     to={item.routes[0]} sx={{color:"#fd5b03" ,backgroundColor:"green" ,mt:"5px"}} >
+     to={item.routes[0]} sx={{color:"black" ,backgroundColor:"#0A84FF" ,mt:"5px"}} >
             <ListItemText><Typography variant='h6'><strong>{item.mainItem}</strong></Typography></ListItemText> 
             {item.nestedItems && item.nestedItems.length > 0 ? (
               subMenuOpen ? <ExpandLess /> : <ExpandMore />

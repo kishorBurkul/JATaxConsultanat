@@ -48,6 +48,7 @@ import SliderMate from './Component/HomeUI/SliderMate';
 import AboutHome from './Component/HomeUI/AboutHome';
 import TestingForm from './Component/Registration/TestingForm';
 
+
 function App() {
   return (
     <Router>
@@ -114,6 +115,7 @@ const HomePage = () => {
           {/* <Visions /> */}
           <Vision/>
           <OurBranches />
+        
           {/* <AboutUs/> */}
           {/* <ContactUs/> */}
       </>
