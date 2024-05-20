@@ -19,7 +19,6 @@ import HomeLoan from './Component/LoanServices/HomeLoan';
 import SliderServices from './Component/HomeUI/SliderServices';
 import HomeServices from './Component/HomeUI/HomeServices';
 import HeaderMate from './Component/HomeUI/HeaderMate';
-import SliderHomePageMUI from './Component/HomeUI/SliderHomePageMUI';
 import BusinessLoan from './Component/LoanServices/BusinessLoan';
 import MortageLoan from './Component/LoanServices/MortageLoan';
 import CarLoan from './Component/LoanServices/CarLoan';
@@ -115,7 +114,6 @@ const HomePage = () => {
           {/* <Visions /> */}
           <Vision/>
           <OurBranches />
-        
           {/* <AboutUs/> */}
           {/* <ContactUs/> */}
       </>

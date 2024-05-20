@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import ContactForm from '../Registration/ContactForm';
 import FormComponent from '../Registration/FormComponent';
 
 
