@@ -80,13 +80,13 @@ export default function HeaderMate(props) {
     },
     {
       mainItem: 'Registration',
-      nestedItems: ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration','Company Registration', 'Shop Act Registration','Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns'],
-      routes: ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration'],
+      nestedItems: ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration','Company Registration', 'Shop Act Registration','Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration'],
+      routes: ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration'],
     },
     {
       mainItem: 'Loan',
-      nestedItems: ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up'],
-      routes: ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan'],
+      nestedItems: ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up','Cash Credit Overdraft Loan'],
+      routes: ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan','/cash-credit-overdraft-loan'],
     },
     {
       mainItem: 'Insurance',
@@ -101,15 +101,15 @@ export default function HeaderMate(props) {
 
   const nestedMenuItems = [
     ['GST Returns & Compliances', 'Income Tax Returns & Compliances', 'TDS Returns & Compliances', 'Digital Signatures', 'Accounting'],
-    ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration' , 'Company Registration', 'Shop Act Registration', 'Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns'],
-    ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up'],
+    ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration' , 'Company Registration', 'Shop Act Registration', 'Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration'],
+    ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up','Cash Credit Overdraft Loan'],
     ['Health Insurance', 'Life Insurance', 'Term Life Insurance', 'General Insurance', 'Motor Insurance', 'Home Insurance', 'Personal Accident Cover', 'Maternity Health Insurance'],
   ];
 
   const routes = [
     ['/gst-return-compliance', '/income-tax-returns', '/tds-return', '/digital-sign', '/accounting'],
-    ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration'],
-    ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan'],
+    ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration'],
+    ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan','/cash-credit-overdraft-loan'],
     ['/health-insurance', '/life-insurance', '/term-life-insurance', '/general-insurance', '/motor-insurance', '/home-insurance', '/personal-accident-cover', '/maternity-health-insurance'],
   ];
 

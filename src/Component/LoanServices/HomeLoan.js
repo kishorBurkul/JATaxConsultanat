@@ -74,11 +74,11 @@ const HomeLoan = () => {
                 <div className="flex flex-wrap justify-center items-start">
                     <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
                        
-                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid hover:border-2 hover:text-black  hover:bg-gray-100 hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
                         <img
                             src="assets/loan-services/home-loan1.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
+                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid"
                         />
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Home Loan Services </h2>
                             <h2 className="text-2xl mb-4 font-semibold"> Types of Home Loans</h2>
@@ -107,7 +107,7 @@ const HomeLoan = () => {
 
                     <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
 
-                        <div className="bg-white rounded-lg shadow-md p-6 mt-10 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:bg-grey hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
 
                             <ul className="pl-8">
                                 <hr />

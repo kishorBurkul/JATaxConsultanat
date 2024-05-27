@@ -11,30 +11,42 @@ const UdyamRegistration = () => {
 
     return (
         <>
-            <div className="relative overflow-hidden">
-
+            {/* <div className="relative overflow-hidden">
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/Registration/Udyog-Aadhaar-Registration.webp"
                     alt="Services Header"
-                />
-
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+                />  <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Udyog Aadhaar - Registration</h1>
                 </div>
-            </div>
-            <Grid container mt={4} spacing={4}
+            </div> */}
+           
+             
+            <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+                <img
+                  src="assets/Registration/Udyog-Aadhaar-Registration.webp"
+                    alt="Services Header"
+                    style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+                />
+                <Box sx={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                    <Typography variant="h4" component="h6" fontWeight="bold">
+                    Udyog Aadhaar - Registration
+                    </Typography>
+                </Box>
+            </Box>
+            
+            <Grid container mt={0} spacing={4} p={2}
                 justifyContent="center" >
                 {/* <Grid container mx={4} mt={4} spacing={4}> */}
-                <Grid item xs={12} sm={8} md={8}>
-                   <Paper sx={{padding:6}}>
-                    <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Udyam / MSME / Udyog Aadhaar - Registration</b></Typography>
+                <Grid item xs={12} sm={12} md={8}>
+                   <Paper>
+                    <Typography variant="h5" gutterBottom sx={{ padding:"5px", textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Udyam / MSME / Udyog Aadhaar - Registration</b></Typography>
                     <Divider />
-                    <Typography variant="subtitle1" gutterBottom>
+                    <Typography variant="subtitle1" gutterBottom p={1}>
                         An SSI also called Small Scale Industry Registration is a registration from the Ministry of Micro, Small and Medium Enterprises. When a business registers as SSI it becomes eligible to avail government schemes and subsidies that are exclusive for small businesses.
                     </Typography>
                     <Box mb={4}>
-                        <Typography variant='h5' sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}> <b>Documents Required</b></Typography>
+                        <Typography variant='h5' sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" ,padding:"5px" }}> <b>Documents Required</b></Typography>
                         <Accordion defaultExpanded sx={{ backgroundColor: "#dee2e6" }} >
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
@@ -195,7 +207,7 @@ const UdyamRegistration = () => {
                     </Paper> </Grid>
 
                 {/* Right Column (4 Grids) */}
-                <Grid item  xs={12} sm={8}  md={4} mt={4} p={8} >
+                <Grid item xs={12} sm={8} md={3} >
                 <FormComponent/>
                        {/* <Paper sx={{padding:2 ,maxWidth:"450px"}}>
                         <FormComponent/>

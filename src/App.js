@@ -46,6 +46,10 @@ import EpfRegistration from './Component/Registration/EpfRegistration';
 import SliderMate from './Component/HomeUI/SliderMate';
 import AboutHome from './Component/HomeUI/AboutHome';
 import TestingForm from './Component/Registration/TestingForm';
+import FoodLRegistartion from './Component/Registration/FoodLicenceRegistartion';
+import ImportExportRegi from './Component/Registration/ImportExportRegi';
+import CashCreditOverdraftLoan from './Component/LoanServices/CashCreditOverdraftLoan';
+import CarouselSlider from './Component/HomeUI/CarouselSlider';
 
 
 function App() {
@@ -88,6 +92,9 @@ function App() {
             <Route path="/professional-tax-registration" element={<ProfessionalTaxRegistration/>}/>
             <Route path="/epf-registration" element={<EpfRegistration/>}/>
             <Route path='/testing-form' element={<TestingForm/>}/>
+            <Route path='/food-license-registration' element={<FoodLRegistartion/>}/>
+            <Route path='/import-export-registration' element={<ImportExportRegi/>}/>
+            <Route path='/cash-credit-overdraft-loan' element={<CashCreditOverdraftLoan/>}/>
 
 
            
@@ -105,7 +112,8 @@ function App() {
 const HomePage = () => {
   return (
       <>
-          <HomeServices />
+          {/* <HomeServices /> */}
+          <CarouselSlider/>
           {/* <SliderMate/> */}
           <AboutHome/>
           <ServicesSection/>

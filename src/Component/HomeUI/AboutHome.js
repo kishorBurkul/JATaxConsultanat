@@ -19,14 +19,14 @@ const AboutHome = () => {
 
                     {/* Right side: Description */}
                     <div className="md:w-1/2 md:ml-12 mt-6 md:mt-0 mr-6 sm:mr-0">
-                        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-justify">About J.A Gaikwad & Associates, In Pune</h2>
+                        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-justify">About J.A.Gaikwad & Associates, In Pune</h2>
                         <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                        J.A. Gaikwad and Associates has established itself as a comprehensive accounting, tax, and audit firm offering a wide array of services to clients across Maharashtra.
+                        J.A.Gaikwad and Associates has established itself as a comprehensive accounting, tax, and audit firm offering a wide array of services to clients across Maharashtra.
                          Founded in 2017 by Jayram Ashok Gaikwad, the firm is led by a team of chartered accountants,
                          tax consultants, and other professionals in India, equipped with extensive knowledge and professional experience.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                        Our services encompass various areas, including accounting, auditing, direct taxation, Goods & Services Tax (GST), company law consultancy, NRI taxation, startup services, and bookkeeping & outsourcing services.
+                         Our services encompass various areas, including accounting, auditing, direct taxation, Goods & Services Tax (GST), company law consultancy, NRI taxation, startup services, and bookkeeping & outsourcing services.
                          We pride ourselves on being a dedicated group of professionals committed to continuously adding value and optimizing benefits for our clients.
                          
                         </p>

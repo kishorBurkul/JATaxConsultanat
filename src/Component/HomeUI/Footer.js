@@ -148,11 +148,12 @@ const Footer = () => {
                                 <ListItem>Company Registration</ListItem>
                                 <ListItem>Shop Act Registration</ListItem>
                                 <ListItem>Udyam Registration</ListItem>
-                                <ListItem>GST Registration</ListItem>
                                 <ListItem>PAN Registration</ListItem>
                                 <ListItem>Trademark Registrations</ListItem>
                                 <ListItem>Professional Tax Registrations & Returns</ListItem>
                                 <ListItem>EPF Registrations & Returns</ListItem>
+                                <ListItem>Food License Registration(FSSAI)</ListItem>
+                                <ListItem>Import Export Code Registration</ListItem>
                             </List>
                         </Box>
                     </Grid>
@@ -179,7 +180,7 @@ const Footer = () => {
                             <List>
                                 <ListItem>Health Insurance</ListItem>
                                 <ListItem>Life Insurance</ListItem>
-                                <ListItem>Term Life Insurance</ListItem>
+                                <ListItem>Term Insurance</ListItem>
                                 <ListItem>General Insurance</ListItem>
                                 <ListItem>Motor Insurance</ListItem>
                                 <ListItem>Home Insurance</ListItem>
@@ -239,8 +240,8 @@ const Footer = () => {
                                 ),
                             }}
                         /> */}
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.0273164783343!2d73.85006435370295!3d18.456914839914706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac906c3ffaf%3A0x48727ec5c226047c!2sTrimurthi%20Chowk%2C%20Bharati%20Vidyapeeth%20Campus%2C%20Dhankawadi%2C%20Pune%2C%20Maharashtra%20411046!5e0!3m2!1sen!2sin!4v1715886428586!5m2!1sen!2sin"
-                            width="350px" height="200px" allowfullscreen=""
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7569.131324311003!2d73.84837078272841!3d18.45801959340881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2eb458c58d0af%3A0x631bdaae3155adae!2sFR5X%2B3MV%20Suman%20Plaza%2C%20Tanaje%20Nagar%2C%20Mohan%20Nagar%2C%20Dhankawadi%2C%20Pune%2C%20Maharashtra%20411046!3m2!1d18.4577307!2d73.84917589999999!5e0!3m2!1sen!2sin!4v1716232403532!5m2!1sen!2sin"
+                            width="330px" height="200px" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
                         </iframe>

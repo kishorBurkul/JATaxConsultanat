@@ -27,7 +27,7 @@ const ServicesPage = () => {
                           <img
                             src="assets/gstservices/GST-Return.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid  "
+                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid "
                             />
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">GST Returns & Compliances</h2>
                             <h1 className="text-2xl mb-4 font-semibold">GST Returns Compliance</h1>

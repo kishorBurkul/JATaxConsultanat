@@ -68,15 +68,16 @@ const PersonalLoan = () => {
                 <div className="flex flex-wrap justify-center items-start">
                     {/* Left side image with description */}
                     <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
+                    <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid  ">
                         <img
                             src="assets/loan-services/personal-loan.jpg"
                             alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4 hover:border-black hover:border-solid hover:border-2 hover:bg-black hover:bg-opacity-50"
+                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid "
                         />
-                        <div className="bg-white rounded-lg shadow-md p-6 hover:border-black hover:border-solid hover:border-2 hover:text-white hover:bg-black hover:bg-opacity-50">
+                        
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Personal Loan Services </h2>
                             <h2 className="text-2xl mb-4 font-semibold"> Top Personal Loan Finance Companies in India</h2>
-                            <p className="text-md mb-4"><mark>In recent years, personal loans have become an increasingly popular financial solution for many individuals in India. Whether it’s to finance a wedding, home renovation, or even to pay off high-interest credit card debt, personal loans provide a flexible and convenient option for individuals looking for a quick source of funds. However, with so many options available in the market, it can be challenging to determine the best personal loans in India. In this article, we’ll explore the top personal loans available in India, highlighting their unique features and benefits.</mark></p>
+                            <p className="text-md mb-4">In recent years, personal loans have become an increasingly popular financial solution for many individuals in India. Whether it’s to finance a wedding, home renovation, or even to pay off high-interest credit card debt, personal loans provide a flexible and convenient option for individuals looking for a quick source of funds. However, with so many options available in the market, it can be challenging to determine the best personal loans in India. In this article, we’ll explore the top personal loans available in India, highlighting their unique features and benefits.</p>
                             {/* <h3 className="font-semibold mb-4">Listed below are the forms required to file GST Returns:</h3> */}
                             <ul className="pl-4">
                                 {benefits.map((benefit, index) => (
@@ -100,7 +101,7 @@ const PersonalLoan = () => {
 
                     <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
 
-                        <div className="bg-white rounded-lg shadow-md p-6 mt-10 hover:border-black hover:border-solid hover:border-2 hover:text-black hover:bg-grey hover:bg-opacity-50">
+                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
 
                             <ul className="pl-8">
                                 <hr />

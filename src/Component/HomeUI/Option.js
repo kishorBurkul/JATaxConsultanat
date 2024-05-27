@@ -5,7 +5,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from 'react-router-dom';
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -63,9 +63,9 @@ export default function Option({ navItems, nestedMenuItems, routes }) {
   };
 
   return (
-    <Box style={{ display: 'flex' }}>
+    <Grid container spacing={2}>
       {navItems.map((item, index) => (
-        <Box key={index} style={{ marginRight: '4px' }}>
+        <Grid item key={index}>
           <Button
             id={`services-button-${index}`}
             aria-controls={`services-menu-${index}`}
@@ -94,8 +94,8 @@ export default function Option({ navItems, nestedMenuItems, routes }) {
               </MenuItem>
             ))}
           </StyledMenu>
-        </Box>
+        </Grid>
       ))}
-    </Box>
+    </Grid>
   );
 }

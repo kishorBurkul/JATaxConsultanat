@@ -84,7 +84,7 @@ const TDSReturn = () => {
                             />
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">TDS Returns & Compliances</h2>
                             <h2 className="text-2xl mb-4 font-semibold ml-1">What are the Eligibility Criteria for TDS Deduction in India?</h2>
-                            <p className="text-md ml-2 mb-4"><mark>TDS is a mechanism prescribed by the Income Tax Act, 1961, where a certain percentage of payments are deducted at the time of making specified transactions. The following entities are eligible as deductors who can deduct TDS in India:</mark></p>
+                            <p className="text-md ml-2 mb-4">TDS is a mechanism prescribed by the Income Tax Act, 1961, where a certain percentage of payments are deducted at the time of making specified transactions. The following entities are eligible as deductors who can deduct TDS in India:</p>
                             {/* <h3 className="font-semibold mb-4">Listed below are the forms required to file GST Returns:</h3> */}
                             <ul className=" pl-4">
                                 {benefits.map((benefit, index) => (

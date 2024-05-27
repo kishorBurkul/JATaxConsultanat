@@ -56,7 +56,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       image: 'assets/homepage/jagaikwadpic.jpeg',
-      name: 'Jayram A Gaikwad',
+      name: 'Jayram Gaikwad',
       role: 'Founder, J A Gaikwad & Associates',
       location: 'Katraj, Pune',
     },

@@ -57,7 +57,7 @@ const OurBranches = () => {
                         {/* Branch 3 */}
                         <div className="w-full md:w-5/6 px-4 ">
                             <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                                <h3 className="text-xl font-semibold mb-2"><span>Rahuri</span> , Daund </h3>
+                                <h3 className="text-xl font-semibold mb-2"><span>Nangaon</span> , Daund </h3>
                                 <div className="mb-2 flex items-center">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
                                     <p><strong>Address:</strong> At post - Nangaon, Ganesh Road, Near Jambhulkar Farm House, Tal- Daund, Dist-Pune - 412203</p>

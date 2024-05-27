@@ -4,42 +4,35 @@ const Accounting = () => {
 
     const benefits = [
         {
-            title: 'Legal Warning:',
+            title: '	To gauge the income and expenditure of the business:',
             points: [
-                'You can use only the valid Digital Signatures issued to you. It is illegal to use Digital Signatures of anybody other than the one to whom it is issued.'
+                'To ensure smoothness and transparency, every individual, firm, or corporation must know about the income generated and expenditure incurred. This helps them to plan and strategize their financial resources and exploit them accordingly.'
             ]
         },
         {
-            title: 'Certification Agencies:',
+            title: '	Timely access to operational information:',
             points: [
-                'Certification Agencies are appointed by the office of the Controller of Certification Agencies (CCA) under the provisions of IT Act, 2000. There are a total of eight Certification Agencies authorised by the CCA to issue Digital Signature Certificates (DSCs). The details of these Certification Agencies are available on the portal of the Ministry Certifying Authorities.'
+                'Up to date records provide access to operational information at any time to management. Since business owners or managers are not directly associated with all transactions, accounting and bookkeeping will help them to keep an eye on all the activities from time to time.'
             ]
         },
         {
-            title: 'Class of DSCs:',
+            title: '	Regular reconciliation rationalizes decisions:',
             points: [
-                'The Ministry of Corporate Affairs has stipulated a Class-II or above category signing certificate for e-Filings under MCA21. A person who already has the specified DSC for any other application can use the same for filings under MCA21 and is not required to obtain a fresh DSC.'
+                'Monthly or quarterly reconciliation of data helps the management to analyze the beneficial or detrimental aspects of a business. Accounting services come with the additional benefit of periodical reconciliation of data. Hence, future decisions can be rationalized after analyzing the profit and loss.'
             ]
         },
         {
-            title: 'Validity of Digital Signatures:',
+            title: 'Attract investors with accurate financial statements:',
             points: [
-                'The DSCs are typically issued with one year validity and two year validity. These are renewable on expiry of the period of initial issue.'
+                'Investing in any business is followed only after a complete analysis of its financial condition. While approaching investors, you need to make sure that your books of accounts are up-to-date and accurate. Inconsistency in financial statements may refrain investors from jumping into your business.'
             ]
         },
         {
-            title: 'Costing/ Pricing of Digital Signatures:',
+            title: '	Ready to furnish data for timely compliance:',
             points: [
-                'It includes the cost of medium (a UBS token which is a one time cost), the cost of issuance of DSC and the renewal cost after the period of validity. The company representatives and professionals required to obtain DSCs are free to procure the same from any one of the approved Certification Agencies as per the MCA portal. The issuance costs in respect of each Agency vary and are market driven.'
+                'Accounting makes it easy to extract data and submit it on time for regular return filing, compliances, and scrutiny of any business.'
             ]
-        }, {
-            title: 'Obtain Digital Signature Certificate:',
-            points: [
-                'Digital Signature Certificate (DSC) Applicants can directly approach Certifying Authorities (CAs) with original supporting documents, and self-attested copies will be sufficient in this case.',
-                ' DSCs can also be obtained, wherever offered by CA, using Aadhar eKYC based authentication, and supporting documents are not required in this case',
-                'A letter/certificate issued by a Bank containing the DSC applicant’s information as retained in the Bank database can be accepted. Such letter/certificate should be certified by the Bank Manager'
-            ]
-        }
+        },
         // , {
         //     title: 'Avoidance of Unnecessary Stress and Legal Battles:',
         //     points: [
@@ -72,17 +65,19 @@ const Accounting = () => {
                     {/* Left side image with description */}
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
                         <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid  ">
-                        <img
-                            src="assets/gstservices/accounting.jpg"
-                            alt="GST Services"
-                            className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid  "
-                        />
-                           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Accounting & Book Keeping  </h2>
-                            <h2 className="text-2xl mb-4 font-semibold"> Accounting & Book Keeping </h2>
-                            <p className="text-md mb-4"><mark>We use accounting assurance services to help our clients grow and reach their aspirations.
-                                This is more than just preparing financial statements and tax returns.
-                                We are constantly developing new services while looking for new efficiencies in core disciplines.</mark></p>
+                            <img
+                                src="assets/gstservices/accounting.jpg"
+                                alt="GST Services"
+                                className="w-full object-cover rounded-lg shadow-md mb-4  border-solid border-violet-800 hover:border-black hover:border-solid  "
+                            />
+                            <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Accounting </h2>
+                            <h2 className="text-2xl mb-4 font-semibold">What Is Accounting  </h2>
+                            <p className="text-md mb-4">Accounting is the backbone of any business organization. Proper accounting system with adequate internal
+                                controls not only help to make timely compliances under various legislations but also help in assessment of
+                                the periodic performance, avoidance of frauds and errors as well as implementation of budgeting & MIS system in the organization</p>
                             {/* <h3 className="font-semibold mb-4">Listed below are the forms required to file GST Returns:</h3> */}
+
+                            <h6 className="text-xl mb-4 font-semibold">Benefits of Accounting and Bookkeeping </h6>
                             <ul className=" pl-4">
                                 {benefits.map((benefit, index) => (
                                     <li key={index} className="mb-4">
@@ -96,6 +91,87 @@ const Accounting = () => {
                                         </ul>
                                     </li>
                                 ))}
+
+
+                                <hr />
+                                <h2 className="text-xl font-bold text-gray-800 mb-4 text-center">Documents required for Accounting and Bookkeeping Services</h2>
+                                <li className="mb-4">
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        - Company / Business Incorporation Documents.
+                                    </span>
+                                </li>
+                                <li className="mb-4">
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+
+                                        - Bank statement of a financial year or monthly statement (with remarks).
+                                    </span>
+                                </li>
+                                <li className="mb-4">
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        -Purchase-Sales invoices, if any.
+                                    </span>
+                                </li>
+
+
+                                <li className="mb-2 flex items-center">
+
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        -Expense bills, if any
+                                    </span>
+
+                                </li>
+
+
+
+                                <li className="mb-2 flex items-center">
+
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        -Any receivable and payable detail
+                                    </span>
+
+                                </li>
+
+
+
+                                <li className="mb-2 flex items-center">
+
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        -Any other Government registration taken
+                                    </span>
+
+                                </li>
+
+
+                                <li className="mb-2 flex items-center">
+
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        - Cash Expenses
+                                    </span>
+
+                                </li>
+                                <li className="mb-2 flex items-center">
+
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        -Bank Statement of partner/ members with remarks if used for business transactions
+                                    </span>
+
+                                </li>
+                                <li className="mb-2 flex items-center">
+
+                                    <span className='text-md flex items-center'>
+                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
+                                        -Expenses made for company or LLP registration by promoters
+                                    </span>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -104,9 +180,9 @@ const Accounting = () => {
 
                     <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 px-4 mb-8">
 
-                        <div className="mx-auto w-2/3 bg-slate-500 mb-4">
-                            <div className="bg-grey rounded-lg shadow-md p-6 bg-inherit">
-                                <p className="text-lg mb-4 text-white">
+                        <div className="mx-auto w-2/3 bg-grey-600 mb-4">
+                            <div className="bg-grey-900 rounded-lg shadow-md p-6 bg-inherit">
+                                <p className="text-lg mb-4 text-black">
                                     " We use accounting assurance services to help our clients grow and reach their aspirations.
                                     This is more than just preparing financial statements and tax returns.
                                     We are constantly developing new services while looking for new efficiencies in core disciplines."
@@ -116,46 +192,46 @@ const Accounting = () => {
 
                         <div className="bg-white rounded-lg shadow-md p-6 mt-1 border-black border-solid border-2 text-black ">
 
-                            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Benefits of a Digital Signature Certificate</h2>
+                            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What Is Bookkeeping</h2>
 
                             <ul className="pl-8">
                                 <li className="mb-4">
-                                    <span className='font-semibold text-lg flex items-center'>
+                                    {/* <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                         Reduced cost and time:
-                                    </span>
+                                    </span> */}
                                     <ul className="list-disc pl-4">
                                         <li className="mb-2 flex items-center">
-                                            Instead of signing the hard copy documents physically and scanning them to send them via e-mail, you can digitally sign the PDF files and send them much more quickly. A Digital Signature certificate holder does not have to be physically present to conduct or authorize a business.
+                                            Bookkeeping is a separate process from accounting, which occurs within the broader scope of accounting. The accounts are prepared from the information provided by bookkeeping. A strong relationship between these two functions is necessary to take the business to the next level.
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li className="mb-4">
-                                    <span className='font-semibold text-lg flex items-center'>
+                                    {/* <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                         Data integrity:
-                                    </span>
+                                    </span> */}
                                     <ul className="list-disc pl-4">
                                         <li className="mb-2 flex items-center">
-                                            Documents that are signed digitally cannot be altered or edited after signing, which makes the data safe and secure. The government agencies often ask for these certificates to cross-check and verify the business transaction.
+                                            Bookkeeping is a segment of the whole accounting system. Bookkeeping is the basis for accounting as it contains the proper records of all financial transactions whereas, accounting involves organising, summarising, classification and reporting financial transactions.
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li className="mb-4">
-                                    <span className='font-semibold text-lg flex items-center'>
+                                    {/* <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                         Authentication:
-                                    </span>
+                                    </span> */}
                                     <ul className="list-disc pl-4">
                                         <li className="mb-2 flex items-center">
-                                            Helpful in authenticating the personal information details of the individual holder when conducting business online.
+                                            If the bookkeeping is correct, the accounting of a company will be proper. Thus, accounting is broader than bookkeeping and accounting of a company relies on a proper and accurate bookkeeping system.
                                         </li>
                                     </ul>
                                 </li>
 
-                                <li className="mb-4">
+                                {/* <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                         Authenticity of documents:
@@ -165,34 +241,30 @@ const Accounting = () => {
                                             Digitally signed documents give confidence to the receiver to be assured of the signer’s authenticity. They can take action on the basis of such documents without getting worried about the documents being forged.
                                         </li>
                                     </ul>
-                                </li>
+                                </li> */}
 
                                 <hr />
-                                <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center mt-4" >Classes Of Digital Signature Certificate</h2>
-                                <p className="text-md mb-4"><mark> The type of applicant and the purpose for which the Digital Signature Certificate is obtained defines the kind of DSC one must apply for depending on the need. There are three types of Digital Signature certificates issued by the certifying authorities
-                                </mark></p>
-
-
+                                <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center mt-4" >Objectives of Bookkeeping</h2>
+                                <p className="text-md mb-4">The objectives of bookkeeping are as follows: </p>
                                 <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        Class 1 Certificates:
+                                        To record the transactions:
                                     </span>
                                     <ul className="list-disc pl-4">
                                         <li className="mb-2 flex items-center">
-                                            These are issued to individual/private subscribers and are used to confirm that the user’s name and email contact details from the clearly defined subject lie within the database of the certifying authority.
+                                            The first objective of bookkeeping is to maintain accurate and complete records of all financial transactions in an orderly manner. It systematically records all transactions and ensures that all financial transactions recorded are reflected in the books of accounts. These transactions can be used for future references.
                                         </li>
                                     </ul>
                                 </li>
                                 <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        Class 2 Certificates:
+                                        To show the correct position:
                                     </span>
                                     <ul className="list-disc pl-4">
                                         <li className="mb-2 flex items-center">
-                                            These are issued to the director/signatory authorities of the companies for the purpose of e-filing with the Registrar of Companies (ROC). Class 2 certificate is mandatory for individuals who have to sign manual documents while filing returns with the ROC. However, from 01.01.2021, the Controller of Certifying Authority has instructed to discontinue
-                                            Class 2 Certificates and Class 3 Certificates will be issued in place of Class 2 Certificates.
+                                            Bookkeeping helps to ascertain the overall impact of all financial transactions of a company. It reflects the financial effect of all business transactions that have taken place in a financial year. It provides financial information to the shareholders and management of the company, thus helping them formulate future policies and plans.
                                         </li>
                                     </ul>
                                 </li>
@@ -203,46 +275,56 @@ const Accounting = () => {
                                 <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        Class 3 Certificates:
+                                        To detect errors and frauds:
                                     </span>
                                     <ul className="list-disc pl-4">
                                         <li className="mb-2 flex items-center">
-                                            These certificates are used in online participation/bidding in e-auctions and online tenders anywhere in India. The vendors who wish to participate in the online tenders must have a Class 3 digital signature certificate..
+                                            Bookkeeping helps to identify the transactions and summarise them chronologically in a systematic manner. It ensures that the books of accounts are correct, up-to-date, chronological and complete. Thus, it helps to detect any errors or frauds in the business.
                                         </li>
                                     </ul>
                                 </li>
 
 
                                 <hr />
-                                <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Documents For Applying Digital Signature Certificate</h2>
+                                <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Types of Bookkeeping System</h2>
+                                <p className="text-md mb-4">There are two types of bookkeeping systems. The business entities can choose any one of the types of bookkeeping system. Some entities use a combination of both types. The following are the two types of bookkeeping system: </p>
+
                                 <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        1. Submission of Digital Signature Certificate Registration form properly completed.
+                                        Single-entry system of bookkeeping
                                     </span>
+                                    <ul className="list-disc pl-4">
+                                        <li className="mb-2 flex items-center">
+                                            The single-entry system of bookkeeping is a basic system to record daily receipts or generate a weekly or daily report of a company’s cash flow. In the single-entry system of bookkeeping, the bookkeeper records one entry for each financial transaction or activity.
+                                        </li>
+
+                                        <li className="mb-2 flex items-center">
+                                            The single-entry system of bookkeeping involves recording only one side of the transaction or activity. It maintains only the purchases, cash receipts and payments and sales. It is used mainly by small businesses, which have minimal transactions.
+                                        </li>
+
+
+                                    </ul>
                                 </li>
+
+
+
                                 <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        2. PAN Card, Aadhar Card, Photograph.
+                                        Double-entry system of bookkeeping
                                     </span>
+                                    <ul className="list-disc pl-4">
+                                        <li className="mb-2 flex items-center">
+                                            The double-entry system of bookkeeping records a double entry for each financial activity or transaction. The double entry system provides balances and checks as it records the corresponding credit entry for every debit entry. It is not cash-based, and the transactions are entered when revenue is earned, or debt is incurred.
+                                        </li>
+
+                                        <li className="mb-2 flex items-center">
+                                            The double-entry system of bookkeeping is based on the duality concept, i.e. every financial transaction affects two accounts. It means that every debit entry to an account has a corresponding credit entry in another account and vice versa. This system is universally adopted and is considered accurate for recording business/financial transactions.
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li className="mb-4">
-                                    <span className='font-semibold text-lg flex items-center'>
-                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        3. E-mail Id and Mobile number
-                                    </span>
-                                </li>
 
-
-                                <li className="mb-2 flex items-center">
-
-                                    <span className='font-semibold text-lg flex items-center'>
-                                        <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
-                                        NOTE: All the documents required needs to be visually clear.
-                                    </span>
-
-                                </li>
                             </ul>
                         </div>
                     </div>

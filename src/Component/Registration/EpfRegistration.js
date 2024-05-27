@@ -6,7 +6,7 @@ import FormComponent from './FormComponent';
 const EpfRegistration = () => {
     return (
         <>
-
+{/* 
             <Box className="relative overflow-hidden">
                 <img
                     className="w-full mt-10  h-64 sm:h-96 object-cover"
@@ -17,12 +17,26 @@ const EpfRegistration = () => {
                 <Box className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Employees Provident Fund Registrations & Returns</h1>
                 </Box>
+            </Box> */}
+
+            <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+                <img
+                    src="assets/Registration/epf-PR-Registration.jpg"
+                    alt="Services Header"
+                    style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+                />
+                <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                    <Typography variant="h4" component="h6" fontWeight="bold">
+                    Employees Provident Fund Registrations & Returns
+                    </Typography>
+                </Box>
             </Box>
  
-            <Grid container spacing={2} mt={4}
-                justifyContent="center">
-                <Grid item xs={12} md={8}  >
-                    <Paper sx={{ padding: 6 }}>
+            <Grid container mt={0} spacing={4} p={2}
+                justifyContent="center" >
+                {/* <Grid container mx={4} mt={4} spacing={4}> */}
+                <Grid item xs={12} sm={12} md={8}>
+                  
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Employees Provident Fund Registrations & Returns</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -118,11 +132,11 @@ const EpfRegistration = () => {
                                 </AccordionDetails>
                             </Accordion>
                         </Box>
-                    </Paper>
+        
                 </Grid>
 
                 {/* Right Column (4 Grids) */}
-                <Grid item  xs={12} sm={8}  md={4} mt={4} p={8} >
+                <Grid item  xs={12} sm={8}  md={3} >
                 <FormComponent/>
                     {/* <Paper sx={{ padding: 4 }}>
                         <FormComponent />

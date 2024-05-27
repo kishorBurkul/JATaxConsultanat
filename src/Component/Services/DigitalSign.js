@@ -80,8 +80,8 @@ const DigitalSign = () => {
                         />
                             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Digital Signature </h2>
                             <h2 className="text-2xl mb-4 font-semibold">About Digital Signature Certificate (DSC)</h2>
-                            <p className="text-md mb-4"><mark>The Information Technology Act, 2000 has provisions for use of Digital Signatures on the documents submitted in electronic form in order to ensure the security and authenticity of the documents filed electronically. This is secure and authentic way to submit a document electronically. As such, all
-                                filings done by the companies/LLPs under MCA21 e-Governance programme are required to be filed using Digital Signatures by the person authorised to sign the documents.</mark></p>
+                            <p className="text-md mb-4">The Information Technology Act, 2000 has provisions for use of Digital Signatures on the documents submitted in electronic form in order to ensure the security and authenticity of the documents filed electronically. This is secure and authentic way to submit a document electronically. As such, all
+                                filings done by the companies/LLPs under MCA21 e-Governance programme are required to be filed using Digital Signatures by the person authorised to sign the documents.</p>
                             {/* <h3 className="font-semibold mb-4">Listed below are the forms required to file GST Returns:</h3> */}
                             <ul className=" pl-4">
                                 {benefits.map((benefit, index) => (
@@ -158,8 +158,8 @@ const DigitalSign = () => {
 
                                     <hr />
                                     <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center mt-4" >Classes Of Digital Signature Certificate</h2>
-                                    <p className="text-md mb-4"><mark> The type of applicant and the purpose for which the Digital Signature Certificate is obtained defines the kind of DSC one must apply for depending on the need. There are three types of Digital Signature certificates issued by the certifying authorities
-                                    </mark></p>
+                                    <p className="text-md mb-4">The type of applicant and the purpose for which the Digital Signature Certificate is obtained defines the kind of DSC one must apply for depending on the need. There are three types of Digital Signature certificates issued by the certifying authorities
+                                    </p>
 
 
                                     <li className="mb-4">
@@ -203,21 +203,21 @@ const DigitalSign = () => {
 
 
                                     <hr />
-                                    <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Documents For Applying Digital Signature Certificate</h2>
+                                    <h2 className="text-xl font-bold text-gray-800 mb-4 text-center">Documents For Applying Digital Signature Certificate</h2>
                                     <li className="mb-4">
-                                        <span className='font-semibold text-lg flex items-center'>
+                                        <span className='text-md flex items-center'>
                                             <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                             1. Submission of Digital Signature Certificate Registration form properly completed.
                                         </span>
                                     </li>
                                     <li className="mb-4">
-                                        <span className='font-semibold text-lg flex items-center'>
+                                        <span className='text-md flex items-center'>
                                             <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                             2. PAN Card, Aadhar Card, Photograph.
                                         </span>
                                     </li>
                                     <li className="mb-4">
-                                        <span className='font-semibold text-lg flex items-center'>
+                                        <span className='text-md flex items-center'>
                                             <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                             3. E-mail Id and Mobile number
                                         </span>
@@ -226,7 +226,7 @@ const DigitalSign = () => {
 
                                     <li className="mb-2 flex items-center">
 
-                                        <span className='font-semibold text-lg flex items-center'>
+                                        <span className='text-md flex items-center'>
                                             <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&#10004;</span>
                                             NOTE: All the documents required needs to be visually clear.
                                         </span>

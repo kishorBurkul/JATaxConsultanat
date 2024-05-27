@@ -38,16 +38,17 @@ const ShopActRegistration = () => {
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
                 <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                    <Typography variant="h3" component="h1" fontWeight="bold">
+                    <Typography variant="h4" component="h1" fontWeight="bold">
                     Shop Act Registration
                     </Typography>
                 </Box>
             </Box>
 
-            <Grid container spacing={2} mt={4} 
-                justifyContent="center">
-                 <Grid item xs={12} md={8} >
-                     <Paper sx={{padding:6}}>
+            <Grid container mt={0} spacing={4} p={2}
+                justifyContent="center" >
+                {/* <Grid container mx={4} mt={4} spacing={4}> */}
+                <Grid item xs={12} sm={12} md={8}>
+                   <Paper>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Shop Act Registration</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -103,7 +104,7 @@ const ShopActRegistration = () => {
                     </Grid>
 
                     {/* Right Column (4 Grids) */}
-                    <Grid item  xs={12} sm={8}  md={4} mt={4} p={8} >
+                    <Grid item  xs={12} sm={8}  md={3}>
                 <FormComponent/>
                         {/* <Paper sx={{padding:4}}>
                         <FormComponent/>
