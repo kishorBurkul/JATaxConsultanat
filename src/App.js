@@ -112,8 +112,8 @@ function App() {
 const HomePage = () => {
   return (
       <>
-          {/* <HomeServices /> */}
-          <CarouselSlider/>
+          <HomeServices />
+          {/* <CarouselSlider/> */}
           {/* <SliderMate/> */}
           <AboutHome/>
           <ServicesSection/>
