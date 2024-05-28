@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Avatar } from '@mui/material';
+import { Grid, Typography, Avatar, Box } from '@mui/material';
 
 const testimonialContainerStyle = {
   flexGrow: 1,
@@ -30,7 +30,7 @@ const avatarStyle = {
 const Testimonial = ({ image, name, role, location }) => {
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <div style={testimonialCardStyle}>
+      <Box style={testimonialCardStyle}>
         <Grid container direction="column" alignItems="center" spacing={2}>
           <Grid item>
             <Avatar alt={name} src={image} style={avatarStyle} />
@@ -47,7 +47,7 @@ const Testimonial = ({ image, name, role, location }) => {
             </Typography>
           </Grid>
         </Grid>
-      </div>
+      </Box>
     </Grid>
   );
 };
@@ -75,16 +75,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <div style={testimonialContainerStyle}>
+    <Box style={testimonialContainerStyle}>
       <Typography variant="h4" align="center" style={{ fontWeight: 'bold' , textDecoration:"underline" ,textDecorationColor:"#0A84FF"}}>
         Our Team
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={2} mt={1}>
         {testimonials.map((testimonial, index) => (
           <Testimonial key={index} {...testimonial} />
         ))}
       </Grid>
-    </div>
+    </Box>
   );
 };
 

@@ -40,9 +40,9 @@ const Vision = () => {
             <Grid item container spacing={3} justifyContent="center">
                 {/* Map over the card data */}
                 {cardData.map((card, index) => (
-                    <Grid key={index} item xs={12} sm={4} sx={{ marginX: 2 }}>
+                    <Grid key={index} item xs={12} sm={3} padding={2} >
                         <CardActionArea>
-                            <Card sx={{borderRadius:"10px"}}>
+                            <Card sx={{borderRadius:"10px" }}>
                                 <Avatar alt={card.title} src={card.image} sx={{ margin: 'auto', width: "100px", height: "100px", }} />
                                 <Typography variant="h5" align="center">{card.title}</Typography>
                                 <Box p={2} display="flex" flexDirection="column" alignItems="center">

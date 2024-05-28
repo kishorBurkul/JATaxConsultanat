@@ -48,12 +48,12 @@ const ServicesSection = () => {
                                     state="hover-pinch"
                                     style={{}}>
                                 </lord-icon>Accounting</li>
-                                <li className="flex items-center"> <lord-icon
+                                {/* <li className="flex items-center"> <lord-icon
                                     src="https://cdn.lordicon.com/rvmukzut.json"
                                     trigger="hover"
                                     state="hover-pinch"
                                     style={{}}>
-                                </lord-icon>Project Report</li>
+                                </lord-icon>Project Report</li> */}
                                
                             </ul>
                         </div>
@@ -149,7 +149,7 @@ const ServicesSection = () => {
                                             trigger="hover"
                                             state="hover-pinch"
                                             style={{}}>
-                                        </lord-icon>Term Life Insurance</li>
+                                        </lord-icon>Term Insurance</li>
                                         <li className="flex items-center"> <lord-icon
                                             src="https://cdn.lordicon.com/rvmukzut.json"
                                             trigger="hover"
@@ -185,7 +185,7 @@ const ServicesSection = () => {
                                             trigger="hover"
                                             state="hover-pinch"
                                             style={{}}>
-                                        </lord-icon>Maternity Health Insuarnce</li>
+                                        </lord-icon>Maternity Health Insurance</li>
                                         {/* <li className="flex items-center"> <lord-icon
                                             src="https://cdn.lordicon.com/rvmukzut.json"
                                             trigger="hover"

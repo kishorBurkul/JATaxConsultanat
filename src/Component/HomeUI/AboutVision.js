@@ -26,19 +26,19 @@ const AboutVision = () => {
                             <Typography variant="h5" align="center">Our Vision</Typography>
                             <Box p={2} display="flex" flexDirection="column" alignItems="center">
                                 <Typography variant="body1" display="flex" justifyContent="center" mx={2}>
-                                    Above all our vision and goal is to divert from the traditional practice of taxation and audit legal requirements to comprehensive and active support to the business entities by providing a broad range of advisory activities, management support services to strengthen and improve productivity and profitability in the clients business with total compliance of business legal laws and applicable regulatory framework.
+                                &#9679;&nbsp; Above all our vision and goal is to divert from the traditional practice of taxation and audit legal requirements to comprehensive and active support to the business entities by providing a broad range of advisory activities, management support services to strengthen and improve productivity and profitability in the clients business with total compliance of business legal laws and applicable regulatory framework.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    Dedication and discipline are the aims of our parents and employees giving an edge to our professional services for the clients.
+                                &#9679;&nbsp; Dedication and discipline are the aims of our parents and employees giving an edge to our professional services for the clients.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    To be a preferred provider of Accounting, Auditing and Consulting Services.
+                                &#9679;&nbsp;   To be a preferred provider of Accounting, Auditing and Consulting Services.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    To provide highest client satisfaction through our dedicated workforce.
+                                &#9679;&nbsp;   To provide highest client satisfaction through our dedicated workforce.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    To be a respected name and leader in consultancy services.
+                                &#9679;&nbsp;  To be a respected name and leader in consultancy services.
                                 </Typography>
                             </Box>
 
@@ -55,23 +55,23 @@ const AboutVision = () => {
                             <Typography variant="h5" align="center">Why Choose Us </Typography>
                             <Box p={2} display="flex" flexDirection="column" alignItems="center">
                                 <Typography variant="body1" display="flex" justifyContent="center" mx={2}>
-                                    We have Professional, Proactive and Partnership Approach towards client’s needs.
+                                &#9679;&nbsp;   We have Professional, Proactive and Partnership Approach towards client’s needs.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We believe to stay ahead and updated with the latest developments and sharing the information in the changing economy to provide our clients with the most consistent and prompt quality services.
+                                &#9679;&nbsp;   We believe to stay ahead and updated with the latest developments and sharing the information in the changing economy to provide our clients with the most consistent and prompt quality services.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We believe in strong and regular communication with our clients to eliminate their concerns thereby ensuring meeting the deadlines by working with
+                                &#9679;&nbsp;  We believe in strong and regular communication with our clients to eliminate their concerns thereby ensuring meeting the deadlines by working with
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We consider feedback from our clients for us to improvise. We abide by our commitment.
+                                &#9679;&nbsp;  We consider feedback from our clients for us to improvise. We abide by our commitment.
                                 </Typography>
 
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.
+                                &#9679;&nbsp;   We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mt={1} mx={2}>
-                                    We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.
+                                &#9679;&nbsp;  We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results.
                                 </Typography>
                                 {/* <Button variant="contained" color="primary" display="flex" justifyContent="center">Read More</Button> */}
                             </Box>
@@ -88,10 +88,10 @@ const AboutVision = () => {
                             <Typography variant="h5" align="center">Our Mission</Typography>
                             <Box p={2} display="flex" flexDirection="column" alignItems="center">
                                 <Typography variant="body1" display="flex" justifyContent="center" m={2}>
-                                    Our mission is to provide quality service of taxation, auditing, financial and general management with up-to-date knowledge of relevant field.
+                                &#9679;&nbsp;   Our mission is to provide quality service of taxation, auditing, financial and general management with up-to-date knowledge of relevant field.
                                 </Typography>
                                 <Typography variant="body1" display="flex" justifyContent="center" mx={2}>
-                                    We help our client to conduct their daily business activities smoothly by providing latest tax information and advices and making timely compliance to tax authorities to avoid financial losses.
+                                &#9679;&nbsp;  We help our client to conduct their daily business activities smoothly by providing latest tax information and advices and making timely compliance to tax authorities to avoid financial losses.
                                 </Typography>
                         
                             </Box>
