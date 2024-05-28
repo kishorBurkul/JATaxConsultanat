@@ -49,7 +49,6 @@ import TestingForm from './Component/Registration/TestingForm';
 import FoodLRegistartion from './Component/Registration/FoodLicenceRegistartion';
 import ImportExportRegi from './Component/Registration/ImportExportRegi';
 import CashCreditOverdraftLoan from './Component/LoanServices/CashCreditOverdraftLoan';
-import CarouselSlider from './Component/HomeUI/CarouselSlider';
 
 
 function App() {
@@ -113,7 +112,6 @@ const HomePage = () => {
   return (
       <>
           <HomeServices />
-          {/* <CarouselSlider/> */}
           {/* <SliderMate/> */}
           <AboutHome/>
           <ServicesSection/>
