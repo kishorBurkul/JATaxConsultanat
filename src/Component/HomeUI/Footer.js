@@ -9,12 +9,11 @@ import {
     ListItem,
     TextField,
 } from "@mui/material";
-import { Avatar } from 'flowbite-react';
 import React, { useEffect, useState } from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import { keyframes } from '@emotion/react';
+ import { keyframes } from '@mui/material';
 
 
 
