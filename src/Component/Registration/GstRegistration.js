@@ -46,101 +46,49 @@ const GstRegistration = () => {
 
             <Box sx={{ position: 'relative', overflow: 'hidden' }}>
                 <img
-                   src="assets/insurance/aboutus.jpg"
+                    src="assets/insurance/aboutus.jpg"
                     alt="Services Header"
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
                 <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
                     <Typography variant="h4" component="h6" fontWeight="bold">
-                    GST Registration
+                        GST Registration
                     </Typography>
                 </Box>
             </Box>
-           
+
             <Grid container mt={0} spacing={4} p={2}
                 justifyContent="center" >
                 {/* <Grid container mx={4} mt={4} spacing={4}> */}
                 <Grid item xs={12} sm={12} md={8}>
-                   <Paper>
-                        <Typography variant="h5" sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03" , mb:2 ,color:"blue"}}><b>Taxes In India</b></Typography>
+                    <Paper sx={{ padding: 1 }}>
+                        <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>GST Registration</b></Typography>
                         <Divider />
-                        <Typography variant="subtitle1" gutterBottom>
-                            In India, taxes are levied by the central and state governments on income, goods and services, property, and wealth. The main taxes include:
-                        </Typography>
                         <Typography>
-                            <span><b>Income Tax:</b></span> a tax on individuals' and entities' income earned during a financial year.
+                            <span><b>Goods and Services Tax (GST):</b></span>  is a comprehensive, multi-stage, destination-based tax that is levied on every value addition. It has replaced many indirect taxes previously levied by the Central and State governments in India.
+
                         </Typography>
-                        <Typography>
-                            <span><b> Corporate Tax:</b></span> a tax on the profits earned by companies.
-                        </Typography>
-                        <Typography>
-                            <span><b>Goods and Services Tax (GST)</b></span> a consumption-based tax on goods and services.
-                        </Typography>
-                        <Typography>
-                            <span><b>Value Added Tax (VAT):</b></span>  a tax on the value added to goods and services during production or distribution.
-                        </Typography>
-                        <Typography>
-                            <span><b>Customs duty:</b></span>  a tax on goods imported into India.
-                        </Typography>
-                        <Typography mt={2}>
-                            <span><b> Excise duty:</b></span> a tax on certain goods produced within India
-                        </Typography>
-                        <Typography>
-                            <span><b>Property Tax:</b></span>  a tax on the ownership or possession of property.
-                        </Typography>
-                        <Typography>
-                            <span><b> Securities Transaction Tax (STT):</b></span> a tax on the value of securities traded on stock exchanges.
-                        </Typography>
-                        <Typography>
-                            <span><b> Wealth Tax:</b></span> a tax on the wealth of individuals and entities above a certain threshold.
-                        </Typography>
-                        <Typography mt={1}>
-                            These taxes are collected by the Central Board of Direct Taxes (CBDT) and state tax departments, and used to fund government services and programs.
-                        </Typography>
-                        <Grid container>
-                            <Grid item md={3}>
-                                <List>
-                                    <ListItemButton sx={{ pl: 2, fontWeight: "bold" }}>
-                                        <ListItemText><b>Indirect Taxes</b></ListItemText>
-                                    </ListItemButton>
-                                    <List component="div" disablePadding>
-                                        <ListItemText sx={{ pl: 3 }}><b>Center Gov</b></ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Service Tax</ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Excise Duty</ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-CST</ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Custom </ListItemText>
-                                    </List>
-                                </List>
-                            </Grid>
-                            <Grid item md={3}>
-                                <List>
-                                    <ListItemButton sx={{ pl: 2, fontWeight: "bold" }}>
-                                        <ListItemText><b>Indirect Taxes</b></ListItemText>
-                                    </ListItemButton>
-                                    <List component="div" disablePadding>
-                                        <ListItemText sx={{ pl: 3 }}><b>State Gov</b></ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Vat</ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Entry Tax</ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Octroi</ListItemText>
-                                        <ListItemText sx={{ pl: 4 }}>-Luxury Tax </ListItemText>
-                                    </List>
-                                </List>
-                            </Grid>
-                            <Grid item md={6}>
-                                <List>
-                                    <ListItemButton sx={{ pl: 2, fontWeight: "bold" }}>
-                                        <ListItemText><b>Direct Tax</b></ListItemText>
-                                    </ListItemButton>
-                                    <List component="div" disablePadding>
-                                        <ListItemText sx={{ pl: 3 }}>Income Tax</ListItemText>
-                                    </List>
-                                </List>
-                            </Grid>
-                        </Grid>
-                        <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03" , mb:2 ,color:"blue"}}><b>GST Registration</b></Typography>
-                        <Divider />
                         <Typography variant="subtitle1" gutterBottom>
                             Goods and Services Tax (GST) registration is a process by which businesses register with the Indian government to become a GST-compliant taxpayer.
+                        </Typography>
+
+                        <Typography variant="subtitle1" gutterBottom>
+                          <strong> Why GST Registration is Important?</strong> 
+                        </Typography>
+                        <Typography>
+
+                            <span><b>Legality:</b></span>  Businesses must comply with GST regulations if their turnover exceeds the threshold limit.
+                        </Typography>
+                        <Typography>
+                            <span><b> Input Tax Credit:</b></span>  Registered businesses can claim Input Tax Credit (ITC) on their purchases.
+                        </Typography>
+                        <Typography>
+                            <span><b>Interstate Transactions:</b></span> GST registration is mandatory for businesses engaged in interstate supply of goods and services. </Typography>
+                        <Typography>
+                            <span><b>E-commerce:</b></span>  Businesses involved in e-commerce are required to register under GST.
+                        </Typography>
+                        <Typography>
+                            <span><b>Credibility:</b></span>  GSTIN (GST Identification Number) adds to the credibility of the business
                         </Typography>
                         <Box mb={4}>
                             <Typography variant='h5'> <b>Documents Required</b></Typography>
@@ -236,18 +184,18 @@ const GstRegistration = () => {
                             </Accordion>
                         </Box>
 
-                   </Paper>
-                    </Grid>
-                    <Grid item  xs={12} sm={8}  md={3}  >
-                <FormComponent/>
-                        {/* <Paper sx={{padding:4}}>
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={8} md={3}  >
+                    <FormComponent />
+                    {/* <Paper sx={{padding:4}}>
                         <FormComponent/>
                         </Paper> */}
-                        </Grid>
+                </Grid>
 
-                     
-        
-             
+
+
+
 
 
             </Grid>

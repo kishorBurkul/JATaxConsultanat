@@ -58,7 +58,7 @@ const FoodLRegistration = () => {
             <Grid container spacing={2} mt={0} p={2}
                 justifyContent="center">
                 <Grid item xs={12} md={8}  >
-                    <Paper >
+                    <Paper sx={{ padding: 1 }}>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>FSSAI Registration Services(FSSAI)</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -78,9 +78,9 @@ const FoodLRegistration = () => {
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Formulating and enforcing regulations for food safety and hygiene.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Granting licenses and registrations to food business operators (FBOs).</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Conducting inspections and audits of food businesses to ensure compliance with regulations.</ListItemText>
-                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Providing guidance and training to FBOs on food safety and hygiene practices.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Providing guidance and training to FBOs on food safety and hygiene practices.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Collaborating with state and local governments, as well as other stakeholders, to improve food safety and hygiene in India.</ListItemText>
-                                   </List>
+                                    </List>
                                 </AccordionDetails>
                             </Accordion>
 
@@ -97,8 +97,8 @@ const FoodLRegistration = () => {
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Improved Business Image: FSSAI registration or license can enhance the reputation of the FBO and increase consumer confidence in their products.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Increased Market Access: FSSAI registration or license is often a prerequisite for participating in government procurement and tenders, as well as for exporting food products.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Easier Access to Financing: FSSAI registration or license can make it easier for FBOs to obtain loans or other forms of financing, as it serves as evidence of their compliance with legal and regulatory requirements.</ListItemText>
-                                    
-                                   </List>
+
+                                    </List>
                                 </AccordionDetails>
                             </Accordion>
 
@@ -114,8 +114,53 @@ const FoodLRegistration = () => {
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Inspection and Verification: After submitting the application, an FSSAI official will conduct an inspection of the food business premises to verify the information provided in the application.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Payment of fees: After the inspection, the FBO will have to pay the relevant fees for the registration or license.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Obtain the registration or license: Once the inspection and verification are complete and the fees have been paid, the FBO will be issued with the FSSAI registration or license certificate.</ListItemText>
-                                         <Typography >Please note that the FSSAI registration or license is valid for a certain period of time and must be renewed before its expiry date.</Typography>
-                                   </List>
+                                        <Typography >Please note that the FSSAI registration or license is valid for a certain period of time and must be renewed before its expiry date.</Typography>
+                                    </List>
+                                </AccordionDetails>
+                            </Accordion>
+
+
+                            <Accordion sx={{ backgroundColor: "#dee2e6" }}>
+                                <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />} aria-controls="panel2-content" id="panel2-header" sx={{ backgroundColor: "#fd5b03", color: "white" }}>
+                                    <Typography variant='h6'>Documents Required For FSSAI Registration Services(FSSAI)</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <List component="div" disablePadding >
+                                        <ListItemText sx={{ pl: 2 }}>1.<b>The following documents are required to obtain FSSAI basic registration, FSSAI state license and FSSAI central license:</b></ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Photo identity proof of the food business operators.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Business constitution certificate, i.e. partnership deed, certificate of incorporation, shop and establishment licence or other business registration certificate.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Proof of possession of business premises, i.e. rental agreement, NOC from the owner of the rented premises, utility bills etc.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Food safety management system plan.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;List of food products manufactured or processed.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Bank account information.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Supporting documents (if required) like NOC by Municipality or Panchayat, Health NOC, copy of License from the manufacturer, etc.</ListItemText>
+
+                                        <ListItemText sx={{ pl: 2 }}>2.<b>Apart from the above-mentioned general documents, certain specific documents are required for obtaining the FSSAI state license and FSSAI central license. The specific documents required to obtain the FSSAI state license are: </b></ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Form B duly completed and signed</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Plan of the processing unit showing the dimensions and operation-wise area allocation   </ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;List of Directors/ Partners/ Proprietor with address, contact details, and photo ID</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Name and list of equipment and machinery used with the number and installed capacity.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Authority letter from manufacturer nominated a responsible person name and address</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Analysis report of water to be used in the process to confirm the portability</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Copy of certificate obtained under Coop Act 1861/Multi-State Coop Act 2002</ListItemText>
+
+                                        <ListItemText sx={{ pl: 2 }}>3 <b>Apart from the general license, the following specific documents are required to obtain FSSAI central license:</b></ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Form B duly completed and signed</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Plan of the processing unit showing the dimensions and operation-wise area allocation  </ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;List of Directors/ Partners/ Proprietor with address, contact details, and photo ID</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Name and list of equipment and machinery used with the number and installed capacity</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Authority letter from manufacturer nominated a responsible person name and address</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Analysis report of water to be used in the process to confirm the portability</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Source of raw material for milk, meat etc</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Recall plan wherever applicable</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Ministry of Commerce Certificate for 100% EOU</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;NOC/PA document issued by FSSAI</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;IE code document issued by DGF</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Form IX</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Certificate from Ministry of Tourism</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Supporting document for proof of turnover and transportation</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Declaration form</ListItemText>
+                                    </List>
                                 </AccordionDetails>
                             </Accordion>
                         </Box>

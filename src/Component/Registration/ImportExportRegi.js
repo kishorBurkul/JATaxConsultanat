@@ -55,10 +55,10 @@ const ImportExportRegi = () => {
                 </Box>
             </Box> */}
 
-            <Grid container mt={0} spacing={2}  p={2}
+            <Grid container mt={0} spacing={2} p={2}
                 justifyContent="center">
                 <Grid item xs={12} md={8}  >
-                    <Paper >
+                    <Paper  sx={{ padding: 1 }} >
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Import Export Code Registration</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -112,7 +112,7 @@ const ImportExportRegi = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <List component="div" disablePadding >
-                                       <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Digital Photograph (3x3cms) of the Proprietor.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Digital Photograph (3x3cms) of the Proprietor.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Copy of PAN card of the Proprietor.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Copy of Passport (first & last page)/Voter’s I-Card/ Driving Licence/UID (Aadhar card) (any one of these).</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Sale deed in case business premise is self-owned; or Rental/Lease Agreement, in case office is rented/ leased; or latest electricity /telephone bill.</ListItemText>
@@ -127,13 +127,29 @@ const ImportExportRegi = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <List component="div" disablePadding >
-                                       <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Digital Photograph (3x3cms) of the signatory applicant/Secretary or Chief Executive.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Digital Photograph (3x3cms) of the signatory applicant/Secretary or Chief Executive.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Copy of PAN card of the applicant entity.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Copy of Passport (first & last page)/Voter’s I-Card /UID (Aadhar Card) /Driving Licence/ PAN (any one of these) of the Secretary or Chief Executive/ Managing Trustee signing the application.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Sale deed in case business premise is self-owned; or Rental/Lease Agreement, in case office is rented/ leased; or latest electricity /telephone bill.</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Registration Certificate of the Society / Copy of the Trust Deed</ListItemText>
                                         <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Bank Certificate as per ANF 2A(I)/Cancelled Cheque bearing preprinted name of the Registered Society or Trust and A/C No.</ListItemText>
-                                   
+
+                                    </List>
+                                </AccordionDetails>
+                            </Accordion>
+
+
+                            <Accordion sx={{ backgroundColor: "#dee2e6" }}>
+                                <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />} aria-controls="panel2-content" id="panel2-header" sx={{ backgroundColor: "#fd5b03", color: "white" }}>
+                                    <Typography variant='h6'>Documents required for Import Export Code Registration </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <List component="div" disablePadding >
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Individual’s or Firm’s or Company’s copy of PAN Card.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Individual’s voter id or Aadhar card or passport copy.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Individual’s or company’s or firm’s cancel cheque copies of current bank accounts.</ListItemText>
+                                        <ListItemText sx={{ pl: 2 }}>&#9679; &nbsp;Copy of Rent Agreement or Electricity Bill Copy of the premise.</ListItemText>
+
                                     </List>
                                 </AccordionDetails>
                             </Accordion>

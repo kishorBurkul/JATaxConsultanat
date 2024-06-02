@@ -8,7 +8,7 @@ const ServicesPage = () => {
                 {/* Background Image */}
                 <img
                     className="w-full h-96 object-cover"
-                    src="assets/gstservices/GST2.jpg"
+                    src="assets/gstservices/gst_header.jpg"
                     alt="Services Header"
                 />
                 {/* Text Overlay */}

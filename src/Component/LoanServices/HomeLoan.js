@@ -1,3 +1,4 @@
+import { Box, Card, CardMedia, Typography } from '@mui/material';
 import React from 'react';
 
 const HomeLoan = () => {
@@ -35,28 +36,73 @@ const HomeLoan = () => {
     return (
         <div>
             {/* Top Section with Image and Text Overlay */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
+        
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/loan-services/home-loan2.jpg"
+                    src="assets/loan-services/home-loan_header.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
+       
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Home Loan </h1>
                 </div>
-            </div>
+            </div> */}
 
+            <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: '40px' }}>
+                <Card>
+                    <CardMedia
+                        component="img"
+                        image="assets/loan-services/home_loan_2.jpg"
+                        alt="Services Header"
+                        sx={{
+                            width: '100%',
+                            height: {
+                                xs: '210px',
+                                sm: '210px',
+                                md: 'auto',
+                                lg: 'auto'
+                            },
+                            maxHeight: {
+                                xs: 'none',
+                                sm: 'none',
+                                md: '56vh',
+                                lg: '56vh'
+                            },
+                            objectFit: 'cover'
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            inset: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            textAlign: 'center',
+                            color: 'white',
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                        }}
+                    >
+                        <Typography variant="h5" component="h1" fontWeight="bold">
+                        Home Loan
+                        </Typography>
+                    </Box>
+                </Card>
+            </Box>
+
+
+
+       
             {/* Service Cards Section */}
 
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto px-1 py-3">
                 <div className="flex flex-col md:flex-row">
 
                     {/* Left content */}
                     <div className="flex-1 flex items-center justify-center p-8">
                         <div>
-                            <h2 className="text-3xl font-bold mb-4">Build your dream house with Home loans</h2>
+                            <h2 className="text-2xl font-bold mb-4">Build Your Dream House With Home Loans</h2>
                             <h2 className="text-2xl font-bold mb-4">What is a Home Loan?</h2>
                             <p className="mt-4">Buying a house is everybody’s dream. It’s an expensive dream and not possible for most people without using up a lifetime of savings. A home loan helps you realize your dream and keep your savings intact at the same time. What is more, it comes with many benefits.</p>
                             <p className="mt-4">You can get a home loan to build a new home or renovate an existing home. Low – interest rates, flexible repayment options, tax benefits, long tenures, top-up facilities, and prepayment options are some of the benefits of a home loan. A home loan is a long-term commitment unlike a Personal loan or other types of loans. Therefore, it is essential to exercise caution while applying for a home loan. Fincover helps you in getting the loan at the best rates.</p>
@@ -72,7 +118,7 @@ const HomeLoan = () => {
 
                 </div>
                 <div className="flex flex-wrap justify-center items-start">
-                    <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
+                    <div className="w-full sm:w-full md:w-full lg:w-1/2 px-1 mb-2">
                        
                         <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
                         <img
@@ -105,7 +151,7 @@ const HomeLoan = () => {
 
                     {/* Right side service list */}
 
-                    <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
+                    <div className="w-full sm:w-full md:w-full lg:w-1/2 px-1 mb-2">
 
                         <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
 

@@ -21,7 +21,7 @@ const EpfRegistration = () => {
 
             <Box sx={{ position: 'relative', overflow: 'hidden' }}>
                 <img
-                    src="assets/Registration/epf-PR-Registration.jpg"
+                    src="assets/Registration/epf_heaader.jpg"
                     alt="Services Header"
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
@@ -32,11 +32,11 @@ const EpfRegistration = () => {
                 </Box>
             </Box>
  
-            <Grid container mt={0} spacing={4} p={2}
+            <Grid container mt={0} spacing={2} p={2}
                 justifyContent="center" >
                 {/* <Grid container mx={4} mt={4} spacing={4}> */}
-                <Grid item xs={12} sm={12} md={8}>
-                  
+                <Grid item xs={12}  md={8}>
+                  <Paper sx={{ padding: 1 }}>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Employees Provident Fund Registrations & Returns</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>
@@ -133,7 +133,7 @@ const EpfRegistration = () => {
                             </Accordion>
                         </Box>
         
-                </Grid>
+                        </Paper></Grid>
 
                 {/* Right Column (4 Grids) */}
                 <Grid item  xs={12} sm={8}  md={3} >

@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 
 // const useStyles = makeStyles((theme) => ({
@@ -46,60 +46,69 @@ const usestyles = {
 
 
 const MaternityHealthInsurance = () => {
-    const benefits = [
-        {
-            title: '1.Car Insurance',
-            image: "/assets/insurance/car_insu.svg",
-            description: ['Car insurance plans offer protection to the vehicle against an accident, theft, natural calamity and other unforeseen circumstances that could incur financial losses. A car insurance policy covers third party liabilities as well.'
-            ]
-        },
-        {
-            title: '2.Two Wheeler Insurance',
-            image: "/assets/insurance/bike.png",
-            description: [
-                'Bike Insurance or two wheeler insurance is a type of insurance, which safeguards you against the damage happening to your bike due to accidents, natural calamities and other unfortunate events. Bike Insurance policy covers the cost of treatment as well as third party liabilities.']
-        },
-
-        {
-            title: '3.Commercial Vehicle Insurance',
-            image: "/assets/insurance/Commercial-Veh-Truck.svg",
-            description: ['Commercial vehicle insurance covers your commercial vehicle against different types of external damages like theft, accident, natural calamity along with personal as well third-party liabilities.']
-        },
-        // {
-        //     title: '4.Travel Insurance',
-        //     image: "/assets/insurance/habits.png",
-        //     description: [
-        //         'Provides coverage for travelers against unexpected events such as trip cancellations, medical emergencies, lost baggage, and travel delays while traveling domestically or internationally.']
-
-        // },
-        // {
-        //     title: '5.Business Insurance:',
-        //     image: "/assets/insurance/pre-existing-health.jpg",
-        //     description: [
-        //         'Offers various types of coverage to protect businesses from financial losses due to risks such as property damage, liability claims, business interruption, theft, and employee-related issues.']
-        // },
-
-    ];
 
   
 
     return (
 
-        <div className={usestyles.root}>
+        <Box className={usestyles.root}>
             {/* Image Section */}
             {/* <div className={usestyles.imageSection} ></div> */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
+         
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/insurance/maternity_helth_insrance_header.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
+          
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Maternity Health Insurance </h1>
                 </div>
-            </div>
+            </div> */}
+         
+            <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: '40px' }}>
+                <Card>
+                    <CardMedia
+                        component="img"
+                        image="assets/insurance/maternity_helth_insrance_header.jpg"
+                        alt="Services Header"
+                        sx={{
+                            width: '100%',
+                            height: {
+                                xs: '210px',
+                                sm: '210px',
+                                md: 'auto',
+                                lg: 'auto'
+                            },
+                            maxHeight: {
+                                xs: 'none',
+                                sm: 'none',
+                                md: '56vh',
+                                lg: '56vh'
+                            },
+                            objectFit: 'cover'
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            inset: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            textAlign: 'center',
+                            color: 'white',
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                        }}
+                    >
+                        <Typography variant="h5" component="h1" fontWeight="bold">
+                        Maternity Health Insurance 
+                        </Typography>
+                    </Box>
+                </Card>
+            </Box>
+
 
             {/* Content Section */}
             <Container className={usestyles.contentSection}>
@@ -137,37 +146,6 @@ const MaternityHealthInsurance = () => {
                     </Grid>
                 </Grid>
             </Container>
-
-            {/* Cards Section */}
-            {/* <Container maxWidth="lg" style={{ marginTop: "20px" }}>
-                <Typography variant="h4" component="h3" display="flex" justifyContent="center">
-                    Type Of Motor Insurance
-                </Typography>
-                <Grid container spacing={3} sx={{ marginTop: "5px" }}>
-                    {benefits.map((benefit, index) => (
-                        <Grid item xs={12} sm={4} key={index}>
-                            <Card sx={cardStyle}>
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        height="140"
-                                        image={benefit.image}
-                                        alt="green iguana"
-                                    />
-                                    <CardContent>
-                                        <Typography variant="h6" component="div" sx={titleStyle}>
-                                            {benefit.title}
-                                        </Typography>
-                                        <Typography variant="body2" paragraph sx={descriptionStyle}>
-                                            <b>{benefit.description}</b>
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Container> */}
             <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
@@ -562,7 +540,7 @@ const MaternityHealthInsurance = () => {
 
                 </Grid>
             </Container>
-        </div>
+        </Box>
     );
 };
 

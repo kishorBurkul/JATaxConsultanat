@@ -4,27 +4,8 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Avatar, Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         flexGrow: 1,
-//     },
-//     imageSection: {
-//         height: 400,
-//         backgroundImage: 'url("assets/loan-services/Business-Loan.png")',
-//         backgroundSize: 'cover',
-//         marginBottom: 100,
-//     },
-//     contentSection: {
-//         margin: '0 100px',
-//     },
-//     card: {
-//         maxWidth: 345,
-//         margin: '16px', // Adjust the margin directly with numeric values
-//     },
-// }));
 
 
 const usestyles = {
@@ -113,21 +94,62 @@ const HealthInsurance = () => {
 
     return (
 
-        <div className={usestyles.root}>
+        <Box className={usestyles.root}>
             {/* Image Section */}
             {/* <div className={usestyles.imageSection} ></div> */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/loan-services/insurance.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
+
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Health Insurance </h1>
                 </div>
-            </div>
+            </div> */}
+
+            <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: '40px' }}>
+                <Card>
+                    <CardMedia
+                        component="img"
+                        image="assets/loan-services/insurance.jpg"
+                        alt="Services Header"
+                        sx={{
+                            width: '100%',
+                            height: {
+                                xs: '210px',
+                                sm: '210px',
+                                md: 'auto',
+                                lg: 'auto'
+                            },
+                            maxHeight: {
+                                xs: 'none',
+                                sm: 'none',
+                                md: '56vh',
+                                lg: '56vh'
+                            },
+                            objectFit: 'cover'
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            inset: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            textAlign: 'center',
+                            color: 'white',
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                        }}
+                    >
+                        <Typography variant="h5" component="h1" fontWeight="bold">
+                            Health Insurance
+                        </Typography>
+                    </Box>
+                </Card>
+            </Box>
 
             {/* Content Section */}
             <Container className={usestyles.contentSection}>
@@ -214,14 +236,14 @@ const HealthInsurance = () => {
                             Key Benefits of Health Insurance Plans
                         </Typography>
                         <Typography variant="body1" paragraph>
-                         Health insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits
+                            Health insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
 
                             paddingLeft: { xs: 2, sm: 2, md: 4 }, // Adjust the padding for different screen sizes
                         }}>
-                           <li style={{ marginBottom: '1rem' }}>
+                            <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
@@ -317,7 +339,7 @@ const HealthInsurance = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5" gutterBottom>
-                        Things to Consider Before You Pick a Health Insurance Plan 
+                            Things to Consider Before You Pick a Health Insurance Plan
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
@@ -428,7 +450,7 @@ const HealthInsurance = () => {
 
             <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 , order: { xs: 2, sm:2 } } }}  >
+                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 2, sm: 2 } } }}  >
                         <img
                             src="assets/insurance/top_10_comp.png"
                             alt="Right Content"
@@ -441,7 +463,7 @@ const HealthInsurance = () => {
                     </Grid>
 
                     {/* Left Content */}
-                    <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 , order: { xs: 1, sm: 1 } } }}  >
+                    <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }}  >
                         <Typography variant="h5" gutterBottom>
                             We provide a list of the top 10 health insurance companies
                         </Typography>
@@ -453,13 +475,13 @@ const HealthInsurance = () => {
 
                             paddingLeft: { xs: 2, sm: 2, md: 4 }, // Adjust the padding for different screen sizes
                         }}>
-                           <li style={{ marginBottom: '1rem' }}>
+                            <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
 
-                                1.Star Health and Allied Health Insurance
+                                    1.Star Health and Allied Health Insurance
                                 </span>
                             </li>
 
@@ -468,8 +490,8 @@ const HealthInsurance = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                   2.Care Health Insurance
-                                 </span>
+                                    2.Care Health Insurance
+                                </span>
                             </li>
 
                             <li style={{ marginBottom: '1rem' }}>
@@ -477,7 +499,7 @@ const HealthInsurance = () => {
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
                                     </span>
-                                   3.Niva Bupa Health Insurance
+                                    3.Niva Bupa Health Insurance
                                 </span>
                             </li>
 
@@ -551,7 +573,7 @@ const HealthInsurance = () => {
 
                 </Grid>
             </Container>
-        </div>
+        </Box>
     );
 };
 

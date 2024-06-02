@@ -67,7 +67,7 @@ const Testimonials = () => {
       location: 'Nangaon, Daund',
     },
     {
-      image: 'assets/resize_rahuri_team.jpg',
+      image: 'assets/profile_rahuri_resize.png',
       name: 'Abhijeet Kaware',
       role: 'Partner, J A Gaikwad & Associates',
       location: 'Rahuri, Ahmednagar',

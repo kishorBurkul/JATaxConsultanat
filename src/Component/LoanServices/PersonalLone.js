@@ -1,3 +1,4 @@
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 
 const PersonalLoan = () => {
@@ -50,18 +51,31 @@ const PersonalLoan = () => {
     return (
         <div>
             {/* Top Section with Image and Text Overlay */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/loan-services/All-loan-services.png"
+                    src="assets/loan-services/personal-loan_header.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Personal Loan  </h1>
                 </div>
-            </div>
+            </div> */}
+
+
+            <Box sx={{ position: 'relative', overflow: 'hidden' ,marginTop:"40px"}}>
+                <img
+                   src="assets/loan-services/personal-loan_header.jpg"
+                    alt="Services Header"
+                    style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+                />
+                <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                    <Typography variant="h5" component="h1" fontWeight="bold">
+                    Personal Loan
+                    </Typography>
+                </Box>
+            </Box>
+
 
             {/* Service Cards Section */}
             <div className="container mx-auto px-4 py-8">
@@ -99,14 +113,14 @@ const PersonalLoan = () => {
 
                     {/* Right side service list */}
 
-                    <div className="w-full sm:w-full md:w-full lg:w-1/2 px-4 mb-8">
+                    <div className="w-full sm:w-full md:w-full lg:w-1/2 ">
 
-                        <div className="bg-white rounded-lg shadow-md p-6 border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
+                        <div className="bg-white rounded-lg shadow-md  border-2 border-solid border-violet-800 hover:border-black hover:border-solid">
 
                             <ul className="pl-8">
                                 <hr />
                                 <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center mt-4">Documents Required For Personal Loan</h2>
-                                <h4 className="text-xls font-bold text-gray-800 mb-4">For Salaried</h4>
+                                <h4 className="text-xl font-bold text-gray-800 mb-4">For Salaried</h4>
                                 <li className="mb-4">
                                     <span className='font-semibold text-lg flex items-center'>
                                         <span className="h-6 w-6 bg-green-500 text-white rounded-full flex items-center justify-center mr-2">&nbsp;&#10004;&nbsp;</span>

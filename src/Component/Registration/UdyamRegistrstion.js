@@ -1,10 +1,6 @@
 import React from 'react';
 import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box, Card, CardContent, Paper } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Formik, Form, Field } from 'formik';
-import * as Yup from 'yup';
-import axios from 'axios';
-import ContactForm from './ContactForm';
 import FormComponent from './FormComponent';
 
 const UdyamRegistration = () => {
@@ -22,9 +18,9 @@ const UdyamRegistration = () => {
             </div> */}
            
              
-            <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+            <Box sx={{ position: 'relative', overflow: 'hidden' , marginTop:"40px"}}>
                 <img
-                  src="assets/Registration/Udyog-Aadhaar-Registration.webp"
+                  src="assets/Registration/udyog-adhar_registation.png"
                     alt="Services Header"
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
@@ -39,7 +35,7 @@ const UdyamRegistration = () => {
                 justifyContent="center" >
                 {/* <Grid container mx={4} mt={4} spacing={4}> */}
                 <Grid item xs={12} sm={12} md={8}>
-                   <Paper>
+                   <Paper  sx={{ padding: 1 }}>
                     <Typography variant="h5" gutterBottom sx={{ padding:"5px", textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Udyam / MSME / Udyog Aadhaar - Registration</b></Typography>
                     <Divider />
                     <Typography variant="subtitle1" gutterBottom p={1}>

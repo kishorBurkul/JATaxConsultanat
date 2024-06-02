@@ -48,7 +48,7 @@ const ShopActRegistration = () => {
                 justifyContent="center" >
                 {/* <Grid container mx={4} mt={4} spacing={4}> */}
                 <Grid item xs={12} sm={12} md={8}>
-                   <Paper>
+                   <Paper  sx={{ padding: 1 }}>
                         <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Shop Act Registration</b></Typography>
                         <Divider />
                         <Typography variant="subtitle1" gutterBottom>

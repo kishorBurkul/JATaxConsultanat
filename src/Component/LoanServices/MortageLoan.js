@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 import { styled } from '@mui/system';
 import { Tabs } from '@mui/base/Tabs';
@@ -166,25 +166,36 @@ const MortageLoan = () => {
     //     // }
     // ];
 
-    
+
 
     return (
 
-        <div className={usestyles.root}>
+        <Box className={usestyles.root}>
             {/* Image Section */}
             {/* <div className={usestyles.imageSection} ></div> */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/loan-services/Mortage-laon.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Mortgage Loan  </h1>
                 </div>
-            </div>
+            </div> */}
+
+            <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: "40px" }}>
+                <img
+                    src="assets/loan-services/Mortage-laon.jpg"
+                    alt="Services Header"
+                    style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+                />
+                <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                    <Typography variant="h5" component="h1" fontWeight="bold">
+                        Mortgage Loan
+                    </Typography>
+                </Box>
+            </Box>
 
             {/* Content Section */}
             <Container className={usestyles.contentSection}>
@@ -200,7 +211,7 @@ const MortageLoan = () => {
 
                     </Grid>
 
-                    {/* Right Image */}
+                 
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 }, marginTop: { xs: 2, sm: 2 } }} >
                         <img
                             src="assets/loan-services/mortgage-loan.png"
@@ -208,7 +219,7 @@ const MortageLoan = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, // Adjust margin for different screen sizes
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
@@ -397,12 +408,12 @@ const MortageLoan = () => {
 
                                 </TabPanel>
                                 <TabPanel value={2}>
-                                <li style={{ marginBottom: '1rem' }}>
+                                    <li style={{ marginBottom: '1rem' }}>
                                         <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                             <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                                 &nbsp;&#10004;&nbsp;
                                             </span>
-                                            ID Proof 
+                                            ID Proof
                                         </span>
                                     </li>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -410,7 +421,7 @@ const MortageLoan = () => {
                                             <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                                 &nbsp;&#10004;&nbsp;
                                             </span>
-                                            Address Proof 
+                                            Address Proof
                                         </span>
                                     </li>
 
@@ -440,7 +451,7 @@ const MortageLoan = () => {
                                         </span>
                                     </li>
                                 </TabPanel>
-                              
+
                             </Tabs>
 
 
@@ -464,7 +475,7 @@ const MortageLoan = () => {
                     </Grid>
                 </Grid>
             </Container>
-        </div>
+        </Box>
     );
 
 

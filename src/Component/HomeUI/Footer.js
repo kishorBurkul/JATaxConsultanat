@@ -132,7 +132,7 @@ const Footer = () => {
                                 <ListItem>TDS Returns & Compliances</ListItem>
                                 <ListItem>Digital Signatures ( DSC)</ListItem>
                                 <ListItem>Accounting</ListItem>
-                                <ListItem>Project Report</ListItem>
+                                {/* <ListItem>Project Report</ListItem> */}
                             </List>
                         </Box>
                     </Grid>
@@ -153,6 +153,7 @@ const Footer = () => {
                                 <ListItem>EPF Registrations & Returns</ListItem>
                                 <ListItem>Food License Registration(FSSAI)</ListItem>
                                 <ListItem>Import Export Code Registration</ListItem>
+                                <ListItem>TAN Registration</ListItem>
                             </List>
                         </Box>
                     </Grid>
@@ -184,7 +185,7 @@ const Footer = () => {
                                 <ListItem>Motor Insurance</ListItem>
                                 <ListItem>Home Insurance</ListItem>
                                 <ListItem>Personal Accident Cover</ListItem>
-                                <ListItem>Maternity Health Insuarnce</ListItem>
+                                <ListItem>Maternity Health  Insurance</ListItem>
 
                             </List>
                         </Box>

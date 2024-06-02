@@ -19,7 +19,7 @@ const CompanyRegistration = () => {
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
                 <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                    <Typography variant="h4" component="h1" fontWeight="bold">
+                    <Typography variant="h4" component="h5" fontWeight="bold">
                         Company Registration
                     </Typography>
                 </Box>
@@ -28,7 +28,7 @@ const CompanyRegistration = () => {
                 justifyContent="center" >
                 {/* <Grid container mx={4} mt={4} spacing={4}> */}
                 <Grid item xs={12} sm={12} md={8}>
-                   <Paper>
+                   <Paper sx={{ padding: 1 }}>
                    <Typography variant="h5" gutterBottom sx={{ textDecoration: "underline", textDecorationColor: "#fd5b03", mb: 2, color: "blue" }}><b>Company Registration</b></Typography>
                         <Divider />
                         <Typography variant="body1" gutterBottom >

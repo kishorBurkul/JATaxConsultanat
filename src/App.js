@@ -49,6 +49,7 @@ import TestingForm from './Component/Registration/TestingForm';
 import FoodLRegistartion from './Component/Registration/FoodLicenceRegistartion';
 import ImportExportRegi from './Component/Registration/ImportExportRegi';
 import CashCreditOverdraftLoan from './Component/LoanServices/CashCreditOverdraftLoan';
+import TANRegistration from './Component/Registration/TANRegistration';
 
 
 function App() {
@@ -94,10 +95,8 @@ function App() {
             <Route path='/food-license-registration' element={<FoodLRegistartion/>}/>
             <Route path='/import-export-registration' element={<ImportExportRegi/>}/>
             <Route path='/cash-credit-overdraft-loan' element={<CashCreditOverdraftLoan/>}/>
-
-
-           
-         </Routes>
+            <Route path='/tan-registartion' element={<TANRegistration/>}/>
+            </Routes>
         
         <Footer />
         

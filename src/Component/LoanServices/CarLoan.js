@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 import { styled } from '@mui/system';
 import { Tabs } from '@mui/base/Tabs';
@@ -125,65 +125,36 @@ const TabsList = styled(BaseTabsList)(
 );
 
 const CarLoan = () => {
-    // const benefits = [
-    //     {
-    //         title: '1. Professional Loan',
-    //         image: "/assets/loan-services/Professional_Loan.png",
-    //         description: ['Professional Loan is given away to self-employed professionals like Doctor, Advocates, and Chartered Accountants. These loans are processed based on the professional’s credit history. In many instances, the loans are provided against collateral like Non-agricultural land, fixed deposits, bonds, and policies. The loans are usually long term in nature.'
-
-    //         ]
-    //     },
-    //     {
-    //         title: '2. Business Loans for Women Entrepreneurs',
-    //         image: "/assets/loan-services/Business-Loans-for-Women.webp",
-    //         description: [
-    //             'In a bid to promote women entrepreneurship, many banks and financial institutions give exclusive loans to women entrepreneurs. These loans have a lot of benefits with respect to interest rates, tenure, and security etc.'
-    //         ]
-    //     },
-    //     {
-    //         title: '3.Term Loan',
-    //         image: "/assets/loan-services/Whats-a-Term-Loan-Meaning-Types-Category-and-Process.jpg",
-    //         description: [
-    //             'With a Term Loan, the borrowers can avail a secured or unsecured loan for their business purposes. They are usually classified according to their tenure as a short-term loan, long- term loan, and intermediate loan, which can be repaid on a monthly or quarterly basis. The rate of interest may be fixed or floating, depending on the type of loan.']
-    //     },
-    //     {
-    //         title: '4.MUDRA Loan',
-    //         image: "/assets/loan-services/mudra-loan_orig.png",
-    //         description: [
-    //             'Micro Units Development and Refinance Agency (MUDRA) loan is a loan option provided by banks to MSMEs across the country. Under Pradhan Mantri MUDRA Yojana, loan amounts from Rs. 50000 to Rs. 10 Lakhs are provided to start a business or an SME.']
-    //     },
-    //     {
-    //         title: '5.Overdraft Loan',
-    //         image: "/assets/loan-services/overdraft-loan.webp",
-    //         description: [
-    //             'Overdraft facility is given to people based on their credit history, tenure of relationship and their repaying capacity. The maximum amount and the interest is based on a mutual written agreement between the borrower and lender.']
-    //     },
-    //     // {
-    //     //     title: '6.Letter of Credit',
-    //     //     image:"/assets/loan-services/Professional_Loan.png",
-    //     //     description: [
-    //     //         'Letter of credit is the monetary guarantee that the bank provides to companies that deal with the import and export of materials. Here the bank pledges one-time payment to the seller based on its origin certificate, insurance certificate and other documents.']
-    //     // }
-    // ];
-
-
     return (
 
-        <div className={usestyles.root}>
+        <Box className={usestyles.root}>
             {/* Image Section */}
             {/* <div className={usestyles.imageSection} ></div> */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/insurance/car_loan_header.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
+           
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Car Loan  </h1>
                 </div>
-            </div>
+            </div> */}
+
+
+            <Box sx={{ position: 'relative', overflow: 'hidden' ,marginTop:"40px"}}>
+                <img
+                   src="assets/insurance/car_loan_header.jpg"
+                    alt="Services Header"
+                    style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+                />
+                <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                    <Typography variant="h4" component="h1" fontWeight="bold">
+                    Car Loan 
+                    </Typography>
+                </Box>
+            </Box>
 
             {/* Content Section */}
             <Container className={usestyles.contentSection}>
@@ -343,7 +314,7 @@ const CarLoan = () => {
 
             <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                    {/* Left Content */}
+                 
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5" gutterBottom>
                             Documents required for car loan application
@@ -351,16 +322,15 @@ const CarLoan = () => {
                         <ul sx={{
                             listStyleType: 'disc',
 
-                            paddingLeft: { xs: 2, sm: 2, md: 4 }, // Adjust the padding for different screen sizes
+                            paddingLeft: { xs: 2, sm: 2, md: 4 }, 
                         }}>
 
-                            <Tabs defaultValue={1}>
-                                <TabsList>
+                            <Tabs defaultValue={1} orientation='vertical' >
+                                <TabsList sx={{width:"200px"}}>
                                     <Tab value={1}>Address proof</Tab>
                                     <Tab value={2}>Identity proof</Tab>
                                     <Tab value={3}>Proof of income</Tab>
-
-                                </TabsList>
+                            </TabsList>
                                 <TabPanel value={1}>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
@@ -493,7 +463,7 @@ const CarLoan = () => {
                     </Grid>
                 </Grid>
             </Container>
-        </div>
+        </Box>
     );
 
 

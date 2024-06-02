@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 import { styled } from '@mui/system';
 import { Tabs } from '@mui/base/Tabs';
@@ -166,58 +166,69 @@ const Balance_Topup = () => {
     //     // }
     // ];
 
- 
+
 
     return (
 
-        <div className={usestyles.root}>
+        <Box className={usestyles.root}>
             {/* Image Section */}
             {/* <div className={usestyles.imageSection} ></div> */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
-                <img
+            {/* <div className="relative overflow-hidden">
+            <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/loan-services/home-loan-balance-transfer-1024x300.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+               <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Balance Transfer & Top Up Loan  </h1>
                 </div>
-            </div>
+            </div> */}
+
+            <Box sx={{ position: 'relative', overflow: 'hidden' ,marginTop:"40px"}}>
+                <img
+                  src="assets/loan-services/balance_tranfer_loan.jpg"
+                    alt="Services Header"
+                    style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
+                />
+                <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                    <Typography variant="h5" component="h1" fontWeight="bold">
+                    Balance Transfer & Top Up Loan 
+                    </Typography>
+                </Box>
+            </Box>
 
             {/* Content Section */}
             <Container className={usestyles.contentSection}>
-    <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-        {/* Right Image */}
-        <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 }, marginTop: { xs: 2, sm: 2 } }}>
-            <img
-                src="assets/loan-services/balnace_transfer1.jpg"
-                alt="Right Content"
-                sx={{
-                    width: '100%',
-                    height: 'auto',
-                    marginBottom: { xs: 4, sm: 8 }, // Adjust margin for different screen sizes
-                }}
-            />
-        </Grid>
+                <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
+                    {/* Right Image */}
+                    <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 }, marginTop: { xs: 2, sm: 2 } }}>
+                        <img
+                            src="assets/loan-services/balnace_transfer1.jpg"
+                            alt="Right Content"
+                            sx={{
+                                width: '100%',
+                                height: 'auto',
+                                marginBottom: { xs: 4, sm: 8 }, // Adjust margin for different screen sizes
+                            }}
+                        />
+                    </Grid>
 
-        {/* Left Content */}
-        <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 } }}>
-            <Typography variant="h4" gutterBottom>
-                Balance Transfer & Top Up Loan
-            </Typography>
-            <Typography variant="body1" style={{ fontWeight: "bold" }}>Balance transfer</Typography>
-            <Typography variant="body1" paragraph>
-                Balance transfer involves transferring the outstanding balance of an existing loan from one lender to another, usually to take advantage of better terms, interest rates, or repayment options offered by the new lender.
-            </Typography>
-            <Typography variant="body1" style={{ fontWeight: "bold" }}>Top-Up Loan</Typography>
-            <Typography variant="body1" paragraph>
-                A top-up loan is an additional loan amount that borrowers can avail on top of their existing loan, typically at a relatively lower interest rate compared to other forms of borrowing.
-            </Typography>
-        </Grid>
-    </Grid>
-</Container>
+                    {/* Left Content */}
+                    <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 } }}>
+                        <Typography variant="h4" gutterBottom>
+                            Balance Transfer & Top Up Loan
+                        </Typography>
+                        <Typography variant="body1" style={{ fontWeight: "bold" }}>Balance transfer</Typography>
+                        <Typography variant="body1" paragraph>
+                            Balance transfer involves transferring the outstanding balance of an existing loan from one lender to another, usually to take advantage of better terms, interest rates, or repayment options offered by the new lender.
+                        </Typography>
+                        <Typography variant="body1" style={{ fontWeight: "bold" }}>Top-Up Loan</Typography>
+                        <Typography variant="body1" paragraph>
+                            A top-up loan is an additional loan amount that borrowers can avail on top of their existing loan, typically at a relatively lower interest rate compared to other forms of borrowing.
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Container>
 
 
             {/* Cards Section */}
@@ -267,10 +278,10 @@ const Balance_Topup = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                         <Typography variant="h5" gutterBottom>
-                        Eligibility to apply for Balance Transfer & Top Up Loan 
+                            Eligibility to apply for Balance Transfer & Top Up Loan
                         </Typography>
-                        <Typography variant="body1" paragraph style={{fontWeight:"bold"}}>
-                        Balance Transfer Loan</Typography>
+                        <Typography variant="body1" paragraph style={{ fontWeight: "bold" }}>
+                            Balance Transfer Loan</Typography>
                         <ul sx={{
                             listStyleType: 'disc',
 
@@ -292,10 +303,10 @@ const Balance_Topup = () => {
                                         &nbsp;&#10004;&nbsp;
                                     </span>
                                     Lenders may have specific criteria regarding the outstanding loan amount, tenure remaining, and property valuation (in the case of home loans).
-                                         </span>
+                                </span>
                             </li>
-                            <Typography variant="body1" paragraph style={{fontWeight:"bold"}}>
-                            Top Up Loan </Typography>
+                            <Typography variant="body1" paragraph style={{ fontWeight: "bold" }}>
+                                Top Up Loan </Typography>
                             <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
@@ -311,7 +322,7 @@ const Balance_Topup = () => {
                                     Lenders may consider factors such as the repayment track record, property valuation, and creditworthiness of the borrower.
                                 </span>
                             </li>
-                                {/* <li style={{ marginBottom: '1rem' }}>
+                            {/* <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
                                         &nbsp;&#10004;&nbsp;
@@ -333,7 +344,7 @@ const Balance_Topup = () => {
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5" gutterBottom>
-                        Documents required for bike loan application
+                            Documents required for bike loan application
                         </Typography>
                         <ul sx={{
                             listStyleType: 'disc',
@@ -382,7 +393,7 @@ const Balance_Topup = () => {
                                             Property documents (in the case of home loan balance transfers).
                                         </span>
                                     </li>
-                                
+
                                 </TabPanel>
                                 <TabPanel value={2}>
                                     <li style={{ marginBottom: '1rem' }}>
@@ -410,7 +421,7 @@ const Balance_Topup = () => {
                                             Property documents (in the case of home loans) or Existing loan statement
                                         </span>
                                     </li>
-                              </TabPanel>
+                                </TabPanel>
                                 {/* <TabPanel value={3}>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
@@ -453,7 +464,7 @@ const Balance_Topup = () => {
                     </Grid>
                 </Grid>
             </Container>
-        </div>
+        </Box>
     );
 
 

@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 
 // const useStyles = makeStyles((theme) => ({
@@ -106,21 +106,65 @@ const LifeInsurance = () => {
     
     return (
 
-        <div className={usestyles.root}>
+        <Box className={usestyles.root}>
             {/* Image Section */}
             {/* <div className={usestyles.imageSection} ></div> */}
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
+            {/* <div className="relative overflow-hidden">
+                
                 <img
                     className="w-full h-64 sm:h-96 object-cover"
                     src="assets/insurance/life_insurance_hader.jpg"
                     alt="Services Header"
                 />
-                {/* Text Overlay */}
+              
                 <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
                     <h1 className="text-4xl font-bold text-center">Life Insurance </h1>
                 </div>
-            </div>
+            </div> */}
+
+            <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: '40px' }}>
+                <Card>
+                    <CardMedia
+                        component="img"
+                        image="assets/insurance/life_insurance_hader.jpg"
+                        alt="Services Header"
+                        sx={{
+                            width: '100%',
+                            height: {
+                                xs: '210px',
+                                sm: '210px',
+                                md: 'auto',
+                                lg: 'auto'
+                            },
+                            maxHeight: {
+                                xs: 'none',
+                                sm: 'none',
+                                md: '56vh',
+                                lg: '56vh'
+                            },
+                            objectFit: 'cover'
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            inset: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            textAlign: 'center',
+                            color: 'white',
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                        }}
+                    >
+                        <Typography variant="h5" component="h1" fontWeight="bold">
+                        Life Insurance
+                        </Typography>
+                    </Box>
+                </Card>
+            </Box>
+
+
 
             {/* Content Section */}
             <Container className={usestyles.contentSection}>
@@ -540,7 +584,7 @@ const LifeInsurance = () => {
 
                 </Grid>
             </Container>
-        </div>
+        </Box>
     );
 };
 

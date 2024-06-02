@@ -119,7 +119,7 @@ const TDSReturn = () => {
                             />
                         </div>
 
-                        <div class="overflow-x-auto mt-10">
+                        {/* <div class="overflow-x-auto mt-10">
                             <table class="min-w-full border-collapse border border-gray-300">
                                 <thead class="bg-gray-200">
                                     <tr>
@@ -166,13 +166,13 @@ const TDSReturn = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> */}
 
                     </div>
 
                 </div>
             </div>
-            <div className="w-full md:w-5/6 lg:w-4/5 xl:w-3/4 mx-auto border-solid border-black border-2 mb-4 shadow-lg">
+            {/* <div className="w-full md:w-5/6 lg:w-4/5 xl:w-3/4 mx-auto border-solid border-black border-2 mb-4 shadow-lg">
                 <div className="bg-white rounded-lg shadow-md p-6">
                     <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What are the Basic Documents Required for TDS Return Filing?</h2>
                     <div className="text-md font-bold text-gray-800 mb-4">
@@ -355,7 +355,7 @@ const TDSReturn = () => {
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

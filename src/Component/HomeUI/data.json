@@ -1,0 +1,35 @@
+{
+    "sections": [
+      {
+        "title": "Our Vision",
+        "avatar": "assets/homepage/vision.png",
+        "points": [
+          "Above all our vision and goal is to divert from the traditional practice of taxation and audit legal requirements to comprehensive and active support to the business entities by providing a broad range of advisory activities, management support services to strengthen and improve productivity and profitability in the clients business with total compliance of business legal laws and applicable regulatory framework.",
+          "Dedication and discipline are the aims of our parents and employees giving an edge to our professional services for the clients.",
+          "To be a preferred provider of Accounting, Auditing and Consulting Services.",
+          "To provide highest client satisfaction through our dedicated workforce.",
+          "To be a respected name and leader in consultancy services."
+        ]
+      },
+      {
+        "title": "Why Choose Us",
+        "avatar": "assets/homepage/Whyus.webp",
+        "points": [
+          "We have Professional, Proactive and Partnership Approach towards client’s needs.",
+          "We believe to stay ahead and updated with the latest developments and sharing the information in the changing economy to provide our clients with the most consistent and prompt quality services.",
+          "We believe in strong and regular communication with our clients to eliminate their concerns thereby ensuring meeting the deadlines by working with",
+          "We consider feedback from our clients for us to improvise. We abide by our commitment.",
+          "We understand our client’s problems as if they were our own and commit to provide them with solutions that bear constructive results."
+        ]
+      },
+      {
+        "title": "Our Mission",
+        "avatar": "assets/homepage/goal-icon-png-3.jpg",
+        "points": [
+          "Our mission is to provide quality service of taxation, auditing, financial and general management with up-to-date knowledge of relevant field.",
+          "We help our client to conduct their daily business activities smoothly by providing latest tax information and advices and making timely compliance to tax authorities to avoid financial losses."
+        ]
+      }
+    ]
+  }
+  

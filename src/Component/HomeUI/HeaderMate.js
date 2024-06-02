@@ -80,8 +80,8 @@ export default function HeaderMate(props) {
     },
     {
       mainItem: 'Registration',
-      nestedItems: ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration','Company Registration', 'Shop Act Registration','Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration'],
-      routes: ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration'],
+      nestedItems: ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration','Company Registration', 'Shop Act Registration','Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration','TAN Registration'],
+      routes: ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration','/tan-registartion'],
     },
     {
       mainItem: 'Loan',
@@ -101,14 +101,14 @@ export default function HeaderMate(props) {
 
   const nestedMenuItems = [
     ['GST Returns & Compliances', 'Income Tax Returns & Compliances', 'TDS Returns & Compliances', 'Digital Signatures', 'Accounting'],
-    ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration' , 'Company Registration', 'Shop Act Registration', 'Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration'],
+    ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration' , 'Company Registration', 'Shop Act Registration', 'Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration','TAN Registration'],
     ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up','Cash Credit Overdraft Loan'],
     ['Health Insurance', 'Life Insurance', 'Term Life Insurance', 'General Insurance', 'Motor Insurance', 'Home Insurance', 'Personal Accident Cover', 'Maternity Health Insurance'],
   ];
 
   const routes = [
     ['/gst-return-compliance', '/income-tax-returns', '/tds-return', '/digital-sign', '/accounting'],
-    ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration'],
+    ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration','/tan-registartion'],
     ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan','/cash-credit-overdraft-loan'],
     ['/health-insurance', '/life-insurance', '/term-life-insurance', '/general-insurance', '/motor-insurance', '/home-insurance', '/personal-accident-cover', '/maternity-health-insurance'],
   ];
@@ -282,7 +282,7 @@ export default function HeaderMate(props) {
   return (
     <Box sx={{ display: 'flex' }} >
       <CssBaseline />
-      <AppBar component="nav" sx={{ bgcolor: "#06121C" }}>
+      <AppBar component="nav" sx={{ bgcolor: "#252B42" }}>
         <Toolbar>
           <IconButton
             color="inherit"
