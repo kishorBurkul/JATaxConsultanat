@@ -145,7 +145,7 @@ const CarLoan = () => {
 
             <Box sx={{ position: 'relative', overflow: 'hidden' ,marginTop:"40px"}}>
                 <img
-                   src="assets/insurance/car_loan_header.jpg"
+                   src="assets/loan-services/car-loan-header.png"
                     alt="Services Header"
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />

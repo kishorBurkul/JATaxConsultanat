@@ -46,7 +46,7 @@ const GstRegistration = () => {
 
             <Box sx={{ position: 'relative', overflow: 'hidden' }}>
                 <img
-                    src="assets/insurance/aboutus.jpg"
+                    src="assets/gstservices/gst_registration_haeder.webp"
                     alt="Services Header"
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
