@@ -1,50 +1,48 @@
 import React from 'react';
-import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box, Paper } from '@mui/material';
+import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails, TextField, Button, Divider, List, ListItemButton, ListItemIcon, ListItemText, Box, Paper, styled } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Formik, Form, Field } from 'formik';
-import * as Yup from 'yup';
-import axios from 'axios';
-import ContactForm from './ContactForm';
 import FormComponent from './FormComponent';
 const GstRegistration = () => {
 
-    // const validationSchema = Yup.object().shape({
-    //     name: Yup.string().required('Name is required'),
-    //     email: Yup.string().email('Invalid email').required('Email is required'),
-    //     mobile: Yup.string().required('Mobile number is required'),
-    //     message: Yup.string().required('Message is required')
-    // });
+    const Overlay = styled(Box)({
+        position: 'absolute',
+        inset: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    });
 
-    // const handleSubmit = async (values, { resetForm }) => {
-    //     try {
-    //         const response = await axios.post(
-    //             'YOUR_GOOGLE_SHEETS_API_ENDPOINT',
-    //             values
-    //         );
-    //         console.log(response.data);
-    //         // Optionally, clear form fields after successful submission
-    //         resetForm();
-    //     } catch (error) {
-    //         console.error('Error submitting form:', error);
-    //     }
-    // };
-
+    const HeaderImage = styled('img')({
+        width: '100%',
+        marginTop: '10px',
+        height: '256px', // h-64 in Tailwind
+        '@media (min-width: 640px)': {
+            height: '384px', // sm:h-96 in Tailwind
+        },
+        objectFit: 'cover',
+    });
     return (
         <>
-            {/* <div className="relative overflow-hidden">
-
-                <img
-                    className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/insurance/aboutus.jpg"
+            <Box position="relative" overflow="hidden">
+                <HeaderImage
+                    src="assets/gstservices/gst_registration_haeder.webp"
                     alt="Services Header"
                 />
+                <Overlay>
+                    <Typography
+                        variant="h4"
+                        component="h5"
+                        color="white"
+                        fontWeight="bold"
+                        align="center"
+                    >
+                        GST Registration
+                    </Typography>
+                </Overlay>
+            </Box>
 
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center">GST Registration</h1>
-                </div>
-            </div> */}
-
-            <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+            {/* <Box sx={{ position: 'relative', overflow: 'hidden' }}>
                 <img
                     src="assets/gstservices/gst_registration_haeder.webp"
                     alt="Services Header"
@@ -55,7 +53,7 @@ const GstRegistration = () => {
                         GST Registration
                     </Typography>
                 </Box>
-            </Box>
+            </Box> */}
 
             <Grid container mt={0} spacing={4} p={2}
                 justifyContent="center" >
@@ -73,7 +71,7 @@ const GstRegistration = () => {
                         </Typography>
 
                         <Typography variant="subtitle1" gutterBottom>
-                          <strong> Why GST Registration is Important?</strong> 
+                            <strong> Why GST Registration is Important?</strong>
                         </Typography>
                         <Typography>
 

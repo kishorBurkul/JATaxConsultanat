@@ -7,32 +7,6 @@ import Typography from '@mui/material/Typography';
 import { Box, CardActionArea } from '@mui/material';
 import { CardMedia } from '@mui/material';
 
-const usestyles = {
-    root: {
-        flexGrow: 1,
-    },
-    imageSection: {
-        height: 400,
-        backgroundImage: 'url("assets/loan-services/Business-Loan.png")',
-        backgroundSize: 'cover',
-        marginBottom: 100,
-    },
-    contentSection: {
-        margin: '0 100px',
-    },
-    card: {
-        maxWidth: 345,
-        margin: '16px', 
-    },
-};
-
-
-
-
-
-
-
-
 const cardStyle = {
     maxWidth: 400,
     margin: '1rem',
@@ -93,23 +67,8 @@ const GeneralInsurance = () => {
 
     return (
 
-        <Box className={usestyles.root}>
-            {/* Image Section */}
-            {/* <div className={usestyles.imageSection} ></div> */}
-            {/* <div className="relative overflow-hidden">
-                
-                <img
-                    className="w-full h-64 sm:h-96 object-cover"
-                    src="assets/insurance/GeneralInsurance.jpg"
-                    alt="Services Header"
-                />
-            
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center">General Insurance </h1>
-                </div>
-            </div> */}
-      
-      <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: '40px' }}>
+        <Box sx={{ flexGrow: 1 }}>
+            {/* <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: '40px' }}>
                 <Card>
                     <CardMedia
                         component="img"
@@ -145,19 +104,24 @@ const GeneralInsurance = () => {
                         }}
                     >
                         <Typography variant="h5" component="h1" fontWeight="bold">
-                        General Insurance
+                            General Insurance
                         </Typography>
                     </Box>
                 </Card>
+            </Box> */}
+            <Box className="relative overflow-hidden">
+                   <img
+                    className="w-full h-64 sm:h-96 object-cover mt-12"
+                    src="assets/insurance/GeneralInsurance.jpg"
+                    alt="GeneralInsurance"
+                />
+                <Box className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+                    <Typography variant="h4" align="center">General Insurance</Typography>
+                </Box>
             </Box>
-
-
-            
-
-            {/* Content Section */}
-            <Container className={usestyles.contentSection}>
+       
+            <Container sx={{ margin: '0 100px' }}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                    {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 } }}>
                         <Typography variant="h4" gutterBottom>
                             What is General Insuarance?
@@ -179,7 +143,7 @@ const GeneralInsurance = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, 
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
@@ -216,7 +180,7 @@ const GeneralInsurance = () => {
                     ))}
                 </Grid>
             </Container>
-            <Container className={usestyles.contentSection}>
+            <Container sx={{ margin: '0 100px' }}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
@@ -225,7 +189,7 @@ const GeneralInsurance = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, 
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
@@ -335,7 +299,7 @@ const GeneralInsurance = () => {
                 </Grid>
             </Container>
 
-            <Container className={usestyles.contentSection}>
+            <Container sx={{ margin: '0 100px' }}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     {/* Left Content */}
                     <Grid item xs={12} sm={6}>
@@ -349,7 +313,7 @@ const GeneralInsurance = () => {
                         <ul sx={{
                             listStyleType: 'disc',
 
-                            paddingLeft: { xs: 2, sm: 2, md: 4 }, 
+                            paddingLeft: { xs: 2, sm: 2, md: 4 },
                         }}>
                             <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
@@ -438,14 +402,14 @@ const GeneralInsurance = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, 
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
                 </Grid>
             </Container>
 
-            <Container className={usestyles.contentSection}>
+            <Container sx={{ margin: '0 100px' }}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
@@ -454,7 +418,7 @@ const GeneralInsurance = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, 
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
@@ -470,7 +434,7 @@ const GeneralInsurance = () => {
                         <ul sx={{
                             listStyleType: 'disc',
 
-                            paddingLeft: { xs: 2, sm: 2, md: 4 }, 
+                            paddingLeft: { xs: 2, sm: 2, md: 4 },
                         }}>
                             <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
@@ -567,7 +531,7 @@ const GeneralInsurance = () => {
                         </ul>
                     </Grid>
 
-                   
+
 
                 </Grid>
             </Container>

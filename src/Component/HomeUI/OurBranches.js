@@ -79,25 +79,6 @@ const OurBranches = () => {
                 <div className="w-full md:w-1/2 w-30 px-4 mb-8">
                       <div className="bg-white rounded-lg shadow-md p-6">
                         <FormComponent/>
-                      {/* <h3 className="text-xl font-bold mb-4 text-center md:text-left">Contact Us</h3>
-                        <div className="mb-4">
-                            <label htmlFor="fullName" className="block text-gray-700 font-semibold mb-2">Full Name</label>
-                            <input type="text" id="fullName" name="fullName" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="mobile" className="block text-gray-700 font-semibold mb-2">Mobile</label>
-                            <input type="tel" id="mobile" name="mobile" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Email</label>
-                            <input type="email" id="email" name="email" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"></textarea>
-                        </div>
-                        <button type="submit" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
-                    </div> */}
 {/* <ContactForm /> */}
                 </div>
                  

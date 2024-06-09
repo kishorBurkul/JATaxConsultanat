@@ -63,9 +63,9 @@ export default function Option({ navItems, nestedMenuItems, routes }) {
   };
 
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} sx={{display:"flex"}}>
       {navItems.map((item, index) => (
-        <Grid item key={index}>
+        <Grid item key={index}  >
           <Button
             id={`services-button-${index}`}
             aria-controls={`services-menu-${index}`}

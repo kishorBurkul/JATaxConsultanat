@@ -13,7 +13,7 @@ import React, { useEffect, useState } from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
- import { keyframes } from '@mui/material';
+import { keyframes } from '@mui/material';
 
 
 
@@ -27,7 +27,7 @@ const whatappStyle = {
     bottom: '20px',
     left: '20px',
 }
-const callStyle={
+const callStyle = {
     position: 'fixed',
     bottom: '100px',
     left: '20px',
@@ -42,10 +42,10 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
-`; 
+`;
 const commonFabStyles = {
     animation: `${rotate} 5s linear infinite`,
-  };
+};
 const Footer = () => {
 
 
@@ -123,7 +123,7 @@ const Footer = () => {
                     </IconButton>
                 </Grid> */}
                 <Grid container m={4} spacing={0.5}>
-                    <Grid item xs={6} sm={6} md={2}>
+                    <Grid item xs={6} sm={4} md={2}>
                         <Box>
                             <Typography variant="h6">GST & Tax Services</Typography>
                             <List>
@@ -137,7 +137,7 @@ const Footer = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={6} sm={6} md={2}>
+                    <Grid item xs={6} sm={4} md={2}>
                         <Box>
                             <Typography variant="h6" justifyContent="center">
                                 Registration Services
@@ -157,7 +157,7 @@ const Footer = () => {
                             </List>
                         </Box>
                     </Grid>
-                    <Grid item xs={6} sm={6} md={2}>
+                    <Grid item xs={6} sm={4} md={2}>
                         <Box>
                             <Typography variant="h6">All Loan Services</Typography>
                             <List>
@@ -240,7 +240,7 @@ const Footer = () => {
                                 ),
                             }}
                         /> */}
-      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7569.131324311003!2d73.84837078272841!3d18.45801959340881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2eb458c58d0af%3A0x631bdaae3155adae!2sFR5X%2B3MV%20Suman%20Plaza%2C%20Tanaje%20Nagar%2C%20Mohan%20Nagar%2C%20Dhankawadi%2C%20Pune%2C%20Maharashtra%20411046!3m2!1d18.4577307!2d73.84917589999999!5e0!3m2!1sen!2sin!4v1716232403532!5m2!1sen!2sin"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7569.131324311003!2d73.84837078272841!3d18.45801959340881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2eb458c58d0af%3A0x631bdaae3155adae!2sFR5X%2B3MV%20Suman%20Plaza%2C%20Tanaje%20Nagar%2C%20Mohan%20Nagar%2C%20Dhankawadi%2C%20Pune%2C%20Maharashtra%20411046!3m2!1d18.4577307!2d73.84917589999999!5e0!3m2!1sen!2sin!4v1716232403532!5m2!1sen!2sin"
                             width="330px" height="200px" allowfullscreen=""
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
@@ -266,28 +266,28 @@ const Footer = () => {
                         >
                             <IconButton
                                 color="primary"
-                                sx={{ ...commonFabStyles, backgroundColor: '#25D366' ,width: '50px', height: '50px', color: 'yellow' }}
+                                sx={{ ...commonFabStyles, backgroundColor: '#25D366', width: '50px', height: '50px', color: 'yellow' }}
                                 aria-label="WhatsApp"
                                 onClick={() => window.open('https://wa.me/+918624058644', '_blank')}
                             >
                                 <WhatsApp fontSize='20' />
                             </IconButton >
                         </Fab>
-                       </Box>
-                       <Box style={callStyle}>
-                       <Fab
+                    </Box>
+                    <Box style={callStyle}>
+                        <Fab
                             title="Calling"
                             color="primary"
-                            sx={{ ...commonFabStyles, width: "60px ", height: "60px" ,backgroundColor: '#0A84FF' }}
-                           >
+                            sx={{ ...commonFabStyles, width: "60px ", height: "60px", backgroundColor: '#0A84FF' }}
+                        >
                             <IconButton
                                 sx={{ width: '80px', height: '80px', color: 'blue' }}
                                 aria-label="Call"
                                 onClick={() => window.open('tel:+918624058644', '_self')}
                             >
-                           <Call /></IconButton>
+                                <Call /></IconButton>
                         </Fab>
-                       </Box>
+                    </Box>
                 </Grid>
             </Grid>
             <Grid style={{ backgroundColor: '#17213C', textAlign: 'center', padding: '20px 0', color: 'white' }}>

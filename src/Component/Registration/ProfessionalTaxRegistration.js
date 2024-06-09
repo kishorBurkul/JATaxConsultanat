@@ -23,7 +23,7 @@ const ProfessionalTaxRegistration = () => {
             </Box> */}
 
 
-            <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+            <Box sx={{ position: 'relative', overflow: 'hidden' ,marginTop:"50px"}}>
                 <img
                   src="assets/Registration/professiona_tax.png"
                     alt="Services Header"

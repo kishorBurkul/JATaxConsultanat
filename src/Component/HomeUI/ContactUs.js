@@ -1,128 +1,93 @@
-
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import ContactForm from '../Registration/ContactForm';
+import React from 'react';
+import { Typography, Grid, Paper, Box } from '@mui/material';
+import { Room, Phone, Mail } from '@mui/icons-material';
 import FormComponent from '../Registration/FormComponent';
 
-
 const ContactUs = () => {
-    return (
-        <div>
+  return (
+    <Box>
+      <Box className="relative overflow-hidden">
+       
+        <img
+          className="w-full h-64 sm:h-96 object-cover mt-12"
+          src="assets/ja_contact_us.png"
+          alt="Services Header"
+        />
+        <Box className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+          <Typography variant="h4" align="center">Contact Us</Typography>
+        </Box>
+      </Box>
+      <Box sx={{ mx: 'auto', px: 4, py: 8 }}>
+        <Grid container spacing={3}>
+          {/* Branches Section */}
+          <Grid item xs={12} md={6}>
+            <Grid container spacing={3} justifyContent="center">
+              {/* Branch 1 */}
+              <Grid item xs={12} sm={10} md={8}>
+                <Paper className="p-6 hover:bg-gray-600 hover:text-white transition duration-300">
+                  <Typography variant="h5" gutterBottom>
+                    Katraj, Pune
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    <Room fontSize="small" sx={{color:"red"}} /> Address: Sr. No. 34/8, Suman Plaza, A Wing, 3rd Floor, Flat No.10 Trimurti Chowk, Near Bharati Vidyapith, Dr. P.K.Nagar, Dhankawadi, Pune Maharashtra - 411046
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    <Mail fontSize="small" sx={{color:"#FBBC05 "}} /> Email: jagaikwadandassociates@gmail.com
+                  </Typography>
+                  <Typography variant="body1">
+                    <Phone fontSize="small" sx={{color:"blue"}} /> Mobile: 8624058644 / 8668511898
+                  </Typography>
+                </Paper>
+              </Grid>
 
-            <div className="relative overflow-hidden">
-                {/* Background Image */}
-                <img
-                    className="w-full h-64 sm:h-96 object-cover mt-12"
-                    src="assets/insurance/contactus (1).jpg"
-                    alt="Services Header"
-                />
-                {/* Text Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-                    <h1 className="text-4xl font-bold text-center">Contact Us</h1>
-                </div>
-            </div>
-            <div className="container mx-auto px-4 py-8">
-            {/* <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center ">
-                <span className="relative">
-                    GET IN TOUCH
-                    <span className="absolute left-0 right-0 bottom-0 h-1 bg-blue-500 transition-all duration-300"></span>
-                </span>
-            </h2> */}
-            <div className="flex flex-wrap">
-                {/* Branches Section */}
-              <div className="w-full md:w-1/2 px-4 mb-8">
-    <div className="flex flex-wrap justify-center md:justify-center">
-        {/* Branch 1 */}
-        <div className="w-full md:w-5/6 px-4 mb-4  ">
-            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                <h3 className="text-xl font-semibold mb-2"><span>Katraj</span> , Pune </h3>
-                <div className="mb-2 flex items-center">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
-                    <p><strong>Address:</strong> Sr. No. 34/8, Suman Plaza, A Wing, 3rd Floor, Flat No.10 Trimurti Chowk, Near Bharati Vidyapith, Dr. P.K.Nagar, Dhankawadi, Pune Maharashtra - 411046</p>
-                </div>
-                <div className="mb-2 flex items-center">
-                    <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-red-500" />
-                    <p style={{ wordWrap: 'break-word' }}><strong>Email:</strong> jagaikwadandassociates@gmail.com</p>
-                </div>
-                <div className="flex items-center">
-                    <FontAwesomeIcon icon={faPhone} className="mr-2 text-red-500" />
-                    <p><strong>Mobile:</strong> 8624058644 / 8668511898</p>
-                </div>
-            </div>
-        </div>
+              {/* Branch 2 */}
+              <Grid item xs={12} sm={10} md={8}>
+                <Paper className="p-6 hover:bg-gray-600 hover:text-white transition duration-300">
+                  <Typography variant="h5" gutterBottom>
+                    Rahuri, Ahmednagar
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    <Room fontSize="small" sx={{color:"red"}} /> Address: At Post -Baragaon Nandur, Near Chhatrapati Shivaji Chowk,Tal- Rahuri, Dist - Ahmednagar -  413705
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    <Mail fontSize="small" sx={{color:"#FBBC05 "}} /> Email: kawareabhijeet22@gmail.com
+                  </Typography>
+                  <Typography variant="body1">
+                    <Phone fontSize="small" sx={{color:"blue"}} /> Mobile: 8624058644 / 9730574023
+                  </Typography>
+                </Paper>
+              </Grid>
 
-        {/* Branch 2 */}
-        <div className="w-full md:w-5/6 px-4 mb-4">
-            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                <h3 className="text-xl font-semibold mb-2"> <span>Rahuri</span> , Ahmednagar</h3>
-                <div className="mb-2 flex items-center">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
-                    <p><strong>Address:</strong> At Post -Baragaon Nandur, Near Chhatrapati Shivaji Chowk,Tal- Rahuri, Dist - Ahmednagar -  413705.</p>
-                </div>
-                <div className="mb-2 flex items-center">
-                    <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-red-500" />
-                    <p><strong>Email:</strong> kawareabhijeet22@gmail.com</p>
-                </div>
-                <div className="flex items-center">
-                    <FontAwesomeIcon icon={faPhone} className="mr-2 text-red-500" />
-                    <p><strong>Mobile:</strong> 8624058644 / 9730574023</p>
-                </div>
-            </div>
-        </div>
-        {/* Branch 3 */}
-        <div className="w-full md:w-5/6 px-4 ">
-            <div className="bg-white rounded-lg shadow-md p-6 hover:bg-gray-600 hover:text-white transition duration-300">
-                <h3 className="text-xl font-semibold mb-2"><span>Nangaon</span> , Daund </h3>
-                <div className="mb-2 flex items-center">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
-                    <p><strong>Address:</strong> At post - Nangaon, Ganesh Road, Near Jambhulkar Farm House, Tal- Daund, Dist-Pune - 412203</p>
-                </div>
-                <div className="mb-2 flex items-center">
-                    <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-red-500" />
-                    <p><strong>Email:</strong> caanitagaikwad06@gmail.com</p>
-                </div>
-                <div className="flex items-center">
-                    <FontAwesomeIcon icon={faPhone} className="mr-2 text-red-500" />
-                    <p><strong>Mobile:</strong> 8624058644 / 9579955439</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+              {/* Branch 3 */}
+              <Grid item xs={12} sm={10} md={8}>
+                <Paper className="p-6 hover:bg-gray-600 hover:text-white transition duration-300">
+                  <Typography variant="h5" gutterBottom>
+                    Nangaon, Daund
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    <Room fontSize="small" sx={{color:"#FBBC05 "}}/> Address: At post - Nangaon, Ganesh Road, Near Jambhulkar Farm House, Tal- Daund, Dist-Pune - 412203
+                  </Typography>
+                  <Typography variant="body1" gutterBottom>
+                    <Mail fontSize="small" sx={{color:"red"}} /> Email: caanitagaikwad06@gmail.com
+                  </Typography>
+                  <Typography variant="body1">
+                    <Phone fontSize="small"  sx={{color:"blue"}}/> Mobile: 8624058644 / 9579955439
+                  </Typography>
+                </Paper>
+              </Grid>
+            </Grid>
+          </Grid>
 
-                {/* Contact Form Section */}
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                    <div className="bg-white rounded-lg shadow-md p-6 md:w-11/12">
-                        {/* <h3 className="text-xl font-bold mb-4 text-center md:text-left">Contact Us</h3>
-                        <div className="mb-4">
-                            <label htmlFor="fullName" className="block text-gray-700 font-semibold mb-2">Full Name</label>
-                            <input type="text" id="fullName" name="fullName" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="mobile" className="block text-gray-700 font-semibold mb-2">Mobile</label>
-                            <input type="tel" id="mobile" name="mobile" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Email</label>
-                            <input type="email" id="email" name="email" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500" />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" className="w-full border rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"></textarea>
-                        </div>
-                        <button type="submit" className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600">Submit</button> */}
-                      <FormComponent/>
-                    </div>
-                    {/* <ContactForm/> */}
-                    
-                </div>
-            </div>
-        </div>
-        
+          {/* Contact Form Section */}
+          <Grid item xs={12} md={6}>
+            <Paper className="p-6 md:w-11/12">
+              <FormComponent />
+            </Paper>
+          </Grid>
+        </Grid>
+      </Box>
+    </Box>
+  );
+};
 
-        </div>
-    )
-}
-
-export default ContactUs
+export default ContactUs;

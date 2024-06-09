@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Box, Typography, Button, Container } from '@mui/material';
+import { styled } from '@mui/system';
 
 const HomeServices = () => {
-    const [key, setKey] = useState(0);
+    const [activeSlide, setActiveSlide] = useState(0);
 
     const slides = [
         {
@@ -35,36 +37,56 @@ const HomeServices = () => {
     ];
 
     useEffect(() => {
-        // Fetch images when the component mounts and updates
-        slides.forEach(slide => {
-            const img = new Image();
-            img.src = slide.image;
-        });
-    }, [key]); // Run useEffect whenever key changes
+        const interval = setInterval(() => {
+            setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+        }, 5000); // Change slide every 5 seconds
 
-    useEffect(() => {
-        // Force remounting of component by updating the key
-        setKey(prevKey => prevKey + 1);
-    }, []);
+        return () => clearInterval(interval);
+    }, [slides.length]);
+
+    const SlideImage = styled('img')({
+        width: '100%',
+        height: '50%',
+        objectFit: 'cover',
+    });
+
+    const SlideContent = styled(Box)(({ theme }) => ({
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: '100%',
+        maxWidth: '650px',
+        color: 'white',
+        textAlign: 'center',
+        padding: theme.spacing(2),
+        borderRadius: theme.shape.borderRadius,
+    }));
 
     return (
-        <>
-            <div id="default-carousel" className="relative w-full mt-12" data-carousel="slide">
-                <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    {slides.map((slide, index) => (
-                        <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img key={key} src={slide.image} className="absolute object-cover block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={`Slide ${index + 1}`} />
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                <div>
-                                    <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-6">{slide.content.title}</h1>
-                                    {/* <button className="mt-4 sm:mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded sm:text-sm md:text-base lg:text-lg xl:text-xl">{slide.content.buttonText}</button> */}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </>
+        <Box sx={{ position: 'relative', width: '100%', mt:{xs:"56px",md:"56px",lg:"56px",sm:"56px"},}}>
+            <Box sx={{ position: 'relative',  overflow: 'hidden'}}>
+                {slides.map((slide, index) => (
+                    <Box
+                        key={index}
+                        sx={{
+                            display: activeSlide === index ? 'block' : 'none',
+                            transition: 'opacity 1s ease-in-out',
+                        }}
+                    >
+                        <SlideImage src={slide.image} alt={`Slide ${index + 1}`} sx={{height:{sx:"250px",md:"350px",lg:"450px"}}} />
+                        <SlideContent>
+                            <Typography variant="h6" sx={{fontWeight: 'bold', fontSize:{xs:"18px" , md:"26px", lg:"36px"} }}>
+                                {slide.content.title}
+                            </Typography>
+                            {/* <Button variant="contained" color="primary" size="medium">
+                                {slide.content.buttonText}
+                            </Button> */}
+                        </SlideContent>
+                    </Box>
+                ))}
+            </Box>
+        </Box>
     );
 };
 

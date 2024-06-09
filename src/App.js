@@ -50,6 +50,8 @@ import FoodLRegistartion from './Component/Registration/FoodLicenceRegistartion'
 import ImportExportRegi from './Component/Registration/ImportExportRegi';
 import CashCreditOverdraftLoan from './Component/LoanServices/CashCreditOverdraftLoan';
 import TANRegistration from './Component/Registration/TANRegistration';
+import MutualFund from './Component/HomeUI/MutualFund';
+import GeneralInsur from './Component/Insuarance/GenearalInsur';
 
 
 function App() {
@@ -96,6 +98,7 @@ function App() {
             <Route path='/import-export-registration' element={<ImportExportRegi/>}/>
             <Route path='/cash-credit-overdraft-loan' element={<CashCreditOverdraftLoan/>}/>
             <Route path='/tan-registartion' element={<TANRegistration/>}/>
+            <Route path="/mutual-fund" element={<MutualFund/>}/>
             </Routes>
         
         <Footer />
@@ -119,6 +122,7 @@ const HomePage = () => {
           {/* <Visions /> */}
           <Vision/>
           <OurBranches />
+          {/* <GeneralInsur/> */}
           {/* <AboutUs/> */}
           {/* <ContactUs/> */}
       </>

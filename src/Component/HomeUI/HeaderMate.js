@@ -27,7 +27,7 @@ const subServices = ['Service 1', 'Service 2', 'Service 3']; // Sub-services und
 // const nestedMenuItems = ['Page 1', 'Page 2']; // Nested menu items under "Service 1"
 
 export default function HeaderMate(props) {
-  const { window , navigateTo} = props;
+  const { window, navigateTo } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [subMenuOpen, setSubMenuOpen] = React.useState(false);
   const history = useNavigate();
@@ -38,7 +38,7 @@ export default function HeaderMate(props) {
   };
 
 
-  
+
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -66,6 +66,10 @@ export default function HeaderMate(props) {
       routes: ['/'],
     },
     {
+      mainItem: 'Mutual Fund',
+      routes: ['/mutual-fund'],
+    },
+    {
       mainItem: 'Contact Us',
       routes: ['/contact-us'],
     },
@@ -80,36 +84,36 @@ export default function HeaderMate(props) {
     },
     {
       mainItem: 'Registration',
-      nestedItems: ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration','Company Registration', 'Shop Act Registration','Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration','TAN Registration'],
-      routes: ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration','/tan-registartion'],
+      nestedItems: ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration', 'Company Registration', 'Shop Act Registration', 'Trademark Registration', 'Professional Tax Registrations & Returns', 'EPF Registrations & Returns', 'Food License Registration(FSSAI)', 'Import Export Registration', 'TAN Registration'],
+      routes: ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration', '/trademark-registrations', '/professional-tax-registration', '/epf-registration', '/food-license-registration', '/import-export-registration', '/tan-registartion'],
     },
     {
       mainItem: 'Loan',
-      nestedItems: ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up','Cash Credit Overdraft Loan'],
-      routes: ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan','/cash-credit-overdraft-loan'],
+      nestedItems: ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up', 'Cash Credit Overdraft Loan'],
+      routes: ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan', '/cash-credit-overdraft-loan'],
     },
     {
       mainItem: 'Insurance',
       nestedItems: ['Health Insurance', 'Life Insurance', 'Term Life Insurance', 'General Insurance', 'Motor Insurance', 'Home Insurance', 'Personal Accident Cover', 'Maternity Health Insurance'],
       routes: ['/health-insurance', '/life-insurance', '/term-life-insurance', '/general-insurance', '/motor-insurance', '/home-insurance', '/personal-accident-cover', '/maternity-health-insurance'],
     },
-   
+
   ];
-  
+
 
   const navItems = ['GST & Tax Services', 'Registration', 'Loan', 'Insurance'];
 
   const nestedMenuItems = [
     ['GST Returns & Compliances', 'Income Tax Returns & Compliances', 'TDS Returns & Compliances', 'Digital Signatures', 'Accounting'],
-    ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration' , 'Company Registration', 'Shop Act Registration', 'Trademark Registration','Professional Tax Registrations & Returns','EPF Registrations & Returns','Food License Registration(FSSAI)','Import Export Registration','TAN Registration'],
-    ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up','Cash Credit Overdraft Loan'],
+    ['GST Registration', 'Udyog Adhar Registration', 'PAN Registration', 'Company Registration', 'Shop Act Registration', 'Trademark Registration', 'Professional Tax Registrations & Returns', 'EPF Registrations & Returns', 'Food License Registration(FSSAI)', 'Import Export Registration', 'TAN Registration'],
+    ['Personal Loan', 'Home Loan', 'Business Loan', 'Mortgage Loan', 'Car Loan', 'Education Loan', 'Balance Transfer & Top Up', 'Cash Credit Overdraft Loan'],
     ['Health Insurance', 'Life Insurance', 'Term Life Insurance', 'General Insurance', 'Motor Insurance', 'Home Insurance', 'Personal Accident Cover', 'Maternity Health Insurance'],
   ];
 
   const routes = [
     ['/gst-return-compliance', '/income-tax-returns', '/tds-return', '/digital-sign', '/accounting'],
-    ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration','/trademark-registrations','/professional-tax-registration','/epf-registration','/food-license-registration','/import-export-registration','/tan-registartion'],
-    ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan','/cash-credit-overdraft-loan'],
+    ['/gst-registration', '/udyog-adhar-registration', '/pan-registration', '/company-registration', '/shop-act-registration', '/trademark-registrations', '/professional-tax-registration', '/epf-registration', '/food-license-registration', '/import-export-registration', '/tan-registartion'],
+    ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan', '/cash-credit-overdraft-loan'],
     ['/health-insurance', '/life-insurance', '/term-life-insurance', '/general-insurance', '/motor-insurance', '/home-insurance', '/personal-accident-cover', '/maternity-health-insurance'],
   ];
 
@@ -158,39 +162,39 @@ export default function HeaderMate(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-    <Typography variant="h6" sx={{ my: 2 }}>
-      J A Gaikwad & Associates
-    </Typography>
-    <Divider />
-    <List>
-      {navMenuResp.map((item, index) => (
-        <React.Fragment key={index}>
-          <ListItemButton onClick={handleSubMenuItemClick}  component={Link}
-     to={item.routes[0]} sx={{color:"black" ,backgroundColor:"#0A84FF" ,mt:"5px"}} >
-            <ListItemText><Typography variant='h6'><strong>{item.mainItem}</strong></Typography></ListItemText> 
-            {item.nestedItems && item.nestedItems.length > 0 ? (
-              subMenuOpen ? <ExpandLess /> : <ExpandMore />
-            ) : null}
-          </ListItemButton>
-          {item.nestedItems && item.nestedItems.length > 0 && (
-            <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                {item.nestedItems.map((nestedItem, nestedIndex) => (
-                  <ListItem key={nestedIndex} disablePadding>
-                    <ListItemButton component={Link} to={item.routes[nestedIndex]}>
-                      <ListItemText primary={nestedItem} />
-                    </ListItemButton>
-                  </ListItem>
-                ))}
-              </List>
-            </Collapse>
-          )}
-        </React.Fragment>
-      ))}
-    </List>
-  </Box>
+      <Typography variant="h6" sx={{ my: 2 }}>
+        J A Gaikwad & Associates
+      </Typography>
+      <Divider />
+      <List>
+        {navMenuResp.map((item, index) => (
+          <React.Fragment key={index}>
+            <ListItemButton onClick={handleSubMenuItemClick} component={Link}
+              to={item.routes[0]} sx={{ color: "black", backgroundColor: "#0A84FF", mt: "5px" }} >
+              <ListItemText><Typography variant='h6'><strong>{item.mainItem}</strong></Typography></ListItemText>
+              {item.nestedItems && item.nestedItems.length > 0 ? (
+                subMenuOpen ? <ExpandLess /> : <ExpandMore />
+              ) : null}
+            </ListItemButton>
+            {item.nestedItems && item.nestedItems.length > 0 && (
+              <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                  {item.nestedItems.map((nestedItem, nestedIndex) => (
+                    <ListItem key={nestedIndex} disablePadding>
+                      <ListItemButton component={Link} to={item.routes[nestedIndex]}>
+                        <ListItemText primary={nestedItem} />
+                      </ListItemButton>
+                    </ListItem>
+                  ))}
+                </List>
+              </Collapse>
+            )}
+          </React.Fragment>
+        ))}
+      </List>
+    </Box>
   );
-  
+
   // const drawer = (
   //   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
   //     <Typography variant="h6" sx={{ my: 2 }}>
@@ -232,50 +236,50 @@ export default function HeaderMate(props) {
   //     </List>
   //   </Box>
   // );
-  
-//   const drawer = (
-//   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-//     <Typography variant="h6" sx={{ my: 2 }}>
-//       J A Gaikwad & Associates
-//     </Typography>
-//     <Divider />
-//     <List>
-//       {navMenuResp.map((item, index) => (
-//         <React.Fragment key={index}>
-//           <ListItemButton
-//             component={Link}
-//             to={item.routes[0]} // Main menu item route
-//             sx={{ paddingLeft: item.nestedItems ? 2 : 0 }} // Indent nested items
-//           >
-//             <ListItemText primary={item.mainItem} />
-//             {item.nestedItems && (
-//               subMenuOpen ? <ExpandLess /> : <ExpandMore />
-//             )}
-//           </ListItemButton>
-//           {item.nestedItems && (
-//             <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
-//               <List component="div" disablePadding>
-//                 {item.nestedItems.map((nestedItem, nestedIndex) => (
-//                   <React.Fragment key={nestedIndex}>
-//                     <ListItemButton
-//                       component={Link}
-//                       to={item.routes[nestedIndex + 1]} // Nested item route
-//                       sx={{ paddingLeft: 4 }} // Indent nested items further
-//                     >
-//                       <ListItemText primary={nestedItem} />
-//                     </ListItemButton>
-//                   </React.Fragment>
-//                 ))}
-//               </List>
-//             </Collapse>
-//           )}
-//         </React.Fragment>
-//       ))}
-//     </List>
-//   </Box>
-// );
 
-  
+  //   const drawer = (
+  //   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+  //     <Typography variant="h6" sx={{ my: 2 }}>
+  //       J A Gaikwad & Associates
+  //     </Typography>
+  //     <Divider />
+  //     <List>
+  //       {navMenuResp.map((item, index) => (
+  //         <React.Fragment key={index}>
+  //           <ListItemButton
+  //             component={Link}
+  //             to={item.routes[0]} // Main menu item route
+  //             sx={{ paddingLeft: item.nestedItems ? 2 : 0 }} // Indent nested items
+  //           >
+  //             <ListItemText primary={item.mainItem} />
+  //             {item.nestedItems && (
+  //               subMenuOpen ? <ExpandLess /> : <ExpandMore />
+  //             )}
+  //           </ListItemButton>
+  //           {item.nestedItems && (
+  //             <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
+  //               <List component="div" disablePadding>
+  //                 {item.nestedItems.map((nestedItem, nestedIndex) => (
+  //                   <React.Fragment key={nestedIndex}>
+  //                     <ListItemButton
+  //                       component={Link}
+  //                       to={item.routes[nestedIndex + 1]} // Nested item route
+  //                       sx={{ paddingLeft: 4 }} // Indent nested items further
+  //                     >
+  //                       <ListItemText primary={nestedItem} />
+  //                     </ListItemButton>
+  //                   </React.Fragment>
+  //                 ))}
+  //               </List>
+  //             </Collapse>
+  //           )}
+  //         </React.Fragment>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
+
+
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
@@ -289,7 +293,7 @@ export default function HeaderMate(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'block' ,md:"none" ,lg:"none"} }}
           >
             <MenuIcon />
           </IconButton>
@@ -301,14 +305,10 @@ export default function HeaderMate(props) {
           >
             J A Gaikwad & Associates
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block', } }}>
-
-
-            
-               <Button sx={{ color: '#fff' }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/">Home</Link></Button>
-           
-
-            <Button><Option navItems={navItems} nestedMenuItems={nestedMenuItems} routes={routes} /></Button> 
+          <Box sx={{ display: { xs: 'none', sm: 'none', md:'block',lg:'block'} }}>
+            <Button sx={{ color: '#fff' }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/">Home</Link></Button>
+            <Button sx={{ color: '#fff' }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/mutual-fund">Mutual Fund</Link></Button>
+            <Button><Option navItems={navItems} nestedMenuItems={nestedMenuItems} routes={routes} /></Button>
             <Link to="/about-us">
               <Button sx={{ color: '#fff' }}>
                 About Us
@@ -332,7 +332,7 @@ export default function HeaderMate(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', sm: 'block', md: 'none', lg: 'none'  },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >

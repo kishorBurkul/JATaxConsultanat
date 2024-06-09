@@ -1,12 +1,10 @@
 import React from 'react';
-
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { Box, CardActionArea } from '@mui/material';
-import { CardMedia } from '@mui/material';
+import { Box } from '@mui/material';
 import { styled } from '@mui/system';
 import { Tabs } from '@mui/base/Tabs';
 import { TabsList as BaseTabsList } from '@mui/base/TabsList';
@@ -29,7 +27,7 @@ const usestyles = {
     },
     card: {
         maxWidth: 345,
-        margin: '16px', // Adjust the margin directly with numeric values
+        margin: '16px',
     },
 };
 
@@ -141,22 +139,19 @@ const CarLoan = () => {
                     <h1 className="text-4xl font-bold text-center">Car Loan  </h1>
                 </div>
             </div> */}
-
-
-            <Box sx={{ position: 'relative', overflow: 'hidden' ,marginTop:"40px"}}>
+            <Box sx={{ position: 'relative', overflow: 'hidden', marginTop: "40px" }}>
                 <img
-                   src="assets/loan-services/car-loan-header.png"
+                    src="assets/loan-services/car-loan-header.png"
                     alt="Services Header"
                     style={{ width: '100%', height: 'auto', maxHeight: '56vh', objectFit: 'cover' }}
                 />
                 <Box sx={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
                     <Typography variant="h4" component="h1" fontWeight="bold">
-                    Car Loan 
+                        Car Loan
                     </Typography>
                 </Box>
             </Box>
 
-            {/* Content Section */}
             <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} >
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 }, marginTop: { xs: 2, sm: 2 } }} >
@@ -166,15 +161,14 @@ const CarLoan = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, // Adjust margin for different screen sizes
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
                     {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 2, md: 1 }, marginTop: { xs: 2, sm: 2 } }} >
                         <Typography variant="h4" gutterBottom>
-
-                            What is a car loan?
+                          What is a car loan?
                         </Typography>
                         <Typography variant="body1" paragraph>
                             Owning a car is a sign of luxury and comfort in life. The rising automobile costs could leave a big dent on your pockets if you pay from your savings. It is much smarter to buy your dream car by availing a car loan.
@@ -182,16 +176,10 @@ const CarLoan = () => {
                         <Typography variant="body1" paragraph>
                             A car loan is a cash amount borrowed from a bank at a pre-decided interest rate, to buy a car. The terms and procedures of a car loan are similar to the other loan types.
                         </Typography>
-
-                        <Typography variant="body1" paragraph>
+                         <Typography variant="body1" paragraph>
                             Car loans help you realize your dream of buying your favorite car without having to worry about your savings. Fincover is the one-stop destination that brings you the best car loan and bike loan quotes from various lenders.
                         </Typography>
-
                     </Grid>
-
-
-                    {/* Right Image */}
-
                 </Grid>
             </Container>
 
@@ -234,12 +222,10 @@ const CarLoan = () => {
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, // Adjust margin for different screen sizes
+                                marginBottom: { xs: 4, sm: 8 },
                             }}
                         />
                     </Grid>
-
-                    {/* Left Content */}
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                         <Typography variant="h5" gutterBottom>
                             Eligibility to avail car loan
@@ -306,15 +292,11 @@ const CarLoan = () => {
 
                         </ul>
                     </Grid>
-
-                    {/* Right Image */}
-
-                </Grid>
+                   </Grid>
             </Container>
-
-            <Container className={usestyles.contentSection}>
+                <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                 
+
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5" gutterBottom>
                             Documents required for car loan application
@@ -322,15 +304,15 @@ const CarLoan = () => {
                         <ul sx={{
                             listStyleType: 'disc',
 
-                            paddingLeft: { xs: 2, sm: 2, md: 4 }, 
+                            paddingLeft: { xs: 2, sm: 2, md: 4 },
                         }}>
 
                             <Tabs defaultValue={1} orientation='vertical' >
-                                <TabsList sx={{width:"200px"}}>
+                                <TabsList sx={{ width: "200px" }}>
                                     <Tab value={1}>Address proof</Tab>
                                     <Tab value={2}>Identity proof</Tab>
                                     <Tab value={3}>Proof of income</Tab>
-                            </TabsList>
+                                </TabsList>
                                 <TabPanel value={1}>
                                     <li style={{ marginBottom: '1rem' }}>
                                         <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
@@ -439,15 +421,10 @@ const CarLoan = () => {
                                         </span>
                                     </li>
                                 </TabPanel>
-
-                            </Tabs>
-
-
-
-
-
+                                 </Tabs>
                         </ul>
                     </Grid>
+
 
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >

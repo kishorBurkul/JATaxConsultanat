@@ -19,7 +19,7 @@ const EpfRegistration = () => {
                 </Box>
             </Box> */}
 
-            <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+            <Box sx={{ position: 'relative', overflow: 'hidden',marginTop:"50px" }}>
                 <img
                     src="assets/Registration/epf_heaader.jpg"
                     alt="Services Header"

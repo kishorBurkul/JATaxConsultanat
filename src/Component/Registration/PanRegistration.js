@@ -11,7 +11,7 @@ const PanRegistration = () => {
     return (
         <>
           
-      <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+      <Box sx={{ position: 'relative', overflow: 'hidden',marginTop:"50px" }}>
         <img
           src="assets/Registration/pan_regi_header.webp"
           alt="Services Header"

@@ -61,7 +61,7 @@ const Testimonials = () => {
       location: 'Katraj, Pune',
     },
     {
-      image: 'assets/homepage/jagaikwadpic.jpeg',
+      image: 'assets/anita_gaikwad_profile.png',
       name: 'Anita Gaikwad',
       role: 'Partner, J A Gaikwad & Associates',
       location: 'Nangaon, Daund',

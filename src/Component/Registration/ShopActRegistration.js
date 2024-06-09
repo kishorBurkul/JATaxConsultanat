@@ -31,7 +31,7 @@ const ShopActRegistration = () => {
 
     return (
         <>
-         <Box sx={{ position: 'relative', overflow: 'hidden' }}>
+         <Box sx={{ position: 'relative', overflow: 'hidden',marginTop:"50px" }}>
                 <img
                     src="assets/Registration/shop-Act-Registration.jpg"
                     alt="Services Header"
