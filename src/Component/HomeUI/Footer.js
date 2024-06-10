@@ -132,6 +132,7 @@ const Footer = () => {
                                 <ListItem>TDS Returns & Compliances</ListItem>
                                 <ListItem>Digital Signatures ( DSC)</ListItem>
                                 <ListItem>Accounting</ListItem>
+                                <ListItem>Mutual Fund</ListItem>
                                 {/* <ListItem>Project Report</ListItem> */}
                             </List>
                         </Box>
@@ -159,7 +160,7 @@ const Footer = () => {
                     </Grid>
                     <Grid item xs={6} sm={4} md={2}>
                         <Box>
-                            <Typography variant="h6">All Loan Services</Typography>
+                            <Typography variant="h6">Loan Services</Typography>
                             <List>
                                 <ListItem>Personal Loan </ListItem>
                                 <ListItem>Home Loan</ListItem>

@@ -71,6 +71,7 @@ export default function Option({ navItems, nestedMenuItems, routes }) {
             aria-controls={`services-menu-${index}`}
             aria-haspopup="true"
             variant="contained"
+            sx={{backgroundColor:"blue"}}
             disableElevation
             onClick={(event) => handleClick(event, index)}
             endIcon={<KeyboardArrowDownIcon />}

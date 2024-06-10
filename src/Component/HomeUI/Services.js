@@ -48,12 +48,12 @@ const ServicesSection = () => {
                                     state="hover-pinch"
                                     style={{}}>
                                 </lord-icon>Accounting</li>
-                                {/* <li className="flex items-center"> <lord-icon
+                                <li className="flex items-center"> <lord-icon
                                     src="https://cdn.lordicon.com/rvmukzut.json"
                                     trigger="hover"
                                     state="hover-pinch"
                                     style={{}}>
-                                </lord-icon>Project Report</li> */}
+                                </lord-icon>Mutual Fund</li>
                                
                             </ul>
                         </div>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
                     <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
                         <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:bg-gray-100 transition duration-300 ease-in-out h-full">
                             <img src="assets/homepage/loan-services-500x500.webp" alt="Service 2" className="w-full  mb-4" />
-                            <h3 className="text-xl font-semibold mb-2">All Loan Services</h3>
+                            <h3 className="text-xl font-semibold mb-2">Loan Services</h3>
                             <ul className="text-gray-700 text-md">
                                 <li className="flex items-center">  <lord-icon
                                     src="https://cdn.lordicon.com/rvmukzut.json"
@@ -266,7 +266,23 @@ const ServicesSection = () => {
                                         trigger="hover"
                                         state="hover-pinch"
                                         style={{}}>
-                                    </lord-icon>Employees Provident Fund Registrations & Returns
+                                    </lord-icon>Food License Registration(FSSAI)
+                                </li>
+                                <li className="flex items-center">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/rvmukzut.json"
+                                        trigger="hover"
+                                        state="hover-pinch"
+                                        style={{}}>
+                                    </lord-icon>Import Export Code Registration
+                                </li>
+                                <li className="flex items-center">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/rvmukzut.json"
+                                        trigger="hover"
+                                        state="hover-pinch"
+                                        style={{}}>
+                                    </lord-icon>TAN Registration
                                 </li>
                             </ul>
                         </div>

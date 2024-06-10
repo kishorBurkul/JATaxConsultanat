@@ -18,7 +18,8 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Option from './Option'; // Import the Option component
 import { Avatar } from '@mui/material';
-import { Link, useNavigate, useNavigation } from 'react-router-dom';
+import { styled } from '@mui/system';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 
 const drawerWidth = 240;
@@ -59,24 +60,18 @@ export default function HeaderMate(props) {
     console.log(item); // You can add your logic here for nested menu item click
   };
 
-
+  const GradientText = styled(Typography)(({ theme }) => ({
+    background: 'linear-gradient(45deg, black, blue, yellow)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    my: 1,
+  }));
   const navMenuResp = [
     {
       mainItem: 'Home',
       routes: ['/'],
     },
-    {
-      mainItem: 'Mutual Fund',
-      routes: ['/mutual-fund'],
-    },
-    {
-      mainItem: 'Contact Us',
-      routes: ['/contact-us'],
-    },
-    {
-      mainItem: 'About Us',
-      routes: ['/about-us'],
-    },
+   
     {
       mainItem: 'GST & Tax Services',
       nestedItems: ['GST Returns & Compliances', 'Income Tax Returns & Compliances', 'TDS Returns & Compliances', 'Digital Signatures', 'Accounting'],
@@ -97,6 +92,18 @@ export default function HeaderMate(props) {
       nestedItems: ['Health Insurance', 'Life Insurance', 'Term Life Insurance', 'General Insurance', 'Motor Insurance', 'Home Insurance', 'Personal Accident Cover', 'Maternity Health Insurance'],
       routes: ['/health-insurance', '/life-insurance', '/term-life-insurance', '/general-insurance', '/motor-insurance', '/home-insurance', '/personal-accident-cover', '/maternity-health-insurance'],
     },
+    {
+      mainItem: 'Mutual Fund',
+      routes: ['/mutual-fund'],
+    },
+    {
+      mainItem: 'Contact Us',
+      routes: ['/contact-us'],
+    },
+    {
+      mainItem: 'About Us',
+      routes: ['/about-us'],
+    },
 
   ];
 
@@ -116,7 +123,7 @@ export default function HeaderMate(props) {
     ['/personal-loan', '/home-loan', '/business-loan', '/mortgage-loan', '/car-loan', '/education-loan', '/balance-topup-loan', '/cash-credit-overdraft-loan'],
     ['/health-insurance', '/life-insurance', '/term-life-insurance', '/general-insurance', '/motor-insurance', '/home-insurance', '/personal-accident-cover', '/maternity-health-insurance'],
   ];
-
+  const location = useLocation();
 
   // const drawer = (
   //   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -162,31 +169,38 @@ export default function HeaderMate(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        J A Gaikwad & Associates
-      </Typography>
+    <GradientText variant="h6">
+      J A Gaikwad & Associates
+    </GradientText>
       <Divider />
       <List>
         {navMenuResp.map((item, index) => (
           <React.Fragment key={index}>
             <ListItemButton onClick={handleSubMenuItemClick} component={Link}
-              to={item.routes[0]} sx={{ color: "black", backgroundColor: "#0A84FF", mt: "5px" }} >
+              to={item.routes[0]} sx={{ color: "white", backgroundColor: "#005bbc", mt: "5px" }} >
               <ListItemText><Typography variant='h6'><strong>{item.mainItem}</strong></Typography></ListItemText>
               {item.nestedItems && item.nestedItems.length > 0 ? (
-                subMenuOpen ? <ExpandLess /> : <ExpandMore />
+                subMenuOpen ? <ExpandLess sx={{color:"#fd5b03"}} /> : <ExpandMore sx={{color:"#fd5b03"}} />
               ) : null}
             </ListItemButton>
             {item.nestedItems && item.nestedItems.length > 0 && (
               <Collapse in={subMenuOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  {item.nestedItems.map((nestedItem, nestedIndex) => (
-                    <ListItem key={nestedIndex} disablePadding>
-                      <ListItemButton component={Link} to={item.routes[nestedIndex]}>
-                        <ListItemText primary={nestedItem} />
-                      </ListItemButton>
-                    </ListItem>
-                  ))}
-                </List>
+      {item.nestedItems.map((nestedItem, nestedIndex) => (
+        <ListItem key={nestedIndex} disablePadding>
+          <ListItemButton
+            component={Link}
+            to={item.routes[nestedIndex]}
+            sx={{
+              color: location.pathname === item.routes[nestedIndex] ? 'blue' : 'inherit',
+            }}
+          >
+            <ListItemText primary={nestedItem} />
+          </ListItemButton>
+        </ListItem>
+      ))}
+    </List>
+                
               </Collapse>
             )}
           </React.Fragment>
@@ -307,8 +321,9 @@ export default function HeaderMate(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'none', md:'block',lg:'block'} }}>
             <Button sx={{ color: '#fff' }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/">Home</Link></Button>
-            <Button sx={{ color: '#fff' }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/mutual-fund">Mutual Fund</Link></Button>
             <Button><Option navItems={navItems} nestedMenuItems={nestedMenuItems} routes={routes} /></Button>
+            <Button sx={{ color: '#fff', backgroundColor:"blue" }} ><Link sx={{ color: '#fff', textDecoration: "none" }} to="/mutual-fund">Mutual Fund</Link></Button>
+        
             <Link to="/about-us">
               <Button sx={{ color: '#fff' }}>
                 About Us
@@ -319,6 +334,7 @@ export default function HeaderMate(props) {
                 Contact Us
               </Button>
             </Link>
+          
           </Box>
         </Toolbar>
       </AppBar>
