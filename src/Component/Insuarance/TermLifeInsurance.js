@@ -53,37 +53,37 @@ const TermLifeInsurance = () => {
     const benefits = [
         {
             title: '1.Level Term Life Insurance',
-            image: "/assets/insurance/Term_insurance_1.jpg",
+            image: "../../assets/Insurance/Term_insurance_1.jpg",
             description: ['In this type of policy, the death benefit and premiums remain level, or unchanged, throughout the term of the policy. This means that the premium payments remain the same for the entire duration of coverage, providing predictable costs.'
             ]
         },
         {
             title: '2.Convertible Term Life Insurance',
-            image: "/assets/insurance/convertible-term-life-insurance.jpg",
+            image: "../../assets/Insurance/convertible-term-life-insurance.jpg",
             description: ['Convertible term life insurance policies allow policyholders to convert their term policy into a permanent life insurance policy, such as whole life or universal life, without the need for a medical exam. This provides flexibility for individuals who may want to extend coverage or build cash value over time..']
         },
         {
             title: '3.Renewable Term Life Insurance ',
-            image: "/assets/insurance/insurance-2-900x506.webp",
+            image: "../../assets/Insurance/insurance-2-900x506.webp",
             description: [
                 'Renewable term life insurance policies offer the option to renew coverage at the end of the initial term without the need for a medical exam. However, premiums may increase upon renewal based on the insureds age and health status.']
         },
         {
             title: '4.Annual Renewable Term (ART) Life Insurance',
-            image: "/assets/insurance/ART.webp",
+            image: "../../assets/Insurance/ART.webp",
             description: [
                 'ART policies offer coverage for one year at a time and can be renewed annually without the need for a medical exam. Premiums typically increase each year as the insured ages.']
 
         },
         {
             title: '5.Decreasing Term Life Insurance',
-            image: "/assets/insurance/Caspian-Header-Decreasing-1.png",
+            image: "../../assets/Insurance/Caspian-Header-Decreasing-1.png",
             description: [
                 'With decreasing term life insurance, the death benefit decreases over the duration of the policy while the premiums remain level. This type of policy is often used to cover specific financial obligations that decrease over time, such as a mortgage or other debts.']
         },
         {
             title: '6.Increasing Term Life Insurance',
-            image: "/assets/insurance/increasing-term-life-insurance.jpg",
+            image: "../../assets/Insurance/increasing-term-life-insurance.jpg",
             description: [
                 'Increasing term life insurance policies provide coverage with a death benefit that increases over time, typically to keep pace with inflation or changing financial needs. Premiums may also increase with the rising death benefit.']
         },
@@ -113,7 +113,7 @@ const TermLifeInsurance = () => {
                 <Card>
                     <CardMedia
                         component="img"
-                        image="assets/insurance/term-in-surance-benefits.jpg"
+                        image="../../assets/Insurance/term-in-surance-benefits.jpg"
                         alt="Services Header"
                         sx={{
                             width: '100%',
@@ -179,7 +179,7 @@ const TermLifeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/HealthInsurance.png"
+                            src="../../assets/Insurance/HealthInsurance.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -225,7 +225,7 @@ const TermLifeInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/top-7-health-insurance-riders-717x404.AVIF"
+                            src="../../assets/Insurance/top-7-health-insurance-riders-717x404.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -438,7 +438,7 @@ const TermLifeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/think-image.png"
+                            src="../../assets/Insurance/think-image.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -454,7 +454,7 @@ const TermLifeInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/life_insuarance_compny-removebg-preview.png"
+                            src="../../assets/Insurance/life_insuarance_compny-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

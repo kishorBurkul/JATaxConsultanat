@@ -1,12 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
-import Header from './Component/HomeUI/Header';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ServicesSection from './Component/HomeUI/Services';
 import Footer from './Component/HomeUI/Footer';
 import Testimonials from './Component/HomeUI/Testimonials';
-import ReviewSlider from './Component/HomeUI/ReviewSlider';
-import Visions from './Component/HomeUI/Visions';
-// import Readmore from './Component/HomeUI/ReadMore';
 import ClientS from './Component/HomeUI/ClientS';
 import OurBranches from './Component/HomeUI/OurBranches';
 import ServicesPage from './Component/Services/ServicesPage';
@@ -16,14 +12,13 @@ import DigitalSign from './Component/Services/DigitalSign';
 import Accounting from './Component/Services/Accounting';
 import PersonalLone from './Component/LoanServices/PersonalLone';
 import HomeLoan from './Component/LoanServices/HomeLoan';
-import SliderServices from './Component/HomeUI/SliderServices';
 import HomeServices from './Component/HomeUI/HomeServices';
 import HeaderMate from './Component/HomeUI/HeaderMate';
 import BusinessLoan from './Component/LoanServices/BusinessLoan';
 import MortageLoan from './Component/LoanServices/MortageLoan';
 import CarLoan from './Component/LoanServices/CarLoan';
 import EducationLoan from './Component/LoanServices/EducationLoan';
-import Balance_Topup from './Component/LoanServices/Balance_Topup';
+import BalanceTopup from './Component/LoanServices/BalanceTopup';
 import HealthInsurance from './Component/Insuarance/HealthInsurance';
 import LifeInsurance from './Component/Insuarance/LifeInsurance';
 import GeneralInsurance from './Component/Insuarance/GeneralInsurance';
@@ -43,7 +38,6 @@ import ShopActRegistration from './Component/Registration/ShopActRegistration';
 import TradeMarkRegistration from './Component/Registration/TradeMarkRegistration';
 import ProfessionalTaxRegistration from './Component/Registration/ProfessionalTaxRegistration';
 import EpfRegistration from './Component/Registration/EpfRegistration';
-import SliderMate from './Component/HomeUI/SliderMate';
 import AboutHome from './Component/HomeUI/AboutHome';
 import TestingForm from './Component/Registration/TestingForm';
 import FoodLRegistartion from './Component/Registration/FoodLicenceRegistartion';
@@ -51,14 +45,14 @@ import ImportExportRegi from './Component/Registration/ImportExportRegi';
 import CashCreditOverdraftLoan from './Component/LoanServices/CashCreditOverdraftLoan';
 import TANRegistration from './Component/Registration/TANRegistration';
 import MutualFund from './Component/HomeUI/MutualFund';
-import GeneralInsur from './Component/Insuarance/GenearalInsur';
+
 
 
 function App() {
   return (
     <Router>
     <>
-        {/* <Header /> */}
+
         <HeaderMate/>
        
         <Routes>
@@ -76,7 +70,7 @@ function App() {
             <Route path="/mortgage-loan" element={<MortageLoan/>}/>
             <Route path='/car-loan' element={<CarLoan/>} /> 
             <Route path='/education-loan' element={<EducationLoan/>}/>
-            <Route path='/balance-topup-loan' element={<Balance_Topup/>}/>
+            <Route path='/balance-topup-loan' element={<BalanceTopup/>}/>
             <Route path='/health-insurance' element={<HealthInsurance/>}/>
             <Route path='/life-insurance' element={<LifeInsurance/>}/>
             <Route path="/term-life-insurance" element={<TermLifeInsurance/>}/>
@@ -114,17 +108,12 @@ const HomePage = () => {
   return (
       <>
           <HomeServices />
-          {/* <SliderMate/> */}
           <AboutHome/>
           <ServicesSection/>
           <Testimonials />
           <ClientS />
-          {/* <Visions /> */}
-          <Vision/>
+       b  <Vision/>
           <OurBranches />
-          {/* <GeneralInsur/> */}
-          {/* <AboutUs/> */}
-          {/* <ContactUs/> */}
       </>
   );
 };

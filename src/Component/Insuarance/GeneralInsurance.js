@@ -32,32 +32,32 @@ const GeneralInsurance = () => {
     const benefits = [
         {
             title: '1.Property Insurance',
-            image: "/assets/insurance/Health-check-up.jpg",
+            image: "../../assets/Insurance/Health-check-up.jpg",
             description: ['Protects physical assets such as homes, buildings, and belongings against damage or loss caused by perils like fire, theft, vandalism, and natural disasters.'
             ]
         },
         {
             title: '2.Motor Insurance',
-            image: "/assets/insurance/medical_history_1.jpg",
+            image: "../../assets/Insurance/medical_history_1.jpg",
             description: [
                 'Provides coverage for vehicles against damages, theft, and liabilities arising from accidents. It typically includes components such as liability, collision, comprehensive, and uninsured/underinsured motorist coverage.']
         },
 
         {
             title: '3.Health Insurance',
-            image: "/assets/insurance/BMI-1.jpg",
+            image: "../../assets/Insurance/BMI-1.jpg",
             description: ['Offers coverage for medical expenses incurred due to illness, injury, or accidents. Health insurance policies may include benefits such as hospitalization, medical treatments, prescription drugs, and preventive care.']
         },
         {
             title: '4.Travel Insurance',
-            image: "/assets/insurance/habits.png",
+            image: "../../assets/Insurance/habits.png",
             description: [
                 'Provides coverage for travelers against unexpected events such as trip cancellations, medical emergencies, lost baggage, and travel delays while traveling domestically or internationally.']
 
         },
         {
             title: '5.Business Insurance:',
-            image: "/assets/insurance/pre-existing-health.jpg",
+            image: "../../assets/Insurance/pre-existing-health.jpg",
             description: [
                 'Offers various types of coverage to protect businesses from financial losses due to risks such as property damage, liability claims, business interruption, theft, and employee-related issues.']
         },
@@ -112,7 +112,7 @@ const GeneralInsurance = () => {
             <Box className="relative overflow-hidden">
                    <img
                     className="w-full h-64 sm:h-96 object-cover mt-12"
-                    src="assets/insurance/GeneralInsurance.jpg"
+                    src="../../assets/Insurance/GeneralInsurance.jpg"
                     alt="GeneralInsurance"
                 />
                 <Box className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
@@ -138,7 +138,7 @@ const GeneralInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/general-insurance2-removebg-preview.png"
+                            src="../../assets/Insurance/general-insurance2-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -184,7 +184,7 @@ const GeneralInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/top-7-health-insurance-riders-717x404.AVIF"
+                            src="../../assets/Insurance/top-7-health-insurance-riders-717x404.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -397,7 +397,7 @@ const GeneralInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/loan-services/business-loan3.png"
+                            src="../../assets/loan-services/business-loan3.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -413,7 +413,7 @@ const GeneralInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
+                            src="../../assets/Insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

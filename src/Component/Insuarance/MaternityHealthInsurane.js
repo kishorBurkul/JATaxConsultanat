@@ -71,7 +71,7 @@ const MaternityHealthInsurance = () => {
                 <Card>
                     <CardMedia
                         component="img"
-                        image="assets/insurance/maternity_helth_insrance_header.jpg"
+                        image="../../assets/Insurance/maternity_helth_insrance_header.jpg"
                         alt="Services Header"
                         sx={{
                             width: '100%',
@@ -135,7 +135,7 @@ const MaternityHealthInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/maternity_health.jpeg"
+                            src="../../assets/Insurance/maternity_health.jpeg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -150,7 +150,7 @@ const MaternityHealthInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/maternity_beneifits.AVIF"
+                            src="../../assets/Insurance/maternity_beneifits.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -394,7 +394,7 @@ const MaternityHealthInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/Maternity-Health-Insurance-document.jpg"
+                            src="../../assets/Insurance/Maternity-Health-Insurance-document.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -410,7 +410,7 @@ const MaternityHealthInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/top_10_comp.png"
+                            src="../../assets/Insurance/top_10_comp.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

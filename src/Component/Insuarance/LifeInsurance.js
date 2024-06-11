@@ -72,31 +72,31 @@ const LifeInsurance = () => {
     const benefits = [
         {
             title: '1.Term Life Insurance',
-            image: "/assets/insurance/Health-check-up.jpg",
+            image: "../../assets/Insurance/Health-check-up.jpg",
             description: ['This type of insurance provides coverage for a specific period, such as 10, 20, or 30 years. If the insured person dies during the term, the policy pays out a death benefit to the beneficiaries. It s usually less expensive than other types of life insurance and offers straightforward coverage for a set period.'
             ]
         },
         {
             title: '2.Retirement Plans ',
-            image: "/assets/insurance/medical_history_1.jpg",
+            image: "../../assets/Insurance/medical_history_1.jpg",
             description: [
                 '"Retirement plans help you save money for the future. They give you tax benefits and provide a steady income when you stop working. You save money over time, and when you retire, you can use that money to buy a plan that gives you regular payments, like a pension.']  },
               
         {
             title: '3.Unit Linked Insurance Plan',
-            image: "/assets/insurance/BMI-1.jpg",
+            image: "../../assets/Insurance/BMI-1.jpg",
             description: ['ULIP is one of the best means through which you can secure your financial future. The idea behind ULIP is that it enables investors to purchase a policy for both investment and life cover. When you decide to invest in this plan, one of the main components you would have to consider would be the type of investment you are interested in.']
         },
         {
             title: '4.Child Insurance Plan',
-            image: "/assets/insurance/habits.png",
+            image: "../../assets/Insurance/habits.png",
             description: [
                 'Child insurance plans help save for a childs future needs like education and marriage. Parents are insured, with the child as the beneficiary. If a parent dies during the premium-paying period, future premiums are waived. Some plans also cover the child.']  
                
         },
         {
             title: '5.Savings Plans',
-            image: "/assets/insurance/pre-existing-health.jpg",
+            image: "../../assets/Insurance/pre-existing-health.jpg",
             description: [
                 'Many of us have savings plans for the future. When we save, we are essentially investing our income into our future. We can choose to invest in a number of different areas depending on our individual needs and preferences.']
         },
@@ -126,7 +126,7 @@ const LifeInsurance = () => {
                 <Card>
                     <CardMedia
                         component="img"
-                        image="assets/insurance/life_insurance_hader.jpg"
+                        image="../../assets/Insurance/life_insurance_hader.jpg"
                         alt="Services Header"
                         sx={{
                             width: '100%',
@@ -188,7 +188,7 @@ const LifeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/HealthInsurance.png"
+                            src="../../assets/Insurance/HealthInsurance.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -234,7 +234,7 @@ const LifeInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/top-7-health-insurance-riders-717x404.AVIF"
+                            src="../../assets/Insurance/top-7-health-insurance-riders-717x404.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -447,7 +447,7 @@ const LifeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/think-image.png"
+                            src="../../assets/Insurance/think-image.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -463,7 +463,7 @@ const LifeInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 , order: { xs: 1, sm:1 } } }} >
                         <img
-                            src="assets/insurance/life_insuarance_compny-removebg-preview.png"
+                            src="../../assets/Insurance/life_insuarance_compny-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

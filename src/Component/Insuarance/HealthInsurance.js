@@ -55,37 +55,37 @@ const HealthInsurance = () => {
     const benefits = [
         {
             title: '1.Age',
-            image: "/assets/insurance/Health-check-up.jpg",
+            image: "../../assets/Insurance/Health-check-up.jpg",
             description: ['The age of an individual is the single biggest factor that determines his/her chances of falling ill. The chances of requiring medical assistance increase significantly with age. Younger people are generally healthy and medical costs are low. Therefore, your age plays a vital role in determining the amount of premium you will have to pay for a health insurance plan. It is always advisable to buy health insurance when you are young rather than waiting for the later years of life.'
 
             ]
         },
         {
             title: '2.Medical History ',
-            image: "/assets/insurance/medical_history_1.jpg",
+            image: "../../assets/Insurance/medical_history_1.jpg",
             description: [
                 'There are several diseases, which have a higher chance of occurrence if you have a family history of the disease. Insurers charge a higher premium from people who have a family history of certain diseases such as cancer, blood pressure and heart diseases.']
         },
         {
             title: '3.Body Mass Index',
-            image: "/assets/insurance/BMI-1.jpg",
+            image: "../../assets/Insurance/BMI-1.jpg",
             description: ['The body mass index is a measurement of an individual’s weight with respect to his/her height. A higher BMI signals towards a relatively unhealthy lifestyle and a higher chance of diseases related to heart, joint and also diseases such as diabetes. People with a higher BMI are more likely to seek frequent medical assistance, which increases the risk for the insurer and hence the premium for the policyholder.']
         },
         {
             title: '4.Habits',
-            image: "/assets/insurance/habits.png",
+            image: "../../assets/Insurance/habits.png",
             description: [
                 'The insurance premiums will be higher for you if you are a daily smoker or consume alcohol on a frequent basis. Insurance companies charge higher premiums for smokers and drinkers to mitigate the risk associated with insuring people who smoke regularly. Regular smokers are more likely to contract diseases such as lung cancer, stroke, heart disease, asthma and respiratory complications.']
         },
         {
             title: '5.Pre-existing Health Conditions',
-            image: "/assets/insurance/pre-existing-health.jpg",
+            image: "../../assets/Insurance/pre-existing-health.jpg",
             description: [
                 'The health insurance premiums for people with pre-existing health issues is higher as the chances of a repeat are high. The insurer covers you against any repeat occurrence of a pre-existing condition.']
         },
         {
             title: '6.Professions',
-            image: "/assets/insurance/list-of-professions1.png",
+            image: "../../assets/Insurance/list-of-professions1.png",
             description: [
                 'Even though it may not seem to be an important factor for health insurance, but your profession matters while buying a policy. Your occupation plays a key role in your overall well-being. Occupational dangers are higher for people working in hazardous industries such as mining, which results in higher insurance premiums for them.']
         }
@@ -113,7 +113,7 @@ const HealthInsurance = () => {
                 <Card>
                     <CardMedia
                         component="img"
-                        image="assets/loan-services/insurance.jpg"
+                        image="../../assets/Insurance/insurance.jpg"
                         alt="Services Header"
                         sx={{
                             width: '100%',
@@ -173,7 +173,7 @@ const HealthInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/HealthInsurance.png"
+                            src="../../assets/Insurance/HealthInsurance.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -219,7 +219,7 @@ const HealthInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/top-7-health-insurance-riders-717x404.AVIF"
+                            src="../../assets/Insurance/top-7-health-insurance-riders-717x404.AVIF"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -436,7 +436,7 @@ const HealthInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/think-image.png"
+                            src="../../assets/Insurance/think-image.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -452,7 +452,7 @@ const HealthInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 2, sm: 2 } } }}  >
                         <img
-                            src="assets/insurance/top_10_comp.png"
+                            src="../../assets/Insurance/top_10_comp.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

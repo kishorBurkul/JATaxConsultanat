@@ -52,35 +52,23 @@ const PersonalCover = () => {
     const benefits = [
         {
             title: '1.Car Insurance',
-            image: "/assets/insurance/car_insu.svg",
+            image: "../../assets/Insurance/car_insu.svg",
             description: ['Car insurance plans offer protection to the vehicle against an accident, theft, natural calamity and other unforeseen circumstances that could incur financial losses. A car insurance policy covers third party liabilities as well.'
             ]
         },
         {
             title: '2.Two Wheeler Insurance',
-            image: "/assets/insurance/bike.png",
+            image: "../../assets/Insurance/bike.png",
             description: [
                 'Bike Insurance or two wheeler insurance is a type of insurance, which safeguards you against the damage happening to your bike due to accidents, natural calamities and other unfortunate events. Bike Insurance policy covers the cost of treatment as well as third party liabilities.']
         },
 
         {
             title: '3.Commercial Vehicle Insurance',
-            image: "/assets/insurance/Commercial-Veh-Truck.svg",
+            image: "../../assets/Insurance/Commercial-Veh-Truck.svg",
             description: ['Commercial vehicle insurance covers your commercial vehicle against different types of external damages like theft, accident, natural calamity along with personal as well third-party liabilities.']
         },
-        // {
-        //     title: '4.Travel Insurance',
-        //     image: "/assets/insurance/habits.png",
-        //     description: [
-        //         'Provides coverage for travelers against unexpected events such as trip cancellations, medical emergencies, lost baggage, and travel delays while traveling domestically or internationally.']
-
-        // },
-        // {
-        //     title: '5.Business Insurance:',
-        //     image: "/assets/insurance/pre-existing-health.jpg",
-        //     description: [
-        //         'Offers various types of coverage to protect businesses from financial losses due to risks such as property damage, liability claims, business interruption, theft, and employee-related issues.']
-        // },
+    
 
     ];
 
@@ -107,7 +95,7 @@ const PersonalCover = () => {
                 <Card>
                     <CardMedia
                         component="img"
-                        image="assets/insurance/personal_accident_2_header.jpg"
+                        image="../../assets/Insurance/personal_accident_2_header.jpg"
                         alt="Services Header"
                         sx={{
                             width: '100%',
@@ -213,7 +201,7 @@ const PersonalCover = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/Personal_health.png"
+                            src="../../assets/Insurance/Personal_health.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -259,7 +247,7 @@ const PersonalCover = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/Accident-Insurance-Policy_benefit.png"
+                            src="../../assets/Insurance/Accident-Insurance-Policy_benefit.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -462,22 +450,6 @@ const PersonalCover = () => {
                                     Medicine bills
                                 </span>
                             </li>
-                            {/* <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Additional Driver Details
-                                </span>
-                            </li>
-                            <li style={{ marginBottom: '1rem' }}>
-                                <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
-                                    <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
-                                        &nbsp;&#10004;&nbsp;
-                                    </span>
-                                    Bank Account Details
-                                </span>
-                            </li> */}
                             <li style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontWeight: 'semi-bold', fontSize: '1rem', display: 'flex', alignItems: 'center' }}>
                                     <span style={{ width: '1.5rem', height: '1.5rem', backgroundColor: '#34D399', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '0.5rem' }}>
@@ -503,7 +475,7 @@ const PersonalCover = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/car_document.webp"
+                            src="../../assets/Insurance/car_document.webp"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -519,7 +491,7 @@ const PersonalCover = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
+                            src="../../assets/Insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Typography, Avatar, CardActionArea, Card, Box } from '@mui/material';
-import data from './data.json'; // Adjust the path according to your project structure
-
+import data from './data.json';
 const AboutVision = () => {
     return (
         <Grid container direction="column" alignItems="center" mt={2} p={4}>

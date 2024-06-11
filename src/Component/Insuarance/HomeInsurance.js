@@ -72,20 +72,20 @@ const HomeInsurance = () => {
     const benefits = [
         {
             title: '1.Car Insurance',
-            image: "/assets/insurance/car_insu.svg",
+            image: "../../assets/Insurance/car_insu.svg",
             description: ['Car insurance plans offer protection to the vehicle against an accident, theft, natural calamity and other unforeseen circumstances that could incur financial losses. A car insurance policy covers third party liabilities as well.'
             ]
         },
         {
             title: '2.Two Wheeler Insurance',
-            image: "/assets/insurance/bike.png",
+            image: "../../assets/Insurance/bike.png",
             description: [
                 'Bike Insurance or two wheeler insurance is a type of insurance, which safeguards you against the damage happening to your bike due to accidents, natural calamities and other unfortunate events. Bike Insurance policy covers the cost of treatment as well as third party liabilities.']
         },
 
         {
             title: '3.Commercial Vehicle Insurance',
-            image: "/assets/insurance/Commercial-Veh-Truck.svg",
+            image: "../../assets/Insurance/Commercial-Veh-Truck.svg",
             description: ['Commercial vehicle insurance covers your commercial vehicle against different types of external damages like theft, accident, natural calamity along with personal as well third-party liabilities.']
         },
         // {
@@ -129,7 +129,7 @@ const HomeInsurance = () => {
                 <Card>
                     <CardMedia
                         component="img"
-                        image="assets/insurance/home_insurancce.png"
+                        image="../../assets/Insurance/home_insurancce.png"
                         alt="Services Header"
                         sx={{
                             width: '100%',
@@ -189,7 +189,7 @@ const HomeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ order: { xs: 1, sm: 1, md: 2 } }} >
                         <img
-                            src="assets/insurance/home-insurance-vs-home-loan-insurance.jpg"
+                            src="../../assets/Insurance/home-insurance-vs-home-loan-insurance.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -235,7 +235,7 @@ const HomeInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/home_insurance_benefits.jpg"
+                            src="../../assets/Insurance/home_insurance_benefits.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -470,7 +470,7 @@ const HomeInsurance = () => {
                     {/* Right Image */}
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="assets/insurance/home_insu_doc.jpg"
+                            src="../../assets/Insurance/home_insu_doc.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -486,7 +486,7 @@ const HomeInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2, order: { xs: 1, sm: 1 } } }} >
                         <img
-                            src="assets/insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
+                            src="../../assets/Insurance/list-of-general-insurance-companies-in-India-removebg-preview.png"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
