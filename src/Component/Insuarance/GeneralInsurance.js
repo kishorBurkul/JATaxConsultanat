@@ -184,7 +184,7 @@ const GeneralInsurance = () => {
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                     <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
                         <img
-                            src="../../assets/Insurance/top-7-health-in.avif"
+                            src="../../assets/Insurance/beneditsofinsurance.webp"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
