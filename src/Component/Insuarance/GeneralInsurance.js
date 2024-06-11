@@ -182,9 +182,9 @@ const GeneralInsurance = () => {
             </Container>
             <Container sx={{ margin: '0 100px' }}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
+                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 ,md:6,lg:6} }} >
                         <img
-                            src="../../assets/Insurance/beneditsofinsurance.webp"
+                            src="../../assets/Insurance/medical_history_1.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',
@@ -198,7 +198,7 @@ const GeneralInsurance = () => {
                     <Grid item xs={12} sm={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
                         <Typography variant="h5" gutterBottom>
 
-                            Key Benefits of General insurance plans
+                            Key Benefits of General insurance plan
                         </Typography>
                         <Typography variant="body1" paragraph>
                             General insurance plans offer several key benefits, providing financial protection and peace of mind for individuals and families. Here are some of the primary benefits

@@ -216,15 +216,15 @@ const HealthInsurance = () => {
                 </Grid>
             </Container>
             <Container className={usestyles.contentSection}>
-                <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
+                <Grid container spacing={6} sx={{ marginTop: { xs: 2, sm: 2 } }}>
+                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 ,md:6 ,lg:6 } }} >
                         <img
-                            src="../../assets/Insurance/beneditsofinsurance.webp"
-                            alt="Right Content"
+                            src="../../assets/Insurance/medical_history_1.jpg"
+                            alt="benefits"
                             sx={{
                                 width: '100%',
                                 height: 'auto',
-                                marginBottom: { xs: 4, sm: 8 }, // Adjust margin for different screen sizes
+                                marginBottom: { xs: 4, sm: 8 }, 
                             }}
                         />
                     </Grid>

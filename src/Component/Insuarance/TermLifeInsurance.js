@@ -223,9 +223,9 @@ const TermLifeInsurance = () => {
             </Container>
             <Container className={usestyles.contentSection}>
                 <Grid container spacing={3} sx={{ marginTop: { xs: 2, sm: 2 } }}>
-                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2 } }} >
+                    <Grid item xs={12} sm={12} md={6} sx={{ marginTop: { xs: 2, sm: 2,md:6,lg:6 } }} >
                         <img
-                            src="../../assets/Insurance/beneditsofinsurance.webp"
+                            src="../../assets/Insurance/medical_history_1.jpg"
                             alt="Right Content"
                             sx={{
                                 width: '100%',

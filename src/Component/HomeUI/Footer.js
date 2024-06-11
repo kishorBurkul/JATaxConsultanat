@@ -13,6 +13,7 @@ import React, { useEffect, useState } from 'react';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 import { keyframes } from '@mui/material';
 
 
@@ -207,6 +208,10 @@ const Footer = () => {
                         </IconButton>
                         <IconButton aria-label="Telegram" sx={{ color: "#0088cc" }} href="https://t.me/jagaikwadandassociates">
                             <Telegram />
+                          
+                        </IconButton>
+                        <IconButton aria-label="Telegram" sx={{ color: "orange" }} href="https://www.google.com/search?client=ms-android-xiaomi-rev1&sca_esv=ee550f040f73c7f6&sca_upv=1&cs=0&output=search&q=J.%20A.%20Gaikwad%20%26%20Associates&ludocid=5208214411368494940&ibp=gwp%3B0%2C7&lsig=AB86z5VHLFVHT3mnQMzbzpBIrP8b&kgs=f8a7b8bdced5274b&shndl=-1&shem=lsp%2Cssic&source=sh%2Fx%2Floc%2Fhdr%2Fm1%2F2">
+                            <  StorefrontIcon />
                         </IconButton>
 
                         <List sx={{ marginTop: 2 }}>
